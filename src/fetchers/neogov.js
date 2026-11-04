@@ -19,6 +19,10 @@ const parser = new XMLParser({
   isArray: (name) => name === "item" || name === "category",
   textNodeName: "#text",
   parseTagValue: false,
+  // Job feeds escape every &, < and > in their HTML descriptions, so a normal feed has
+  // thousands of standard entities. Raise the total-count cap; keep the size and depth
+  // caps that guard against entity-expansion attacks.
+  processEntities: { maxTotalExpansions: 1_000_000, maxExpansionDepth: 10, maxExpandedLength: 50_000_000 },
 });
 
 const text = (v) => (v == null ? "" : typeof v === "object" ? String(v["#text"] ?? "") : String(v)).trim();

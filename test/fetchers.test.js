@@ -48,3 +48,10 @@ test("Slack message groups by category and caps the list", () => {
   assert.match(text, /Job &lt;0&gt;/);
   assert.ok(msg.blocks.length <= 50);
 });
+
+test("handles feeds with thousands of escaped entities", async (t) => {
+  const big = fixture.replace("Designs &amp;amp; reviews", "&lt;b&gt;x&lt;/b&gt; ".repeat(3000) + "Designs &amp;amp; reviews");
+  t.mock.method(globalThis, "fetch", async () => new Response(big));
+  const jobs = await fetchNeogov({ id: "fx", slug: "fixture" });
+  assert.equal(jobs.length, 4);
+});

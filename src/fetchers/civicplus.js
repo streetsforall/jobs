@@ -4,7 +4,15 @@
 import { XMLParser } from "fast-xml-parser";
 import { fetchText, stripHtml, toISODate } from "../util.js";
 
-const parser = new XMLParser({ ignoreAttributes: true, isArray: (n) => n === "item", parseTagValue: false });
+const parser = new XMLParser({
+  ignoreAttributes: true,
+  isArray: (n) => n === "item",
+  parseTagValue: false,
+  // Job feeds escape every &, < and > in their HTML descriptions, so a normal feed has
+  // thousands of standard entities. Raise the total-count cap; keep the size and depth
+  // caps that guard against entity-expansion attacks.
+  processEntities: { maxTotalExpansions: 1_000_000, maxExpansionDepth: 10, maxExpandedLength: 50_000_000 },
+});
 
 export async function fetchCivicPlus(agency) {
   const doc = parser.parse(await fetchText(agency.feedUrl));

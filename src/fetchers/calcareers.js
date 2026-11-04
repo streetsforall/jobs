@@ -28,7 +28,10 @@ function hiddenFields(html) {
 // option whose text matches `label`.
 function selectOption(html, key, label) {
   const sel = [...html.matchAll(/<select[^>]*name="([^"]+)"[^>]*>([\s\S]*?)<\/select>/gi)].find((m) => m[1].toLowerCase().includes(key.toLowerCase()));
-  if (!sel) throw new Error(`CalCareers: no ${key} dropdown on search page`);
+  if (!sel) {
+    const names = [...html.matchAll(/<select[^>]*name="([^"]+)"/gi)].map((m) => m[1]);
+    throw new Error(`CalCareers: no ${key} dropdown on search page (selects: ${names.join(", ") || "none"}; page ${html.length} bytes, title "${stripHtml(html.match(/<title>([\s\S]*?)<\/title>/i)?.[1] || "")}")`);
+  }
   const opt = [...sel[2].matchAll(/<option[^>]*value="([^"]*)"[^>]*>([^<]*)<\/option>/gi)].find((o) => stripHtml(o[2]).toLowerCase() === label.toLowerCase());
   if (!opt) throw new Error(`CalCareers: option "${label}" not found in ${sel[1]}`);
   return [sel[1], opt[1]];
