@@ -16,7 +16,7 @@ on:
         default: false
   push:
     branches: [main]
-    paths: ["site/index.html"]
+    paths: ["site/index.html", "site/embed.js"]
 
 concurrency:
   group: jobs

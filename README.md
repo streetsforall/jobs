@@ -10,11 +10,25 @@ anything new to **#jobs** in Slack.
 | Job | Runs on | Triggered by | Code |
 |---|---|---|---|
 | Fetch listings, post new ones to Slack #jobs, commit `site/jobs.json` | GitHub Actions `jobs` | schedule, daily ~6:40am PT | `src/run.js` |
-| jobs.streetsforall.org | GitHub Pages (deployed by the same workflow) | each run, and pushes that change `site/index.html` | `site/` |
+| Job board page | Squarespace page on streetsforall.org (Code Block) that loads `embed.js` | — | `site/embed.js` |
+| `jobs.json` + `embed.js` host (jobs.streetsforall.org) | GitHub Pages (deployed by the same workflow) | each run, and pushes that change `site/` | `site/` |
 
 Secrets and variables (names only):
 - `SLACK_BOT_TOKEN` (secret) — the existing Streets For All Slack app, same one agenda-watch uses. The bot must be a member of #jobs.
 - `SLACK_JOBS_CHANNEL_ID` (variable) — `C08CFG5RFQ8` (#jobs).
+
+## The Squarespace page
+
+The board is a normal Squarespace page (e.g. streetsforall.org/jobs) with one Code Block:
+
+```html
+<div id="sfa-jobs"></div>
+<script src="https://jobs.streetsforall.org/embed.js" defer></script>
+```
+
+The widget inherits the site's fonts and uses the S4A palette; the page title and intro
+are ordinary Squarespace text blocks. jobs.streetsforall.org itself redirects to that
+page (`REDIRECT` in `site/index.html`); add `?preview` to see the standalone version.
 
 ## Agencies and sources
 

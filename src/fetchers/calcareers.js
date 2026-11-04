@@ -67,6 +67,7 @@ function parseResults(html, agency) {
       url: `https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=${id}`,
       summary: "",
       internalOnly: false,
+      _text: text,
     });
   }
   return jobs;
@@ -77,6 +78,22 @@ export async function fetchCalCareers(agency) {
   if (!first.ok) throw new Error(`CalCareers search page HTTP ${first.status}`);
   const html = await first.text();
   const cookies = cookieHeader(first);
+
+  // CalCareers now opens straight onto a results page (newest first) with no filter
+  // dropdowns. In that case read the results and filter by department + county text.
+  if (!/<select[^>]*name="[^"]*Department/i.test(html)) {
+    const all = parseResults(html, agency);
+    const dept = /transportation/i;
+    const county = new RegExp(agency.county.replace(/ County$/i, ""), "i");
+    const jobs = all.filter((j) => dept.test(j._text) && county.test(j._text));
+    console.log(`caltrans7: results page has ${all.length} postings, ${jobs.length} Caltrans in ${agency.county}`);
+    if (!all.length || process.env.DEBUG_CALCAREERS) {
+      const i = html.search(/JobControlId=/i);
+      console.log(`caltrans7 sample: ${stripHtml(html.slice(Math.max(0, i - 1500), i + 2500)).slice(0, 1500)}`);
+    }
+    if (!all.length) throw new Error("CalCareers: no postings found on results page");
+    return jobs.map(({ _text, ...j }) => j);
+  }
 
   const form = new URLSearchParams(hiddenFields(html));
   const [deptName, deptVal] = selectOption(html, "Department", agency.department);
@@ -94,7 +111,7 @@ export async function fetchCalCareers(agency) {
     signal: AbortSignal.timeout(60_000),
   });
   if (!res.ok) throw new Error(`CalCareers search POST HTTP ${res.status}`);
-  const jobs = parseResults(await res.text(), agency);
+  const jobs = parseResults(await res.text(), agency).map(({ _text, ...j }) => j);
   if (!jobs.length) throw new Error("CalCareers returned no results — the search form may have changed");
   // District 7 covers LA + Ventura; the county filter already limits to LA County.
   return jobs;

@@ -32,7 +32,6 @@ export const CATEGORIES = [
       /\bcommunications? (specialist|manager|officer|coordinator|director|strategist)/i,
       /\b(legislative|government(al)?|intergovernmental) (affairs|relations|analyst|representative|advocate|liaison)/i,
       /\bpolicy (analyst|advisor|adviser|director|manager|specialist|associate)/i,
-      /\b(field|council|board|senior|justice)? ?deputy\b.*\b(council|board|supervisor|district)/i,
       /\bfield deputy|council aide|district representative|constituent/i,
       /\bstakeholder/i,
     ],
@@ -43,10 +42,8 @@ export const CATEGORIES = [
     patterns: [
       /\bGIS\b/,
       /\bgeographic information|geospatial|cartograph|mapping/i,
-      /\bdata (analyst|scientist|engineer|specialist|manager|architect)/i,
       /\b(transportation|travel demand) model/i,
       /\bmodeler\b/i,
-      /\banalytics\b/i,
     ],
   },
   {
@@ -54,13 +51,20 @@ export const CATEGORIES = [
     label: "Project Management",
     patterns: [
       /\bproject (manager|management|coordinator|control|delivery|engineer)/i,
-      /\bprogram (manager|management|director)\b/i,
       /\bcapital (project|program|improvement)/i,
       /\bconstruction (manager|management|inspector)/i,
-      /\bgrants? (analyst|manager|administrator|coordinator|specialist|writer)/i,
       /\bscheduler\b|project control/i,
     ],
   },
+];
+
+// Generic titles that are only relevant inside a transportation / planning / public
+// works department (or with a transportation term in the title): a "Program Manager"
+// at LADOT belongs here, one at Mental Health doesn't.
+export const DEPT_GATED = [
+  { cat: "pm", re: /\bprogram (manager|management|director|specialist|coordinator)\b/i },
+  { cat: "pm", re: /\bgrants? (analyst|manager|administrator|coordinator|specialist|writer)/i },
+  { cat: "gis", re: /\bdata (analyst|scientist|engineer|specialist|manager)|analytics\b/i },
 ];
 
 // Transportation-specific terms: always relevant, even if an exclusion also matches.
@@ -75,7 +79,11 @@ export const EXCLUDE = [
   /\b(librar|teacher|recreation|park ranger|zoo|animal|veterinar|custodian|janitor|cook|food service)\b/i,
   /\b(software|network|systems?|database|cloud|cyber|security|solutions|application|IT|information technology|telecom|audio|electronics|mechanical|electrical|stationary|plant|power|water utility|wastewater|aircraft|airport operations)\s+(engineer|architect)/i,
   /\b(financial|emergency|disaster|workforce|benefits|succession|event|retirement|estate)\s+plann/i,
-  /\bfire (protection )?engineer/i,
+  /\bfire (protection |prevention )?engineer/i,
+  /\b(attorney|legal|paralegal|counsel|accountant|accounting|auditor|payroll|human resources|personnel|procurement|purchasing)\b/i,
+  /\b(mental health|health program|homeless|social services|children|child support|eligibility|benefits|airport|harbor|port of|aquarium|museum|golf)\b/i,
+  /\b(water|wastewater|sewer|sanitation|solid waste|stormwater|refuse|utility|utilities|power|electric|energy|gas)\b/i,
+  /\b(developer|programmer|software|network|cyber|IT|information technology)\b/i,
 ];
 
 // Departments whose engineering / PM / analyst roles are relevant even when the
@@ -102,6 +110,9 @@ export function classify(job) {
   if (excluded && !core) return null;
 
   const cats = CATEGORIES.filter((c) => c.patterns.some((re) => re.test(title))).map((c) => c.id);
+  if (core || RELEVANT_DEPARTMENTS.test(dept)) {
+    for (const g of DEPT_GATED) if (g.re.test(title) && !cats.includes(g.cat)) cats.push(g.cat);
+  }
 
   // Generic analyst/manager titles in a clearly relevant department (e.g. LADOT
   // "Management Analyst") are worth listing under Project Management.

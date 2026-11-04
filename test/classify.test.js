@@ -22,6 +22,11 @@ test("keeps the roles the board is for", () => {
     "Transportation Modeler": "gis",
     "Senior Project Manager - Capital Projects": "pm",
     "Program Manager (Active Transportation)": "pm",
+    "Capital Projects Management Associate, PW": "pm",
+    "Senior GIS Analyst": "gis",
+    "Survey-Mapping Technician": "gis",
+    "Assistant Engineer (Transportation Engineering)": "engineering",
+    "Communications Specialist I-VI (Camera Project Lead)": "outreach",
     "Deputy Executive Officer, Project Management (Construction Management)": "pm",
   };
   for (const [title, cat] of Object.entries(keep)) {
@@ -35,6 +40,12 @@ test("drops roles outside scope", () => {
     "Registered Nurse", "Librarian", "Software Engineer", "Network Engineer", "Financial Planning Analyst",
     "Mechanic Helper", "Senior Clerk Typist", "Deputy Sheriff", "Custodian", "Electrical Mechanic",
     "Emergency Planning Coordinator", "Fire Protection Engineer",
+    "DEPUTY DISTRICT ATTORNEY I", "MENTAL HEALTH PROGRAM MANAGER II / EMERGENCY APPOINTMENTS HOMELESSNESS",
+    "EQUITY IN COUNTY CONTRACTS PROGRAM MANAGER (ADMINISTRATIVE MANAGER 10, ISD)",
+    "FIRE PREVENTION ENGINEERING ASSISTANT II (Fire Alarm/Sprinkler System Specialty) - FIRE EMERGENCY",
+    "DATA SCIENTIST / EMERGENCY APPOINTMENT HOMELESSNESS", "SENIOR APPLICATION DEVELOPER (DATA & ANALYTICS)",
+    "AIRPORT MANAGER", "Health Program Manager III, Support Services (UC)", "Senior Accountant (Capital Improvement Program)",
+    "Water Resources and Planning Manager", "Civil Engineer I / GWP - Water Engineering", "POLICY AND RESOURCES SPECIALIST (SANITATION)",
   ]) {
     assert.equal(cats(t), null, `${t} should be dropped, got ${cats(t)}`);
   }
@@ -47,4 +58,11 @@ test("generic analyst titles count only in a relevant department", () => {
 
 test("transportation term wins over a health-department exclusion", () => {
   assert.ok(cats("Health Program Manager - Active Transportation"));
+});
+
+test("program manager and data titles count only in relevant departments", () => {
+  assert.deepEqual(cats("Program Manager", "Transportation"), ["pm"]);
+  assert.equal(cats("Program Manager", "Mental Health"), null);
+  assert.deepEqual(cats("Data Analyst", "Department of Transportation"), ["gis"]);
+  assert.equal(cats("Senior Data Scientist", "Internal Services"), null);
 });

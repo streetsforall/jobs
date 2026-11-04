@@ -4,303 +4,32 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Public Sector Jobs | Streets For All</title>
-<meta name="description" content="Open planning, engineering, outreach, GIS and project management jobs at the City of LA, LA County, Metro, Caltrans, SCAG and surrounding cities, updated daily by Streets For All.">
-<meta property="og:title" content="Public Sector Jobs | Streets For All">
-<meta property="og:description" content="Get hired to build better streets. Open roles at LA-area agencies, updated daily.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,600;0,800;0,900;1,400&display=swap" rel="stylesheet">
+<meta name="description" content="Open planning, engineering, outreach, GIS and project management jobs at LA-area public agencies, updated daily by Streets For All.">
+<!--
+  The job board lives on streetsforall.org as a Squarespace page that loads embed.js.
+  This page is a plain fallback / preview of the same widget, and the host for
+  jobs.json + embed.js. Set REDIRECT to the Squarespace page URL once it is live.
+-->
+<script>
+  var REDIRECT = "https://www.streetsforall.org/jobs";
+  if (REDIRECT && !/[?&]preview\b/.test(location.search)) location.replace(REDIRECT);
+</script>
 <style>
-  :root {
-    --navy: #14213d;
-    --ink: #1c2433;
-    --muted: #5b6577;
-    --line: #d9dee7;
-    --paper: #f5f7fa;
-    --white: #ffffff;
-    --lane: #1f8a4c;      /* protected bike lane green */
-    --lane-soft: #e3f3ea;
-    --amber: #b7791f;     /* closing soon */
-    --amber-soft: #fdf3dc;
-    --focus: #2f6fde;
-  }
-  * { box-sizing: border-box; }
-  html { -webkit-text-size-adjust: 100%; }
-  body {
-    margin: 0;
-    background: var(--paper);
-    color: var(--ink);
-    font: 400 16px/1.5 "Public Sans", system-ui, sans-serif;
-  }
-  a { color: inherit; }
-  :focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
-
-  /* Hero: navy street with a dashed centre line */
-  header.hero {
-    background: var(--navy);
-    color: var(--white);
-    padding: 28px 16px 0;
-    position: relative;
-    overflow: hidden;
-  }
-  .wrap { max-width: 980px; margin: 0 auto; }
-  .brand { display: flex; align-items: center; justify-content: space-between; gap: 12px; font-weight: 600; font-size: 15px; }
-  .brand a { text-decoration: none; }
-  .brand a:hover { text-decoration: underline; }
-  .hero h1 {
-    font-weight: 900;
-    font-size: clamp(38px, 7.5vw, 76px);
-    line-height: 0.98;
-    letter-spacing: -0.02em;
-    margin: 44px 0 18px;
-    max-width: 12ch;
-  }
-  .hero p.lede { font-size: 18px; max-width: 58ch; color: #d6dcea; margin: 0 0 28px; }
-  .hero p.lede strong { color: var(--white); font-weight: 600; }
-  .centerline {
-    height: 6px;
-    margin: 0 -16px;
-    background: repeating-linear-gradient(90deg, #f2c94c 0 44px, transparent 44px 76px);
-  }
-  .lane-band {
-    height: 22px;
-    margin: 0 -16px;
-    background: var(--lane);
-    border-top: 4px solid var(--white);
-  }
-
-  /* Filters */
-  .filters {
-    position: sticky; top: 0; z-index: 5;
-    background: var(--white);
-    border-bottom: 1px solid var(--line);
-    padding: 12px 16px;
-  }
-  .filters .wrap { display: grid; gap: 10px; }
-  .row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
-  input[type=search], select {
-    font: inherit; color: var(--ink);
-    border: 1.5px solid var(--line); border-radius: 8px;
-    padding: 9px 12px; background: var(--white);
-    min-height: 42px;
-  }
-  input[type=search] { flex: 1 1 260px; }
-  select { flex: 0 1 220px; }
-  .chip {
-    font: 500 14px/1 "Public Sans", sans-serif;
-    border: 1.5px solid var(--line); background: var(--white); color: var(--ink);
-    padding: 9px 13px; border-radius: 999px; cursor: pointer; min-height: 38px;
-  }
-  .chip[aria-pressed=true] { background: var(--lane); border-color: var(--lane); color: var(--white); }
-  .chip:hover { border-color: var(--lane); }
-  .count { color: var(--muted); font-size: 14px; margin-left: auto; }
-
-  /* Listings: each job is a lane — green stripe on the left */
-  main { padding: 20px 16px 64px; }
-  ol.jobs { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
-  .job {
-    background: var(--white);
-    border: 1px solid var(--line);
-    border-left: 6px solid var(--lane);
-    border-radius: 6px;
-    padding: 14px 16px;
-    display: grid;
-    grid-template-columns: 1fr auto;
-    gap: 4px 16px;
-  }
-  .job.closing { border-left-color: #e0a526; }
-  .job h2 { font-size: 18px; font-weight: 700; line-height: 1.3; margin: 0; }
-  .job h2 a { text-decoration: none; }
-  .job h2 a:hover { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 3px; }
-  .agency { font-weight: 600; color: var(--navy); }
-  .dept { color: var(--muted); }
-  .meta { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 14px; color: var(--muted); }
-  .side { text-align: right; font-size: 14px; white-space: nowrap; }
-  .salary { font-weight: 600; color: var(--ink); }
-  .new {
-    display: inline-block; vertical-align: 2px; margin-left: 8px;
-    font-size: 12px; font-weight: 700; color: var(--lane);
-    background: var(--lane-soft); border-radius: 4px; padding: 2px 7px;
-  }
-  .soon { color: var(--amber); font-weight: 600; }
-  .tags { display: flex; gap: 6px; flex-wrap: wrap; }
-  .tag { font-size: 12.5px; border: 1px solid var(--line); border-radius: 4px; padding: 1px 7px; color: var(--muted); }
-
-  .empty { background: var(--white); border: 1.5px dashed var(--line); border-radius: 8px; padding: 28px; text-align: center; color: var(--muted); }
-  .empty button { margin-top: 10px; }
-
-  footer { border-top: 1px solid var(--line); padding: 28px 16px 48px; color: var(--muted); font-size: 14px; }
-  footer p { max-width: 70ch; margin: 0 0 10px; }
-  footer .sources { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 8px; }
-  footer .down { color: #b42318; }
-
-  @media (max-width: 640px) {
-    .filters { position: static; }
-    .job { grid-template-columns: 1fr; }
-    .side { text-align: left; }
-    select { flex: 1 1 100%; }
-    .count { margin-left: 0; width: 100%; }
-  }
-  @media (prefers-reduced-motion: no-preference) {
-    .centerline { animation: drive 3s linear 1; }
-    @keyframes drive { from { background-position: 152px 0; } to { background-position: 0 0; } }
-  }
+  body { margin: 0; font: 17px/1.6 "Helvetica Neue", Arial, sans-serif; color: #333; background: #fff; }
+  header { background: #1b1b1b; color: #fff; padding: 18px 16px; }
+  header a { color: #fff; text-decoration: none; font-weight: 700; }
+  main { max-width: 960px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 36px; line-height: 1.15; margin: 0 0 8px; color: #173861; }
+  .intro { margin: 0 0 24px; max-width: 65ch; }
 </style>
 </head>
 <body>
-<header class="hero">
-  <div class="wrap">
-    <div class="brand">
-      <a href="https://www.streetsforall.org">Streets For All</a>
-    </div>
-    <h1>Get hired to fix LA's streets.</h1>
-    <p class="lede" id="lede">The people who design, plan and build our streets work for public agencies. This board collects open planning, engineering, outreach, GIS and project management jobs across <strong>LA-area agencies</strong>, updated every morning.</p>
-  </div>
-  <div class="centerline" aria-hidden="true"></div>
-  <div class="lane-band" aria-hidden="true"></div>
-</header>
-
-<nav class="filters" aria-label="Filter jobs">
-  <div class="wrap">
-    <div class="row">
-      <label class="sr" for="q" hidden>Search jobs</label>
-      <input id="q" type="search" placeholder="Search titles, departments, agencies" autocomplete="off">
-      <label for="agency" hidden>Agency</label>
-      <select id="agency"><option value="">All agencies</option></select>
-      <label for="sort" hidden>Sort</label>
-      <select id="sort">
-        <option value="new">Newest first</option>
-        <option value="closing">Closing soonest</option>
-        <option value="salary">Highest salary</option>
-      </select>
-    </div>
-    <div class="row" id="cats" role="group" aria-label="Job type"></div>
-  </div>
-</nav>
-
+<header><a href="https://www.streetsforall.org">Streets For All</a></header>
 <main>
-  <div class="wrap">
-    <p class="count" id="count" aria-live="polite"></p>
-    <ol class="jobs" id="jobs"></ol>
-  </div>
+  <h1>Public sector jobs</h1>
+  <p class="intro">Open planning, engineering, outreach, GIS and project management jobs at LA-area public agencies, updated every morning.</p>
+  <div id="sfa-jobs"></div>
 </main>
-
-<footer>
-  <div class="wrap">
-    <p>Listings come straight from each agency's official job site and link back there to apply. Civil service jobs usually require an exam, so read the bulletin carefully and apply before the filing deadline. Spotted a job that belongs here, or one that doesn't? Tell us in the #jobs channel on Slack.</p>
-    <p id="updated"></p>
-    <div class="sources" id="sources"></div>
-  </div>
-</footer>
-
-<script>
-const CATS = [
-  ["engineering", "Engineering & planning"],
-  ["outreach", "Outreach & policy"],
-  ["gis", "GIS & data"],
-  ["pm", "Project management"],
-];
-const state = { q: "", agency: "", cats: new Set(), sort: "new" };
-let DATA = { jobs: [], agencies: [] };
-const $ = (id) => document.getElementById(id);
-const esc = (s = "") => s.replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-const today = new Date().toLocaleDateString("en-CA", { timeZone: "America/Los_Angeles" });
-const daysUntil = (d) => Math.round((new Date(d + "T12:00:00Z") - new Date(today + "T12:00:00Z")) / 864e5);
-
-function salary(s) {
-  if (!s || (!s.min && !s.max)) return "";
-  const iv = s.interval || "";
-  const yearly = !/hour|month|week|day/.test(iv);
-  const f = (n) => (yearly && n >= 1000 ? "$" + Math.round(n / 1000) + "K" : "$" + n.toLocaleString("en-US", { minimumFractionDigits: Number.isInteger(n) ? 0 : 2, maximumFractionDigits: 2 }));
-  const r = s.min && s.max && s.min !== s.max ? f(s.min) + "–" + f(s.max) : f(s.min || s.max);
-  return r + (/hour/.test(iv) ? "/hr" : /month/.test(iv) ? "/mo" : "");
-}
-const annual = (s) => {
-  if (!s) return 0;
-  const v = s.max || s.min || 0;
-  return /hour/.test(s.interval || "") ? v * 2080 : /month/.test(s.interval || "") ? v * 12 : v;
-};
-
-function closing(c) {
-  if (!c) return { text: "", soon: false };
-  if (c === "continuous") return { text: "Open until filled", soon: false };
-  const n = daysUntil(c);
-  const date = new Date(c + "T12:00:00Z").toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone: "UTC" });
-  if (n <= 0) return { text: "Closes today", soon: true };
-  if (n === 1) return { text: "Closes tomorrow", soon: true };
-  return { text: (n <= 7 ? `Closes in ${n} days` : `Closes ${date}`), soon: n <= 7 };
-}
-
-function render() {
-  const names = Object.fromEntries(DATA.agencies.map((a) => [a.id, a.short || a.name]));
-  const q = state.q.toLowerCase().trim();
-  let list = DATA.jobs.filter((j) =>
-    (!state.agency || j.agency === state.agency) &&
-    (!state.cats.size || j.categories.some((c) => state.cats.has(c))) &&
-    (!q || `${j.title} ${j.department} ${names[j.agency] || ""}`.toLowerCase().includes(q)));
-
-  if (state.sort === "closing") {
-    const key = (j) => (!j.closes || j.closes === "continuous" ? "9999" : j.closes);
-    list = list.slice().sort((a, b) => key(a).localeCompare(key(b)));
-  } else if (state.sort === "salary") {
-    list = list.slice().sort((a, b) => annual(b.salary) - annual(a.salary));
-  }
-
-  $("count").textContent = `${list.length} open job${list.length === 1 ? "" : "s"}`;
-  const labels = Object.fromEntries(CATS);
-  $("jobs").innerHTML = list.length ? list.map((j) => {
-    const c = closing(j.closes);
-    const isNew = j.firstSeen && daysUntil(j.firstSeen) >= -6;
-    return `<li class="job${c.soon ? " closing" : ""}">
-      <div>
-        <h2><a href="${esc(j.url)}" target="_blank" rel="noopener">${esc(j.title)}</a>${isNew ? '<span class="new">New</span>' : ""}</h2>
-        <div><span class="agency">${esc(names[j.agency] || j.agency)}</span>${j.department ? ` <span class="dept">${esc(j.department)}</span>` : ""}</div>
-      </div>
-      <div class="side">
-        <div class="salary">${esc(salary(j.salary))}</div>
-        <div class="${c.soon ? "soon" : ""}">${esc(c.text)}</div>
-      </div>
-      <div class="meta"><span class="tags">${j.categories.map((k) => `<span class="tag">${labels[k] || k}</span>`).join("")}</span>${j.jobType ? `<span>${esc(j.jobType)}</span>` : ""}</div>
-    </li>`;
-  }).join("") : `<li class="empty">No open jobs match these filters.<br><button class="chip" type="button" id="reset">Clear filters</button></li>`;
-  const reset = $("reset");
-  if (reset) reset.onclick = () => { state.q = ""; state.agency = ""; state.cats.clear(); $("q").value = ""; $("agency").value = ""; syncChips(); render(); };
-}
-
-function syncChips() {
-  document.querySelectorAll("#cats .chip").forEach((b) => b.setAttribute("aria-pressed", state.cats.has(b.dataset.cat)));
-}
-
-function setup() {
-  $("cats").innerHTML = CATS.map(([id, label]) => `<button class="chip" type="button" data-cat="${id}" aria-pressed="false">${label}</button>`).join("");
-  $("cats").addEventListener("click", (e) => {
-    const b = e.target.closest(".chip"); if (!b) return;
-    state.cats.has(b.dataset.cat) ? state.cats.delete(b.dataset.cat) : state.cats.add(b.dataset.cat);
-    syncChips(); render();
-  });
-  $("q").addEventListener("input", (e) => { state.q = e.target.value; render(); });
-  $("agency").addEventListener("change", (e) => { state.agency = e.target.value; render(); });
-  $("sort").addEventListener("change", (e) => { state.sort = e.target.value; render(); });
-
-  const counts = {};
-  DATA.jobs.forEach((j) => (counts[j.agency] = (counts[j.agency] || 0) + 1));
-  $("agency").innerHTML += DATA.agencies
-    .slice().sort((a, b) => (a.short || a.name).localeCompare(b.short || b.name))
-    .map((a) => `<option value="${a.id}">${esc(a.short || a.name)} (${counts[a.id] || 0})</option>`).join("");
-
-  const n = DATA.agencies.length;
-  $("lede").innerHTML = `The people who design, plan and build our streets work for public agencies. This board collects open planning, engineering, outreach, GIS and project management jobs across <strong>${n} LA-area agencies</strong>, updated every morning.`;
-  const when = new Date(DATA.updated);
-  $("updated").textContent = `Last updated ${when.toLocaleString("en-US", { dateStyle: "medium", timeStyle: "short", timeZone: "America/Los_Angeles" })}. Agencies covered:`;
-  const down = new Set((DATA.sources || []).filter((s) => !s.ok).map((s) => s.id));
-  $("sources").innerHTML = DATA.agencies.map((a) =>
-    `<a href="${esc(a.careersUrl || "#")}" target="_blank" rel="noopener"${down.has(a.id) ? ' class="down" title="We couldn\'t refresh this agency today; showing its last known listings."' : ""}>${esc(a.name)}</a>`).join("");
-}
-
-fetch("jobs.json", { cache: "no-cache" })
-  .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
-  .then((d) => { DATA = d; setup(); render(); })
-  .catch(() => { $("jobs").innerHTML = '<li class="empty">The job list didn\'t load. Refresh the page to try again.</li>'; });
-</script>
+<script src="embed.js" defer></script>
 </body>
 </html>
