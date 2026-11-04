@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:joblisting="http://www.neogov.com/namespaces/JobListing" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Fixture Agency</title>
+    <item>
+      <title>Transportation Engineering Associate</title>
+      <link>https://www.governmentjobs.com/careers/fixture/jobs/100001/transportation-engineering-associate</link>
+      <pubDate>2026-11-01 09:00:00.0</pubDate>
+      <description>&lt;p&gt;Designs &amp;amp; reviews street improvements.&lt;/p&gt;</description>
+      <joblisting:jobId>100001</joblisting:jobId>
+      <joblisting:advertiseFromDateUTC>Sun, 01 Nov 2026 07:00:00</joblisting:advertiseFromDateUTC>
+      <joblisting:advertiseToDateTime>Mon, 30 Nov 2026 23:59:00</joblisting:advertiseToDateTime>
+      <joblisting:advertiseToDateTimeUTC>Tue, 01 Dec 2026 07:59:00</joblisting:advertiseToDateTimeUTC>
+      <joblisting:minimumSalary>98,000.00</joblisting:minimumSalary>
+      <joblisting:maximumSalary>143,500.00</joblisting:maximumSalary>
+      <joblisting:salaryInterval>Year</joblisting:salaryInterval>
+      <joblisting:jobType>Full-Time</joblisting:jobType>
+      <joblisting:department>Transportation</joblisting:department>
+    </item>
+    <item>
+      <title>Police Officer</title>
+      <link>https://www.governmentjobs.com/careers/fixture/jobs/100002/police-officer</link>
+      <joblisting:jobId>100002</joblisting:jobId>
+      <joblisting:advertiseToDateTime>Continuous</joblisting:advertiseToDateTime>
+      <joblisting:department>Police</joblisting:department>
+    </item>
+    <item>
+      <title>GIS Specialist</title>
+      <link>https://www.governmentjobs.com/careers/fixture/jobs/100003/gis-specialist</link>
+      <joblisting:jobId>100003</joblisting:jobId>
+      <joblisting:advertiseFromDate>Mon, 02 Nov 2026</joblisting:advertiseFromDate>
+      <joblisting:advertiseToDateTime>Continuous</joblisting:advertiseToDateTime>
+      <joblisting:minimumSalary>41.50</joblisting:minimumSalary>
+      <joblisting:maximumSalary>55.25</joblisting:maximumSalary>
+      <joblisting:salaryInterval>Hourly</joblisting:salaryInterval>
+      <joblisting:jobType>Part-Time</joblisting:jobType>
+      <joblisting:department>Public Works</joblisting:department>
+    </item>
+    <item>
+      <title>Senior Management Analyst (Promotional)</title>
+      <link>https://www.governmentjobs.com/careers/fixture/jobs/100004/x</link>
+      <joblisting:jobId>100004</joblisting:jobId>
+      <joblisting:department>Transportation</joblisting:department>
+    </item>
+  </channel>
+</rss>

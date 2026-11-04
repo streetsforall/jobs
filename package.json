@@ -1,0 +1,19 @@
+{
+  "name": "sfa-jobs",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Streets For All public-sector job board: aggregates LA-area agency openings in planning, engineering, outreach, GIS and project management, publishes jobs.streetsforall.org and posts new roles to Slack #jobs daily.",
+  "scripts": {
+    "start": "node src/run.js",
+    "dry-run": "node src/run.js --dry-run",
+    "baseline": "node src/run.js --baseline",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^4.5.0"
+  }
+}

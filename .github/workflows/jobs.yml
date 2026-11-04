@@ -1,0 +1,79 @@
+name: jobs
+
+on:
+  schedule:
+    # Daily ~6:40am Pacific in winter / 7:40am in summer (GitHub cron is UTC).
+    - cron: "40 14 * * *"
+  workflow_dispatch:
+    inputs:
+      baseline:
+        description: "Baseline: mark everything currently open as seen, no Slack post (run once at launch)"
+        type: boolean
+        default: false
+      dry_run:
+        description: "Dry run: fetch and print only"
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+    paths: ["site/index.html"]
+
+concurrency:
+  group: jobs
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: "22"
+          cache: "npm"
+
+      - run: npm ci
+
+      - name: Refresh listings
+        if: github.event_name != 'push'
+        env:
+          # Same Streets For All Slack app agenda-watch uses. Invite it to #jobs.
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+          SLACK_JOBS_CHANNEL_ID: ${{ vars.SLACK_JOBS_CHANNEL_ID }}
+        run: |
+          FLAGS=""
+          if [ "${{ github.event.inputs.baseline }}" = "true" ]; then FLAGS="$FLAGS --baseline"; fi
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then FLAGS="$FLAGS --dry-run"; fi
+          node src/run.js $FLAGS
+
+      - name: Commit listings and state
+        if: github.event_name != 'push' && github.event.inputs.dry_run != 'true'
+        run: |
+          git config user.name "sfa-jobs-bot"
+          git config user.email "sfa-jobs-bot@users.noreply.github.com"
+          git add site/jobs.json state/seen.json
+          git diff --cached --quiet || git commit -m "Refresh job listings $(date -u +%F)"
+          git push
+
+      - uses: actions/upload-pages-artifact@v3
+        if: github.event.inputs.dry_run != 'true'
+        with:
+          path: site
+
+  deploy:
+    needs: refresh
+    if: github.event.inputs.dry_run != 'true'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,74 @@
+// Daily #jobs post. One message per day, only when there are new postings.
+// Posts as the existing Streets For All Slack bot (SLACK_BOT_TOKEN, the same app
+// agenda-watch uses) into SLACK_JOBS_CHANNEL_ID. Invite the bot to #jobs first.
+
+import { CATEGORY_LABELS, CATEGORIES } from "../config/categories.js";
+
+const SITE = process.env.SITE_URL || "https://jobs.streetsforall.org";
+const MAX_LISTED = 30;
+
+const esc = (s = "") => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+export function formatSalary(s) {
+  if (!s || (!s.min && !s.max)) return "";
+  const iv = s.interval || "";
+  const yearly = !/hour|month|week|day/.test(iv);
+  const fmt = (n) => (yearly && n >= 1000 ? `$${Math.round(n / 1000)}K` : `$${n.toLocaleString("en-US", { minimumFractionDigits: Number.isInteger(n) ? 0 : 2, maximumFractionDigits: 2 })}`);
+  const range = s.min && s.max && s.min !== s.max ? `${fmt(s.min)}–${fmt(s.max)}` : fmt(s.min || s.max);
+  return /hour/.test(s.interval || "") ? `${range}/hr` : /month/.test(s.interval || "") ? `${range}/mo` : range;
+}
+
+function formatClose(c) {
+  if (!c) return "";
+  if (c === "continuous") return "open until filled";
+  const d = new Date(`${c}T12:00:00Z`);
+  return `closes ${d.toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone: "UTC" })}`;
+}
+
+export function buildMessage(newJobs, agencyNames) {
+  const n = newJobs.length;
+  const blocks = [
+    { type: "header", text: { type: "plain_text", text: `🚲 ${n} new public-sector job${n === 1 ? "" : "s"} today` } },
+    { type: "context", elements: [{ type: "mrkdwn", text: `Planning, engineering, outreach, GIS and project roles at LA-area agencies. Full board: <${SITE}|jobs.streetsforall.org>` }] },
+  ];
+  let listed = 0;
+  for (const cat of CATEGORIES) {
+    const jobs = newJobs.filter((j) => j.categories[0] === cat.id);
+    if (!jobs.length || listed >= MAX_LISTED) continue;
+    const lines = [];
+    for (const j of jobs) {
+      if (listed >= MAX_LISTED) break;
+      const meta = [agencyNames[j.agency] || j.agency, formatSalary(j.salary), formatClose(j.closes)].filter(Boolean).join(" · ");
+      lines.push(`• <${j.url}|${esc(j.title)}> — ${esc(meta)}`);
+      listed++;
+    }
+    // Section text caps at 3000 chars; split long categories across sections.
+    let chunk = `*${CATEGORY_LABELS[cat.id]}*`;
+    for (const line of lines) {
+      if (chunk.length + line.length + 1 > 2900) {
+        blocks.push({ type: "section", text: { type: "mrkdwn", text: chunk } });
+        chunk = "";
+      }
+      chunk += `\n${line}`;
+    }
+    blocks.push({ type: "section", text: { type: "mrkdwn", text: chunk } });
+  }
+  if (n > listed) {
+    blocks.push({ type: "context", elements: [{ type: "mrkdwn", text: `+${n - listed} more on <${SITE}|the job board>` }] });
+  }
+  return { text: `${n} new public-sector job${n === 1 ? "" : "s"} today — ${SITE}`, blocks, unfurl_links: false, unfurl_media: false };
+}
+
+export async function postToSlack(message) {
+  const token = process.env.SLACK_BOT_TOKEN;
+  const channel = process.env.SLACK_JOBS_CHANNEL_ID;
+  if (!token || !channel) throw new Error("SLACK_BOT_TOKEN / SLACK_JOBS_CHANNEL_ID not set");
+  const res = await fetch("https://slack.com/api/chat.postMessage", {
+    method: "POST",
+    headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json; charset=utf-8" },
+    body: JSON.stringify({ channel, ...message }),
+  });
+  const body = await res.json();
+  if (!body.ok) throw new Error(`Slack chat.postMessage failed: ${body.error}`);
+  return body.ts;
+}
