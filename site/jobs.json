@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05T17:06:59.518Z",
+ "updated": "2026-11-05T21:12:56.459Z",
  "agencies": [
   {
    "id": "lacity",
@@ -123,7 +123,7 @@
    "id": "metro",
    "name": "LA Metro",
    "ok": true,
-   "total": 12,
+   "total": 11,
    "listed": 0
   },
   {
@@ -157,7 +157,7 @@
    "id": "pasadena",
    "name": "City of Pasadena",
    "ok": true,
-   "total": 20,
+   "total": 21,
    "listed": 4
   },
   {
