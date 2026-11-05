@@ -1,1 +1,870 @@
-{"updated":null,"agencies":[],"sources":[],"jobs":[]}
+{
+ "updated": "2026-11-05T17:06:59.518Z",
+ "agencies": [
+  {
+   "id": "lacity",
+   "name": "City of Los Angeles",
+   "short": "City of LA",
+   "careersUrl": "https://www.governmentjobs.com/careers/lacity"
+  },
+  {
+   "id": "lacounty",
+   "name": "County of Los Angeles",
+   "short": "LA County",
+   "careersUrl": "https://www.governmentjobs.com/careers/lacounty"
+  },
+  {
+   "id": "metro",
+   "name": "LA Metro",
+   "short": "LA Metro",
+   "careersUrl": "https://www.governmentjobs.com/careers/lametro"
+  },
+  {
+   "id": "metrolink",
+   "name": "Metrolink (SCRRA)",
+   "short": "Metrolink",
+   "careersUrl": "https://www.governmentjobs.com/careers/scrra"
+  },
+  {
+   "id": "scag",
+   "name": "Southern California Association of Governments",
+   "short": "SCAG",
+   "careersUrl": "https://www.governmentjobs.com/careers/scag"
+  },
+  {
+   "id": "caltrans7",
+   "name": "Caltrans District 7",
+   "short": "Caltrans District 7",
+   "careersUrl": "https://calcareers.ca.gov/CalHRPublic/Search/JobSearchResults.aspx"
+  },
+  {
+   "id": "longbeach",
+   "name": "City of Long Beach",
+   "short": "Long Beach",
+   "careersUrl": "https://www.governmentjobs.com/careers/longbeach"
+  },
+  {
+   "id": "pasadena",
+   "name": "City of Pasadena",
+   "short": "Pasadena",
+   "careersUrl": "https://www.governmentjobs.com/careers/pasadena"
+  },
+  {
+   "id": "santamonica",
+   "name": "City of Santa Monica (incl. Big Blue Bus)",
+   "short": "Santa Monica",
+   "careersUrl": "https://www.governmentjobs.com/careers/santamonica"
+  },
+  {
+   "id": "glendale",
+   "name": "City of Glendale",
+   "short": "Glendale",
+   "careersUrl": "https://www.governmentjobs.com/careers/glendaleca"
+  },
+  {
+   "id": "burbank",
+   "name": "City of Burbank",
+   "short": "Burbank",
+   "careersUrl": "https://www.governmentjobs.com/careers/burbankca"
+  },
+  {
+   "id": "culvercity",
+   "name": "Culver City (incl. CityBus)",
+   "short": "Culver City",
+   "careersUrl": "https://www.governmentjobs.com/careers/culvercity"
+  },
+  {
+   "id": "weho",
+   "name": "City of West Hollywood",
+   "short": "West Hollywood",
+   "careersUrl": "https://www.governmentjobs.com/careers/weho"
+  },
+  {
+   "id": "beverlyhills",
+   "name": "City of Beverly Hills",
+   "short": "Beverly Hills",
+   "careersUrl": "https://www.governmentjobs.com/careers/beverlyhills"
+  },
+  {
+   "id": "torrance",
+   "name": "City of Torrance (incl. Torrance Transit)",
+   "short": "Torrance",
+   "careersUrl": "https://www.governmentjobs.com/careers/torranceca"
+  },
+  {
+   "id": "inglewood",
+   "name": "City of Inglewood",
+   "short": "Inglewood",
+   "careersUrl": "https://www.cityofinglewood.org/Jobs.aspx"
+  },
+  {
+   "id": "lbtransit",
+   "name": "Long Beach Transit",
+   "short": "Long Beach Transit",
+   "careersUrl": "https://ibcrqy.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/jobs"
+  }
+ ],
+ "sources": [
+  {
+   "id": "lacity",
+   "name": "City of Los Angeles",
+   "ok": true,
+   "total": 49,
+   "listed": 3
+  },
+  {
+   "id": "lacounty",
+   "name": "County of Los Angeles",
+   "ok": true,
+   "total": 422,
+   "listed": 7
+  },
+  {
+   "id": "metro",
+   "name": "LA Metro",
+   "ok": true,
+   "total": 12,
+   "listed": 0
+  },
+  {
+   "id": "metrolink",
+   "name": "Metrolink (SCRRA)",
+   "ok": true,
+   "total": 7,
+   "listed": 0
+  },
+  {
+   "id": "scag",
+   "name": "Southern California Association of Governments",
+   "ok": true,
+   "total": 1,
+   "listed": 0
+  },
+  {
+   "id": "caltrans7",
+   "name": "Caltrans District 7",
+   "ok": false,
+   "error": "CalCareers: no postings found on results page"
+  },
+  {
+   "id": "longbeach",
+   "name": "City of Long Beach",
+   "ok": true,
+   "total": 29,
+   "listed": 3
+  },
+  {
+   "id": "pasadena",
+   "name": "City of Pasadena",
+   "ok": true,
+   "total": 20,
+   "listed": 4
+  },
+  {
+   "id": "santamonica",
+   "name": "City of Santa Monica (incl. Big Blue Bus)",
+   "ok": true,
+   "total": 11,
+   "listed": 0
+  },
+  {
+   "id": "glendale",
+   "name": "City of Glendale",
+   "ok": true,
+   "total": 8,
+   "listed": 1
+  },
+  {
+   "id": "burbank",
+   "name": "City of Burbank",
+   "ok": true,
+   "total": 11,
+   "listed": 0
+  },
+  {
+   "id": "culvercity",
+   "name": "Culver City (incl. CityBus)",
+   "ok": true,
+   "total": 7,
+   "listed": 1
+  },
+  {
+   "id": "weho",
+   "name": "City of West Hollywood",
+   "ok": true,
+   "total": 1,
+   "listed": 0
+  },
+  {
+   "id": "beverlyhills",
+   "name": "City of Beverly Hills",
+   "ok": true,
+   "total": 6,
+   "listed": 2
+  },
+  {
+   "id": "torrance",
+   "name": "City of Torrance (incl. Torrance Transit)",
+   "ok": true,
+   "total": 30,
+   "listed": 6
+  },
+  {
+   "id": "inglewood",
+   "name": "City of Inglewood",
+   "ok": true,
+   "total": 3,
+   "listed": 0
+  },
+  {
+   "id": "lbtransit",
+   "name": "Long Beach Transit",
+   "ok": true,
+   "total": 6,
+   "listed": 1
+  }
+ ],
+ "jobs": [
+  {
+   "id": "culvercity:5537114",
+   "agency": "culvercity",
+   "title": "Assistant Engineer (Transportation Engineering)",
+   "department": "Public Works",
+   "location": "City Hall, 9770 Culver Boulevard, Culver City, CA 90232",
+   "jobType": "Full-Time",
+   "salary": {
+    "min": 42.75,
+    "max": 52.18,
+    "interval": "hour"
+   },
+   "posted": "2026-11-02",
+   "closes": "2026-11-12",
+   "url": "https://www.governmentjobs.com/careers/culvercity/jobs/5537114-0",
+   "summary": "Culver City is a Charter City incorporated in 1917, and is a destination filled with outdoor cafes, unique shops and galleries opening onto pedestrian-friendly boulevards. Culver City has dedicated staff of approximately 800 employees with an overall operating budget of over $370 million. The City provides a full range of municipal services including Fire, Police, Housing & Human Services, Plannin",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "firstSeen": "2026-11-05"
+  },
+  {
+   "id": "lacity:5508889",
+   "agency": "lacity",
+   "title": "SUPERVISING TRANSPORTATION PLANNER 2481",
+   "department": "ALL DEPARTMENTS",
+   "location": "CITY OF LOS ANGELES",
+   "jobType": "FULL-TIME",
+   "salary": {
+    "min": 120477,
+    "max": 206732,
+    "interval": "year"
+   },
+   "posted": "2026-10-30",
+   "closes": "2026-11-12",
+   "url": "https://www.governmentjobs.com/careers/lacity/jobs/5508889-0",
+   "summary": "ANNUAL SALARY$120,477 to $176,164 and $141,399 to $206,732 NOTES: Candidates from the eligible list are normally appointed to vacancies in the lower pay grade positions. Annual salary is at the start of the pay range. The current salary range is subject to change. Please confirm the starting salary with the hiring department before accepting a job offer. A Supervising Transportation Planner superv",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "firstSeen": "2026-11-05"
+  },
+  {
+   "id": "beverlyhills:5351532",
+   "agency": "beverlyhills",
+   "title": "Parking Services Manager",
+   "department": "Public Works",
+   "location": "Beverly Hills Public Works Building",
+   "jobType": "Full-time",
+   "salary": {
+    "min": 11957.39,
+    "max": 14855.69,
+    "interval": "month"
+   },
+   "posted": "2026-10-30",
+   "closes": "2026-11-27",
+   "url": "https://www.governmentjobs.com/careers/beverlyhills/jobs/5351532-0",
+   "summary": "Who We Are The City of Beverly Hills has a long-standing reputation for providing superior customer service to residents, businesses, and visitors. This characteristic, combined with outstanding staff in all departments, has been a hallmark of success for this high-performance organization. The municipal government (approximately 1,000+ full-time and part-time employees) provides the highest quali",
+   "internalOnly": false,
+   "categories": [
+    "pm"
+   ],
+   "core": true,
+   "firstSeen": "2026-11-05"
+  },
+  {
+   "id": "torrance:5510021",
+   "agency": "torrance",
+   "title": "PLANNING ASSOCIATE (REISSUE)",
+   "department": "COMMUNITY DEVELOPMENT",
+   "location": "Torrance",
+   "jobType": "Permanent Full-time",
+   "salary": {
+    "min": 42.78,
+    "max": 54.62,
+    "interval": "hour"
+   },
+   "posted": "2026-10-28",
+   "closes": "continuous",
+   "url": "https://www.governmentjobs.com/careers/torranceca/jobs/5510021-0",
+   "summary": "WE STRONGLY ENCOURAGE APPLICANTS TO READ THE JOB ANNOUNCEMENT IN ITS ENTIRETY BEFORE SUBMITTING AN APPLICATION FOR THIS POSITION. ____________________________________________________________ The City of Torrance recognizes the principles of diversity and inclusion, and strives to ensure equal opportunities for its workforce, applicants and community members. If you are a person who wants to make a",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": false,
+   "firstSeen": "2026-11-05"
+  },
+  {
+   "id": "torrance:5513235",
+   "agency": "torrance",
+   "title": "LANDSCAPE ARCHITECT / PARK DEVELOPMENT MANAGER",
+   "department": "COMMUNITY SERVICES",
+   "location": "Torrance",
+   "jobType": "Permanent Full-time",
+   "salary": {
+    "min": 12767,
+    "max": 17618,
+    "interval": "month"
+   },
+   "posted": "2026-10-27",
+   "closes": "continuous",
+   "url": "https://www.governmentjobs.com/careers/torranceca/jobs/5513235-0",
+   "summary": "WE STRONGLY ENCOURAGE APPLICANTS TO READ THE JOB ANNOUNCEMENT IN ITS ENTIRETY BEFORE SUBMITTING AN APPLICATION FOR THIS POSITION. ____________________________________________________________ The City of Torrance recognizes the principles of diversity and inclusion, and strives to ensure equal opportunities for its workforce, applicants and community members. If you are a person who wants to make a",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": false,
+   "firstSeen": "2026-11-05"
+  },
+  {
+   "id": "lacounty:5265302",
+   "agency": "lacounty",
+   "title": "SURVEY-MAPPING TECHNICIAN",
+   "department": "PUBLIC WORKS",
+   "location": "Los Angeles County",
+   "jobType": "Full time",
+   "salary": {
+    "min": 6306,
+    "max": 8049,
+    "interval": "month"
+   },
+   "posted": "2026-10-26",
+   "closes": "2026-11-09",
+   "url": "https://www.governmentjobs.com/careers/lacounty/jobs/5265302-0",
+   "summary": "EXAM NUMBER C3619K FILING PERIOD We will be accepting online applications from Tuesday, October 27, 2026, at 8:00 a.m. (PT) until Monday, November 9, 2026, 5:00 p.m. (PT). All applications must be received before 5:00 p.m. (PT) on Monday, November 9, 2026, to be accepted. TYPE OF RECRUITMENT We welcome applications from everyone! Why work for us?With almost 10 million residents, Los Angeles County",
+   "internalOnly": false,
+   "categories": [
+    "gis"
+   ],
+   "core": true,
+   "firstSeen": "2026-11-05"
+  },
+  {
+   "id": "beverlyhills:5518793",
+   "agency": "beverlyhills",
+   "title": "Associate Planner",
+   "department": "CD-Planning",
+   "location": "Beverly Hills City Hall",
+   "jobType": "Full-time",
+   "salary": {
+    "min": 8357.44,
+    "max": 10383.06,
+    "interval": "month"
+   },
+   "posted": "2026-10-23",
+   "closes": "2026-11-15",
+   "url": "https://www.governmentjobs.com/careers/beverlyhills/jobs/5518793-0",
+   "summary": "PLEASE NOTE: This recruitment has been extended and will close on Sunday, November 15, 2026, at 11:59 p.m. PST. Please be sure to submit your application prior to the deadline. Who We Are The City of Beverly Hills has a long-standing reputation for providing superior customer service to residents, businesses, and visitors. This characteristic, combined with outstanding staff in all departments, ha",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "firstSeen": "2026-11-05"
+  },
+  {
+   "id": "torrance:5524315",
+   "agency": "torrance",
+   "title": "GEOGRAPHIC INFORMATION SYSTEMS (GIS) ADMINISTRATOR",
+   "department": "INFORMATION TECHNOLOGY",
+   "location": "Torrance",
+   "jobType": "Permanent Full-time",
+   "salary": {
+    "min": 50.83,
+    "max": 68.16,
+    "interval": "hour"
+   },
+   "posted": "2026-10-23",
+   "closes": "continuous",
+   "url": "https://www.governmentjobs.com/careers/torranceca/jobs/5524315-0",
+   "summary": "WE STRONGLY ENCOURAGE APPLICANTS TO READ THE JOB ANNOUNCEMENT IN ITS ENTIRETY BEFORE SUBMITTING AN APPLICATION FOR THIS POSITION. The City of Torrance recognizes the principles of diversity and inclusion, and strives to ensure equal opportunities for its workforce, applicants and community members. If you are a person who wants to make a difference, give back to your community, and be a voice for ",
+   "internalOnly": false,
+   "categories": [
+    "gis"
+   ],
+   "core": false,
+   "firstSeen": "2026-11-05"
+  },
+  {
+   "id": "pasadena:5334614",
+   "agency": "pasadena",
+   "title": "Communications Specialist",
+   "department": "Water & Power",
+   "location": "City of Pasadena",
+   "jobType": "2025 - REGULAR FULLTIME 40+ HRS A WK",
+   "salary": {
+    "min": 33.1582,
+    "max": 39.3815,
+    "interval": "hour"
+   },
+   "posted": "2026-10-22",
+   "closes": "2026-11-05",
+   "url": "https://www.governmentjobs.com/careers/pasadena/jobs/5334614-0",
+   "summary": "Please Note: Online Applications will ONLY be accepted beginning on Thursday, October 22, 2026, and will close on Thursday, November 5, 2026, at 11:59PM. The Pasadena Water and Power Department is seeking a Communications Specialist to support and implement marketing, social media, and interactive communication strategies for the utility. This role involves a range of paraprofessional responsibili",
+   "internalOnly": false,
+   "categories": [
+    "outreach"
+   ],
+   "core": false,
+   "firstSeen": "2026-11-05"
+  },
+  {
+   "id": "glendale:5507756",
+   "agency": "glendale",
+   "title": "Director of Communications & Community Relations",
+   "department": "Management Services Department",
+   "location": "613 E. Broadway, Room 100, Glendale",
+   "jobType": "Salaried - Full-time",
+   "salary": {
+    "min": 12533.57,
+    "max": 18223.81,
+    "interval": "month"
+   },
+   "posted": "2026-10-19",
+   "closes": "2026-11-30",
+   "url": "https://www.governmentjobs.com/careers/glendaleca/jobs/5507756-0",
+   "summary": "OPEN EXAMINATION - ONE YEAR PROBATIONARY PERIOD Job Description:. Under the direction of the City Manager, this position leads citywide communications and community engagement — including internal/external communications, media relations, and messaging consistency across departments. The position builds and maintains partnerships with stakeholders, directs community outreach and civic events, over",
+   "internalOnly": false,
+   "categories": [
+    "outreach"
+   ],
+   "core": false,
+   "firstSeen": "2026-11-05"
+  },
+  {
+   "id": "torrance:5509892",
+   "agency": "torrance",
+   "title": "ENGINEERING TECHNICIAN I (GIS - GEOGRAPHIC INFORMATION SYSTEMS)",
+   "department": "INFORMATION TECHNOLOGY",
+   "location": "Torrance",
+   "jobType": "Permanent Full-time",
+   "salary": {
+    "min": 27.97,
+    "max": 34.01,
+    "interval": "hour"
+   },
+   "posted": "2026-10-09",
+   "closes": "continuous",
+   "url": "https://www.governmentjobs.com/careers/torranceca/jobs/5509892-0",
+   "summary": "WE STRONGLY ENCOURAGE APPLICANTS TO READ THE JOB ANNOUNCEMENT IN ITS ENTIRETY BEFORE SUBMITTING AN APPLICATION FOR THIS POSITION. ____________________________________________________________ The City of Torrance recognizes the principles of diversity and inclusion, and strives to ensure equal opportunities for its workforce, applicants and community members. If you are a person who wants to make a",
+   "internalOnly": false,
+   "categories": [
+    "engineering",
+    "gis"
+   ],
+   "core": false,
+   "firstSeen": "2026-11-05"
+  },
+  {
+   "id": "lbtransit:27",
+   "agency": "lbtransit",
+   "title": "Project Engineer",
+   "department": "",
+   "location": "Long Beach, CA, United States",
+   "jobType": "",
+   "salary": null,
+   "posted": "2026-09-21",
+   "closes": null,
+   "url": "https://ibcrqy.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/27",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "pm"
+   ],
+   "core": false,
+   "firstSeen": "2026-11-05"
+  },
+  {
+   "id": "lacounty:5472714",
+   "agency": "lacounty",
+   "title": "SENIOR PUBLIC INFORMATION SPECIALIST",
+   "department": "HEALTH SERVICES",
+   "location": "Los Angeles County",
+   "jobType": "Full time",
+   "salary": {
+    "min": 8229.82,
+    "max": 11090.82,
+    "interval": "month"
+   },
+   "posted": "2026-09-18",
+   "closes": "continuous",
+   "url": "https://www.governmentjobs.com/careers/lacounty/jobs/5472714-0",
+   "summary": "EXAM NUMBER Y1609B TYPE OF RECRUITMENT We welcome applications from anyone. WHEN TO APPLY The application filing period will begin on September 18, 2026, at 12:30 p.m. (PT) – Continuous. We will keep accepting applications until the position is filled. The application window may close unexpectedly once we have enough qualified candidates. ABOUT LOS ANGELES COUNTY DEPARTMENT OF HEALTH SERVICES: LA ",
+   "internalOnly": false,
+   "categories": [
+    "outreach"
+   ],
+   "core": false,
+   "firstSeen": "2026-11-05"
+  },
+  {
+   "id": "lacounty:5339937",
+   "agency": "lacounty",
+   "title": "CAPITAL PROJECTS MANAGEMENT ASSOCIATE, PW",
+   "department": "PUBLIC WORKS",
+   "location": "Los Angeles County",
+   "jobType": "Full time",
+   "salary": {
+    "min": 9660.1,
+    "max": 12330.46,
+    "interval": "month"
+   },
+   "posted": "2026-09-08",
+   "closes": "continuous",
+   "url": "https://www.governmentjobs.com/careers/lacounty/jobs/5339937-0",
+   "summary": "EXAM NUMBER C4140H FILING PERIOD We will begin accepting applications on Wednesday, September 9, 2026, at 8:00 a.m. Pacific Time (PT) – Continuous. We will keep accepting applications until the position is filled. The application window may close unexpectedly once we have enough qualified candidates. TYPE OF RECRUITMENT We welcome applications from anyone. Why work for us? With almost 10 million r",
+   "internalOnly": false,
+   "categories": [
+    "pm"
+   ],
+   "core": true,
+   "firstSeen": "2026-11-05"
+  },
+  {
+   "id": "pasadena:5470812",
+   "agency": "pasadena",
+   "title": "Permit Services Specialist",
+   "department": "Planning & Community Development",
+   "location": "City of Pasadena",
+   "jobType": "2025 - REGULAR FULLTIME 40+ HRS A WK",
+   "salary": {
+    "min": 38.8897,
+    "max": 46.1887,
+    "interval": "hour"
+   },
+   "posted": "2026-09-03",
+   "closes": "continuous",
+   "url": "https://www.governmentjobs.com/careers/pasadena/jobs/5470812-0",
+   "summary": "The City of Pasadena's Planning and Community Development Department is currently seeking an enthusiastic and skilled Permit Services Specialist. The Permit Services Specialist may lead the permit technicians and supports the e-permit services for the Department’s Land Management System (LMS). The position is essential in LMS management, ensuring that the LMS is maintained and operated efficiently",
+   "internalOnly": false,
+   "categories": [
+    "pm"
+   ],
+   "core": true,
+   "firstSeen": "2026-11-05"
+  },
+  {
+   "id": "lacounty:5337806",
+   "agency": "lacounty",
+   "title": "CIVIL ENGINEERING ASSISTANT",
+   "department": "PUBLIC WORKS",
+   "location": "Los Angeles County",
+   "jobType": "Full time",
+   "salary": {
+    "min": 7293.36,
+    "max": 8818.28,
+    "interval": "month"
+   },
+   "posted": "2026-09-01",
+   "closes": "continuous",
+   "url": "https://www.governmentjobs.com/careers/lacounty/jobs/5337806-0",
+   "summary": "Exam Number: C3424V Application Filing Period: The application filing period will begin on Wednesday, September 2, 2026, at 8:00 a.m. (PT)–Continuous. We will keep accepting applications until the position is filled. The application window may close unexpectedly once we have enough qualified candidates. Type of Recruitment: We encourage applications from everyone. Why work for us? With almost 10 m",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "firstSeen": "2026-11-05"
+  },
+  {
+   "id": "pasadena:5461824",
+   "agency": "pasadena",
+   "title": "Senior GIS Analyst",
+   "department": "Information Technology",
+   "location": "Pasadena City Hall",
+   "jobType": "Full -Time",
+   "salary": {
+    "min": 106688,
+    "max": 133360,
+    "interval": "year"
+   },
+   "posted": "2026-08-27",
+   "closes": "continuous",
+   "url": "https://www.governmentjobs.com/careers/pasadena/jobs/5461824-0",
+   "summary": "The City of Pasadena’s Department of Information Technology is currently seeking a Senior GIS Analyst to assist in the design, development, analysis, implementation, and maintenance of the city's Geographic Information System. Under general supervision, the Senior GIS Analyst performs professional duties in support of City and departmental GIS databases and geographic information systems capabilit",
+   "internalOnly": false,
+   "categories": [
+    "gis"
+   ],
+   "core": false,
+   "firstSeen": "2026-11-05"
+  },
+  {
+   "id": "pasadena:5451581",
+   "agency": "pasadena",
+   "title": "Construction Inspector I/II",
+   "department": "Water & Power",
+   "location": "City of Pasadena",
+   "jobType": "Full -Time",
+   "salary": {
+    "min": 87410,
+    "max": 109262,
+    "interval": "year"
+   },
+   "posted": "2026-08-20",
+   "closes": "continuous",
+   "url": "https://www.governmentjobs.com/careers/pasadena/jobs/5451581-0",
+   "summary": "Construction Inspector I $38.20 - $47.75 Hourly $79,464.00 - $99,329.00 Annually Construction Inspector II $42.02 - $52.52 Hourly $87,410.00 - $109,262.00 Annually The City of Pasadena, Water and Power Department is seeking qualified applicants for the position of Construction Inspector I/II. Reporting to Capital Project Manager, the Construction Inspector I/II reviews contract specifications and ",
+   "internalOnly": false,
+   "categories": [
+    "pm"
+   ],
+   "core": false,
+   "firstSeen": "2026-11-05"
+  },
+  {
+   "id": "lacity:5219744",
+   "agency": "lacity",
+   "title": "CIVIL ENGINEERING DRAFTING TECHNICIAN 7232 (E) (REVISED 08-12-2026)",
+   "department": "ALL DEPARTMENTS",
+   "location": "CITY OF LOS ANGELES",
+   "jobType": "FULL-TIME",
+   "salary": {
+    "min": 71367,
+    "max": 120373,
+    "interval": "year"
+   },
+   "posted": "2026-08-14",
+   "closes": "continuous",
+   "url": "https://www.governmentjobs.com/careers/lacity/jobs/5219744-0",
+   "summary": "ANNUAL SALARY $71,367 to $104,358 The salary in the Los Angeles World Airports and the Harbor Department is $77,757 to $113,670 The salary in the Department of Water and Power is $89,136 to $110,726; $92,832 to $115,341; $94,795 to $117,763; $96,904 to $120,373 NOTES: Annual salary is at the start of the pay range. The current salary range is subject to change. Please confirm the starting salary w",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": false,
+   "firstSeen": "2026-11-05"
+  },
+  {
+   "id": "longbeach:5426602",
+   "agency": "longbeach",
+   "title": "COMMUNICATION SPECIALIST I-VI (Camera Project Lead)",
+   "department": "Multiple Departments - (CL)",
+   "location": "City of Long Beach",
+   "jobType": "Classified - Full-Time, Permanent",
+   "salary": {
+    "min": 30.58,
+    "max": 76.54,
+    "interval": "hour"
+   },
+   "posted": "2026-07-28",
+   "closes": "2026-11-17",
+   "url": "https://www.governmentjobs.com/careers/longbeach/jobs/5426602-0",
+   "summary": "Applications are available online beginning Tuesday, July 28, 2026, through 4:30 PM, Tuesday, October 20, 2026. (EXTENDED) VACANCY INFORMATION: Communication Specialist IV (Camera Project Lead) – There is currently one (1) Communication Specialist IV (Camera Project Lead) opening in the Technology & Innovation (TID) Department. This role operates under limited supervision and requires specialized ",
+   "internalOnly": false,
+   "categories": [
+    "outreach"
+   ],
+   "core": false,
+   "firstSeen": "2026-11-05"
+  },
+  {
+   "id": "lacounty:5339822",
+   "agency": "lacounty",
+   "title": "ASSOCIATE CIVIL ENGINEER",
+   "department": "PUBLIC WORKS",
+   "location": "Los Angeles County",
+   "jobType": "Full time",
+   "salary": {
+    "min": 9660.1,
+    "max": 12330.46,
+    "interval": "month"
+   },
+   "posted": "2026-06-01",
+   "closes": "continuous",
+   "url": "https://www.governmentjobs.com/careers/lacounty/jobs/5339822-0",
+   "summary": "EXAM NUMBER C3433M FILING PERIOD The application filing period will begin on June 2, 2026, at 8:00 a.m. (PT) – Continuous. We will keep accepting applications until the position is filled. The application window may close unexpectedly once we have enough qualified candidates. TYPE OF RECRUITMENT We welcome applications from anyone. Why work for us? With more than 10 million residents, Los Angeles ",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "firstSeen": "2026-11-05"
+  },
+  {
+   "id": "lacounty:5196037",
+   "agency": "lacounty",
+   "title": "CIVIL ENGINEERING STUDENT",
+   "department": "PUBLIC WORKS",
+   "location": "Los Angeles County",
+   "jobType": "Temporary",
+   "salary": {
+    "min": 4220.94,
+    "max": 4220.94,
+    "interval": "month"
+   },
+   "posted": "2026-05-28",
+   "closes": "continuous",
+   "url": "https://www.governmentjobs.com/careers/lacounty/jobs/5196037-0",
+   "summary": "EXAM NUMBER C3422C FILING PERIOD The application filing period will begin on June 1, 2026, at 8:00 a.m. (PT) - Continuous. We will keep accepting applications until the position is filled. The application window may close unexpectedly once we have enough qualified candidates. This announcement is being reposted to reopen the filling period. TYPE OF RECRUITMENT We welcome applications from anyone. ",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "firstSeen": "2026-11-05"
+  },
+  {
+   "id": "longbeach:5278557",
+   "agency": "longbeach",
+   "title": "SENIOR CIVIL ENGINEER",
+   "department": "Multiple Departments - (CL)",
+   "location": "City of Long Beach",
+   "jobType": "Classified - Full-Time, Permanent",
+   "salary": {
+    "min": 59.8,
+    "max": 81.45,
+    "interval": "hour"
+   },
+   "posted": "2026-04-10",
+   "closes": "2026-12-04",
+   "url": "https://www.governmentjobs.com/careers/longbeach/jobs/5278557-0",
+   "summary": "Applications are available online beginning Friday, April 10, 2026, through 11:59 PM Friday, December 4, 2026. APPLICATION CLOSING DATE HAS BEEN EXTENDED. VACANCY INFORMATION: The Senior Civil Engineer classification is used in the following five City of Long Beach departments: Airport, Community Development, Harbor, Public Works, and Utilities. Look at examples of how the position is used in vari",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": false,
+   "firstSeen": "2026-11-05"
+  },
+  {
+   "id": "lacounty:5152083",
+   "agency": "lacounty",
+   "title": "ASSOCIATE CIVIL ENGINEER / Emergency Appointment Fire",
+   "department": "PUBLIC WORKS",
+   "location": "Los Angeles County",
+   "jobType": "Full time",
+   "salary": {
+    "min": 9660.1,
+    "max": 12330.46,
+    "interval": "month"
+   },
+   "posted": "2026-04-08",
+   "closes": "continuous",
+   "url": "https://www.governmentjobs.com/careers/lacounty/jobs/5152083-0",
+   "summary": "TYPE OF RECRUITMENT: OPEN COMPETITIVE - EMERGENCY The application filing period will begin on April 9, 2026, at 8:00 a.m. (PT) - Continuous. We will keep accepting applications until the position is filled. The application window may close unexpectedly once we have enough qualified candidates. EXAM NUMBER: C3433A-FR The LA County Board of Supervisors has unanimously ratified a Proclamation of Loca",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "firstSeen": "2026-11-05"
+  },
+  {
+   "id": "torrance:5182381",
+   "agency": "torrance",
+   "title": "INTERACTIVE COMMUNICATIONS OFFICER (STAFF ASSISTANT) (ON-CALL/PART-TIME/AT-WILL)",
+   "department": "xVARIES",
+   "location": "Torrance",
+   "jobType": "Recurrent - Variable Hours",
+   "salary": {
+    "min": 32,
+    "max": 45.06,
+    "interval": "hour"
+   },
+   "posted": "2025-12-29",
+   "closes": "continuous",
+   "url": "https://www.governmentjobs.com/careers/torranceca/jobs/5182381-0",
+   "summary": "WE STRONGLY ENCOURAGE APPLICANTS TO READ THE JOB ANNOUNCEMENT IN ITS ENTIRETY BEFORE SUBMITTING AN APPLICATION FOR THIS POSITION. The City of Torrance recognizes the principles of diversity and inclusion, and strives to ensure equal opportunities for its workforce, applicants, and community members. If you are a person who wants to make a difference, give back to your community, and be a voice for",
+   "internalOnly": false,
+   "categories": [
+    "outreach"
+   ],
+   "core": false,
+   "firstSeen": "2026-11-05"
+  },
+  {
+   "id": "torrance:5068434",
+   "agency": "torrance",
+   "title": "PUBLIC WORKS INSPECTOR (CAPITAL PROJECTS)",
+   "department": "PUBLIC WORKS",
+   "location": "Torrance",
+   "jobType": "Permanent Full-time",
+   "salary": {
+    "min": 36.76,
+    "max": 49.28,
+    "interval": "hour"
+   },
+   "posted": "2025-09-04",
+   "closes": "continuous",
+   "url": "https://www.governmentjobs.com/careers/torranceca/jobs/5068434-0",
+   "summary": "WE STRONGLY ENCOURAGE APPLICANTS TO READ THE JOB ANNOUNCEMENT IN ITS ENTIRETY BEFORE SUBMITTING AN APPLICATION FOR THIS POSITION. The City of Torrance is recruiting for a Public Works Inspector, Capital Projects to be part of the Public Works Department's Engineering Division Team! The Department The Public Works Department is a dynamic organization that readily adapts to the needs of the Torrance",
+   "internalOnly": false,
+   "categories": [
+    "pm"
+   ],
+   "core": true,
+   "firstSeen": "2026-11-05"
+  },
+  {
+   "id": "longbeach:4963265",
+   "agency": "longbeach",
+   "title": "CIVIL ENGINEER",
+   "department": "Multiple Departments - (CL)",
+   "location": "City of Long Beach",
+   "jobType": "Classified - Full-Time, Permanent",
+   "salary": {
+    "min": 53.79,
+    "max": 73.21,
+    "interval": "hour"
+   },
+   "posted": "2025-06-13",
+   "closes": "continuous",
+   "url": "https://www.governmentjobs.com/careers/longbeach/jobs/4963265-0",
+   "summary": "Applications are available online beginning Friday, June 13, 2025. Filing will remain open until vacancies are filled. Filing may close without further notice. The Civil Engineer classification is used in the following five City of Long Beach departments: Airport, Community Development, Harbor (Port of Long Beach), Public Works, and Utilities. To learn more about each department descriptions pleas",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": false,
+   "firstSeen": "2026-11-05"
+  },
+  {
+   "id": "lacity:4791742",
+   "agency": "lacity",
+   "title": "CIVIL ENGINEERING DRAFTING TECHNICIAN 7232 (C) (REVISED 07-31-2025)",
+   "department": "ALL DEPARTMENTS",
+   "location": "CITY OF LOS ANGELES",
+   "jobType": "FULL-TIME",
+   "salary": {
+    "min": 67922,
+    "max": 117095,
+    "interval": "year"
+   },
+   "posted": "2025-02-07",
+   "closes": "continuous",
+   "url": "https://www.governmentjobs.com/careers/lacity/jobs/4791742-0",
+   "summary": "ANNUAL SALARY $67,922 to $99,305 The salary in the Los Angeles World Airports and the Harbor Department is $74,019 to $108,179 The salary in the Department of Water and Power is $86,714 to $107,719; $90,306 to $112, 209; $92,206 to $114,547; $94,231 to $117,095 NOTES: Annual salary is at the start of the pay range. The current salary range is subject to change. Please confirm the starting salary w",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": false,
+   "firstSeen": "2026-11-05"
+  }
+ ]
+}
