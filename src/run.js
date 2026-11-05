@@ -28,7 +28,7 @@ const OUT_FILE = path.join(ROOT, "site", "jobs.json");
 
 const args = new Set(process.argv.slice(2));
 const DRY = args.has("--dry-run");
-const BASELINE = args.has("--baseline");
+let BASELINE = args.has("--baseline");
 const ONLY = [...args].find((a) => a.startsWith("--only="))?.split("=")[1];
 
 const FETCHERS = { neogov: fetchNeogov, calcareers: fetchCalCareers, civicplus: fetchCivicPlus, oraclehcm: fetchOracleHcm };
@@ -45,6 +45,12 @@ async function main() {
   const today = todayLA();
   const agencies = AGENCIES.filter((a) => !a.disabled && (!ONLY || a.id === ONLY));
   const seen = readJSON(STATE_FILE, {});
+  // First real run (no state yet): treat as baseline so launch day doesn't post the
+  // whole board to Slack.
+  if (!Object.keys(seen).length && !BASELINE) {
+    log("no saved state yet: running as baseline (no Slack post)");
+    BASELINE = true;
+  }
   const previous = readJSON(OUT_FILE, { jobs: [] });
 
   const results = await Promise.allSettled(
