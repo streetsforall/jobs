@@ -114,7 +114,9 @@ async function main() {
 
   log(`\n${jobs.length} listings, ${fresh.length} new today${BASELINE ? " (baseline: not posting)" : ""}${quietlyAdded ? `, ${quietlyAdded} from newly added agencies recorded without posting` : ""}`);
   if (DRY) {
-    for (const j of fresh) log(`  NEW [${j.categories.join(",")}] ${j.agency} — ${j.title}`);
+    for (const j of jobs.filter((x) => !seen[x.id] || x.firstSeen === today)) {
+      log(`  ${known.has(j.agency) && fresh.includes(j) ? "NEW " : "ADD "}[${j.categories.join(",")}] ${j.agency} — ${j.title}${j.department ? ` (${j.department})` : ""}`);
+    }
     return;
   }
 

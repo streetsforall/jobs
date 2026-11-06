@@ -68,6 +68,8 @@ export const AGENCIES = [
   },
   { id: "oakland", region: "norcal", name: "City of Oakland", short: "Oakland", ...ng("oaklandca") },
   { id: "sanjose", region: "norcal", name: "City of San José", short: "San José", ...ng("sanjoseca") },
+  { id: "santaclara", region: "norcal", name: "City of Santa Clara", short: "Santa Clara", ...ng("cityofsantaclaraca") },
+  { id: "emeryville", region: "norcal", name: "City of Emeryville", short: "Emeryville", ...ng("emeryville") },
   { id: "berkeley", region: "norcal", name: "City of Berkeley", short: "Berkeley", ...ng("berkeley") },
   { id: "fremont", region: "norcal", name: "City of Fremont", short: "Fremont", ...ng("fremontca") },
   { id: "hayward", region: "norcal", name: "City of Hayward", short: "Hayward", ...ng("haywardca") },
@@ -90,9 +92,19 @@ export const AGENCIES = [
   { id: "solano", region: "norcal", name: "County of Solano", short: "Solano County", ...ng("solanocounty") },
   { id: "napa", region: "norcal", name: "County of Napa", short: "Napa County", ...ng("napacounty") },
 
+  { id: "bart", region: "norcal", name: "BART", ...ng("bartca") },
+  { id: "vta", region: "norcal", name: "VTA (Santa Clara Valley Transportation Authority)", short: "VTA", ...ng("vtasantaclara") },
+  {
+    id: "mtc", region: "norcal", name: "MTC / ABAG (Bay Area Metro)", short: "MTC / ABAG", platform: "oraclehcm",
+    host: "https://iazcqy.fa.ocs.oraclecloud.com", siteNumber: "CX_1",
+    careersUrl: "https://iazcqy.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/jobs",
+  },
   { id: "actransit", region: "norcal", name: "AC Transit", ...ng("actransit") },
   { id: "samtrans", region: "norcal", name: "SamTrans / Caltrain", ...ng("smctd") },
   { id: "goldengate", region: "norcal", name: "Golden Gate Bridge, Highway & Transportation District", short: "Golden Gate Transit", ...ng("goldengate") },
+
+  // Not yet covered: County of Alameda (JobAps), Redwood City (CalOpps), SFCTA (no
+  // applicant system; postings are pages on sfcta.org).
 
   {
     id: "caltrans4", region: "norcal", name: "Caltrans District 4 (Bay Area)", short: "Caltrans D4",
