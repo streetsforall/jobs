@@ -45,10 +45,20 @@ test("drops roles outside scope", () => {
     "FIRE PREVENTION ENGINEERING ASSISTANT II (Fire Alarm/Sprinkler System Specialty) - FIRE EMERGENCY",
     "DATA SCIENTIST / EMERGENCY APPOINTMENT HOMELESSNESS", "SENIOR APPLICATION DEVELOPER (DATA & ANALYTICS)",
     "AIRPORT MANAGER", "Health Program Manager III, Support Services (UC)", "Senior Accountant (Capital Improvement Program)",
-    "Water Resources and Planning Manager", "Civil Engineer I / GWP - Water Engineering", "POLICY AND RESOURCES SPECIALIST (SANITATION)",
+    "Water Resources and Planning Manager",
+    "Parking & Traffic Control Officer PT/FT (PTCO) - Department of Transportation", "Surgery Scheduler - Extra Help",
+    "Deputy City Attorney - Transportation Team - City Attorney's Office (8177)", "Associate Engineer (Fire Protection)",
+    "As-Needed Traffic Control (Special Events)", "Radio Systems IS Project Manager I (Open)",
+    "Senior Environmental Health Specialist - $15k signing bonus", "Recycling Program Specialist III",
+    "Real Property Manager", "Facilities Manager (Public Works)", "Civil Engineer I / GWP - Water Engineering", "POLICY AND RESOURCES SPECIALIST (SANITATION)",
   ]) {
     assert.equal(cats(t), null, `${t} should be dropped, got ${cats(t)}`);
   }
+});
+
+test("generic manager titles in a broad Public Works department are not enough", () => {
+  assert.equal(cats("Parks Manager", "Public Works"), null);
+  assert.deepEqual(cats("Senior Administrative Analyst", "Planning & Development"), ["pm"]);
 });
 
 test("generic analyst titles count only in a relevant department", () => {

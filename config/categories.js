@@ -53,7 +53,7 @@ export const CATEGORIES = [
       /\bproject (manager|management|coordinator|control|delivery|engineer)/i,
       /\bcapital (project|program|improvement)/i,
       /\bconstruction (manager|management|inspector)/i,
-      /\bscheduler\b|project control/i,
+      /\bproject control/i,
     ],
   },
 ];
@@ -83,7 +83,8 @@ export const EXCLUDE = [
   /\b(attorney|legal|paralegal|counsel|accountant|accounting|auditor|payroll|human resources|personnel|procurement|purchasing)\b/i,
   /\b(mental health|health program|homeless|social services|children|child support|eligibility|benefits|airport|harbor|port of|aquarium|museum|golf)\b/i,
   /\b(water|wastewater|sewer|sanitation|solid waste|stormwater|refuse|utility|utilities|power|electric|energy|gas)\b/i,
-  /\b(developer|programmer|software|network|cyber|IT|information technology)\b/i,
+  /\b(developer|programmer|software|network|cyber|IT|IS|information technology|radio)\b/i,
+  /\b(environmental health|recycling|parks?|facilities|real property|real estate|building inspection|code enforcement)\b/i,
 ];
 
 // Departments whose engineering / PM / analyst roles are relevant even when the
@@ -91,11 +92,15 @@ export const EXCLUDE = [
 export const RELEVANT_DEPARTMENTS =
   /\b(transportation|LADOT|public works|street services|streetsLA|engineering|city planning|planning|regional planning|metro|transit|mobility|capital)\b/i;
 
+// Narrower set for the generic analyst/coordinator rule, where a broad "Public Works"
+// match pulls in parks, facilities and fleet roles.
+const TRANSPORT_DEPARTMENTS = /\b(transportation|LADOT|street services|streetsLA|mobility|transit|city planning|regional planning|planning (&|and) development)\b/i;
+
 // Frontline/trades roles excluded even when the title has a transportation term
 // ("Transit Operator", "Traffic Officer", "Bus Mechanic") — the board is for
 // professional roles that shape street design, policy and delivery.
 export const HARD_EXCLUDE =
-  /\b(operator|mechanic|(traffic|police|security|parking|enforcement|peace|transit security|safety) officer|driver|laborer|maintenance (worker|helper|laborer|technician)|helper|custodian|electrician|painter|welder|carpenter|cleaner|service attendant|dispatcher|controller|fare|parking enforcement|warehouse|storekeeper|crossing guard)\b/i;
+  /\b(attorney|counsel|police|sheriff|fire protection|fire department|surgery|surgical|nurse|medical|traffic control|special events)\b|\b(operator|mechanic|(traffic|police|security|parking|enforcement|peace|transit security|safety) officer|driver|laborer|maintenance (worker|helper|laborer|technician)|helper|custodian|electrician|painter|welder|carpenter|cleaner|service attendant|dispatcher|controller|fare|parking enforcement|warehouse|storekeeper|crossing guard)\b/i;
 
 // Professional nouns a "core" title needs before it is listed on the strength of its
 // transportation term alone.
@@ -116,7 +121,7 @@ export function classify(job) {
 
   // Generic analyst/manager titles in a clearly relevant department (e.g. LADOT
   // "Management Analyst") are worth listing under Project Management.
-  if (!cats.length && RELEVANT_DEPARTMENTS.test(dept) && /\b(analyst|manager|coordinator|specialist|administrator)\b/i.test(title)) {
+  if (!cats.length && TRANSPORT_DEPARTMENTS.test(dept) && /\b(analyst|manager|coordinator|specialist|administrator)\b/i.test(title)) {
     cats.push("pm");
   }
   if (!cats.length && core && PROFESSIONAL.test(title)) cats.push(/\b(analyst|manager|coordinator|administrator)\b/i.test(title) ? "pm" : "engineering");
