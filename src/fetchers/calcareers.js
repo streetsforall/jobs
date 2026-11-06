@@ -28,24 +28,37 @@ async function scrapeAll() {
     throw new Error("CalCareers needs Playwright (npm i playwright && npx playwright install chromium)");
   }
   const browser = await chromium.launch();
+  let page;
   try {
-    const page = await browser.newPage({ userAgent: "Mozilla/5.0 (compatible; StreetsForAll-JobBoard/1.0; +https://jobs.streetsforall.org)" });
+    return await scrapeWith(browser, (p) => (page = p));
+  } catch (err) {
+    if (page) {
+      const info = await page.evaluate(() => ({ url: location.href, title: document.title, text: document.body?.innerText.slice(0, 600) })).catch(() => null);
+      if (info) console.log(`calcareers debug: ${info.url} | ${info.title} | ${info.text.replace(/\s+/g, " ")}`);
+    }
+    throw err;
+  } finally {
+    await browser.close();
+  }
+}
+
+async function scrapeWith(browser, track) {
+  {
+    const page = await browser.newPage({ viewport: { width: 1400, height: 1000 } });
+    track(page);
     page.setDefaultTimeout(60_000);
     await page.goto(SEARCH, { waitUntil: "networkidle" });
 
     // Department filter is a DevExpress combobox; set it through its client API.
     await page.waitForFunction(() => window.ASPx && ASPx.GetControlCollection().Get("cphMainContent_ddlDepartment"));
     await page.evaluate((id) => ASPx.GetControlCollection().Get("cphMainContent_ddlDepartment").SetValue(id), CALTRANS_DEPT_ID);
-    await Promise.all([
-      page.waitForSelector("#cphMainContent_lblTotalResultCount"),
-      page.click('[name="ctl00$cphMainContent$btnUpdateResults"]'),
-    ]);
+    // The Update Results button sits in a collapsible "Refine Search" panel that may be
+    // hidden, so submit it from script rather than with a visible click.
+    await page.evaluate(() => document.querySelector('[name="ctl00$cphMainContent$btnUpdateResults"]').click());
+    await page.waitForSelector("#cphMainContent_lblTotalResultCount", { state: "attached" });
 
     // 100 per page.
-    await Promise.all([
-      page.waitForLoadState("networkidle"),
-      page.selectOption("#cphMainContent_ddlRowCount", "100"),
-    ]);
+    await page.selectOption("#cphMainContent_ddlRowCount", "100");
     await page.waitForFunction(() => document.querySelectorAll('[id^="cphMainContent_rptResults_hlViewJobPosting_"]').length > 10 ||
       Number(document.getElementById("cphMainContent_lblTotalResultCount")?.innerText) <= 10);
 
@@ -91,8 +104,6 @@ async function scrapeAll() {
     console.log(`calcareers: ${seen.size} of ${total} Caltrans postings read`);
     if (!seen.size) throw new Error("CalCareers: search returned no Caltrans postings — the page may have changed");
     return [...seen.values()];
-  } finally {
-    await browser.close();
   }
 }
 
