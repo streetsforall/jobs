@@ -1,107 +1,365 @@
 {
- "updated": "2026-11-06T20:32:54.737Z",
+ "updated": "2026-11-06T21:48:36.903Z",
+ "regions": [
+  {
+   "id": "socal",
+   "name": "Southern California"
+  },
+  {
+   "id": "norcal",
+   "name": "Northern California"
+  }
+ ],
  "agencies": [
   {
    "id": "lacity",
    "name": "City of Los Angeles",
    "short": "City of LA",
+   "region": "socal",
    "careersUrl": "https://www.governmentjobs.com/careers/lacity"
   },
   {
    "id": "lacounty",
    "name": "County of Los Angeles",
    "short": "LA County",
+   "region": "socal",
    "careersUrl": "https://www.governmentjobs.com/careers/lacounty"
   },
   {
    "id": "metro",
    "name": "LA Metro",
    "short": "LA Metro",
+   "region": "socal",
    "careersUrl": "https://www.governmentjobs.com/careers/lametro"
   },
   {
    "id": "metrolink",
    "name": "Metrolink (SCRRA)",
    "short": "Metrolink",
+   "region": "socal",
    "careersUrl": "https://www.governmentjobs.com/careers/scrra"
   },
   {
    "id": "scag",
    "name": "Southern California Association of Governments",
    "short": "SCAG",
+   "region": "socal",
    "careersUrl": "https://www.governmentjobs.com/careers/scag"
   },
   {
    "id": "caltrans7",
-   "name": "Caltrans District 7",
-   "short": "Caltrans District 7",
+   "name": "Caltrans District 7 (LA & Ventura)",
+   "short": "Caltrans D7",
+   "region": "socal",
    "careersUrl": "https://calcareers.ca.gov/CalHRPublic/Search/JobSearchResults.aspx"
   },
   {
    "id": "longbeach",
    "name": "City of Long Beach",
    "short": "Long Beach",
+   "region": "socal",
    "careersUrl": "https://www.governmentjobs.com/careers/longbeach"
   },
   {
    "id": "pasadena",
    "name": "City of Pasadena",
    "short": "Pasadena",
+   "region": "socal",
    "careersUrl": "https://www.governmentjobs.com/careers/pasadena"
   },
   {
    "id": "santamonica",
    "name": "City of Santa Monica (incl. Big Blue Bus)",
    "short": "Santa Monica",
+   "region": "socal",
    "careersUrl": "https://www.governmentjobs.com/careers/santamonica"
   },
   {
    "id": "glendale",
    "name": "City of Glendale",
    "short": "Glendale",
+   "region": "socal",
    "careersUrl": "https://www.governmentjobs.com/careers/glendaleca"
   },
   {
    "id": "burbank",
    "name": "City of Burbank",
    "short": "Burbank",
+   "region": "socal",
    "careersUrl": "https://www.governmentjobs.com/careers/burbankca"
   },
   {
    "id": "culvercity",
    "name": "Culver City (incl. CityBus)",
    "short": "Culver City",
+   "region": "socal",
    "careersUrl": "https://www.governmentjobs.com/careers/culvercity"
   },
   {
    "id": "weho",
    "name": "City of West Hollywood",
    "short": "West Hollywood",
+   "region": "socal",
    "careersUrl": "https://www.governmentjobs.com/careers/weho"
   },
   {
    "id": "beverlyhills",
    "name": "City of Beverly Hills",
    "short": "Beverly Hills",
+   "region": "socal",
    "careersUrl": "https://www.governmentjobs.com/careers/beverlyhills"
   },
   {
    "id": "torrance",
    "name": "City of Torrance (incl. Torrance Transit)",
    "short": "Torrance",
+   "region": "socal",
    "careersUrl": "https://www.governmentjobs.com/careers/torranceca"
   },
   {
    "id": "inglewood",
    "name": "City of Inglewood",
    "short": "Inglewood",
+   "region": "socal",
    "careersUrl": "https://www.cityofinglewood.org/Jobs.aspx"
   },
   {
    "id": "lbtransit",
    "name": "Long Beach Transit",
    "short": "Long Beach Transit",
+   "region": "socal",
    "careersUrl": "https://ibcrqy.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/jobs"
+  },
+  {
+   "id": "sf",
+   "name": "City & County of San Francisco (incl. SFMTA)",
+   "short": "San Francisco",
+   "region": "norcal",
+   "careersUrl": "https://careers.sf.gov/"
+  },
+  {
+   "id": "oakland",
+   "name": "City of Oakland",
+   "short": "Oakland",
+   "region": "norcal",
+   "careersUrl": "https://www.governmentjobs.com/careers/oaklandca"
+  },
+  {
+   "id": "sanjose",
+   "name": "City of San José",
+   "short": "San José",
+   "region": "norcal",
+   "careersUrl": "https://www.governmentjobs.com/careers/sanjoseca"
+  },
+  {
+   "id": "santaclara",
+   "name": "City of Santa Clara",
+   "short": "Santa Clara",
+   "region": "norcal",
+   "careersUrl": "https://www.governmentjobs.com/careers/cityofsantaclaraca"
+  },
+  {
+   "id": "emeryville",
+   "name": "City of Emeryville",
+   "short": "Emeryville",
+   "region": "norcal",
+   "careersUrl": "https://www.governmentjobs.com/careers/emeryville"
+  },
+  {
+   "id": "berkeley",
+   "name": "City of Berkeley",
+   "short": "Berkeley",
+   "region": "norcal",
+   "careersUrl": "https://www.governmentjobs.com/careers/berkeley"
+  },
+  {
+   "id": "fremont",
+   "name": "City of Fremont",
+   "short": "Fremont",
+   "region": "norcal",
+   "careersUrl": "https://www.governmentjobs.com/careers/fremontca"
+  },
+  {
+   "id": "hayward",
+   "name": "City of Hayward",
+   "short": "Hayward",
+   "region": "norcal",
+   "careersUrl": "https://www.governmentjobs.com/careers/haywardca"
+  },
+  {
+   "id": "alameda",
+   "name": "City of Alameda",
+   "short": "Alameda",
+   "region": "norcal",
+   "careersUrl": "https://www.governmentjobs.com/careers/alamedaca"
+  },
+  {
+   "id": "richmond",
+   "name": "City of Richmond",
+   "short": "Richmond",
+   "region": "norcal",
+   "careersUrl": "https://www.governmentjobs.com/careers/richmondca"
+  },
+  {
+   "id": "concord",
+   "name": "City of Concord",
+   "short": "Concord",
+   "region": "norcal",
+   "careersUrl": "https://www.governmentjobs.com/careers/concord"
+  },
+  {
+   "id": "walnutcreek",
+   "name": "City of Walnut Creek",
+   "short": "Walnut Creek",
+   "region": "norcal",
+   "careersUrl": "https://www.governmentjobs.com/careers/walnutcreek"
+  },
+  {
+   "id": "paloalto",
+   "name": "City of Palo Alto",
+   "short": "Palo Alto",
+   "region": "norcal",
+   "careersUrl": "https://www.governmentjobs.com/careers/paloaltoca"
+  },
+  {
+   "id": "mountainview",
+   "name": "City of Mountain View",
+   "short": "Mountain View",
+   "region": "norcal",
+   "careersUrl": "https://www.governmentjobs.com/careers/mountainview"
+  },
+  {
+   "id": "sunnyvale",
+   "name": "City of Sunnyvale",
+   "short": "Sunnyvale",
+   "region": "norcal",
+   "careersUrl": "https://www.governmentjobs.com/careers/sunnyvale"
+  },
+  {
+   "id": "vallejo",
+   "name": "City of Vallejo",
+   "short": "Vallejo",
+   "region": "norcal",
+   "careersUrl": "https://www.governmentjobs.com/careers/vallejo"
+  },
+  {
+   "id": "santarosa",
+   "name": "City of Santa Rosa",
+   "short": "Santa Rosa",
+   "region": "norcal",
+   "careersUrl": "https://www.governmentjobs.com/careers/srcity"
+  },
+  {
+   "id": "petaluma",
+   "name": "City of Petaluma",
+   "short": "Petaluma",
+   "region": "norcal",
+   "careersUrl": "https://www.governmentjobs.com/careers/petaluma"
+  },
+  {
+   "id": "santaclaracounty",
+   "name": "County of Santa Clara",
+   "short": "Santa Clara County",
+   "region": "norcal",
+   "careersUrl": "https://www.governmentjobs.com/careers/santaclara"
+  },
+  {
+   "id": "sanmateocounty",
+   "name": "County of San Mateo",
+   "short": "San Mateo County",
+   "region": "norcal",
+   "careersUrl": "https://www.governmentjobs.com/careers/sanmateo"
+  },
+  {
+   "id": "contracosta",
+   "name": "County of Contra Costa",
+   "short": "Contra Costa County",
+   "region": "norcal",
+   "careersUrl": "https://www.governmentjobs.com/careers/contracosta"
+  },
+  {
+   "id": "marin",
+   "name": "County of Marin",
+   "short": "Marin County",
+   "region": "norcal",
+   "careersUrl": "https://www.governmentjobs.com/careers/marincounty"
+  },
+  {
+   "id": "sonoma",
+   "name": "County of Sonoma",
+   "short": "Sonoma County",
+   "region": "norcal",
+   "careersUrl": "https://www.governmentjobs.com/careers/sonoma"
+  },
+  {
+   "id": "solano",
+   "name": "County of Solano",
+   "short": "Solano County",
+   "region": "norcal",
+   "careersUrl": "https://www.governmentjobs.com/careers/solanocounty"
+  },
+  {
+   "id": "napa",
+   "name": "County of Napa",
+   "short": "Napa County",
+   "region": "norcal",
+   "careersUrl": "https://www.governmentjobs.com/careers/napacounty"
+  },
+  {
+   "id": "bart",
+   "name": "BART",
+   "short": "BART",
+   "region": "norcal",
+   "careersUrl": "https://www.governmentjobs.com/careers/bartca"
+  },
+  {
+   "id": "vta",
+   "name": "VTA (Santa Clara Valley Transportation Authority)",
+   "short": "VTA",
+   "region": "norcal",
+   "careersUrl": "https://www.governmentjobs.com/careers/vtasantaclara"
+  },
+  {
+   "id": "mtc",
+   "name": "MTC / ABAG (Bay Area Metro)",
+   "short": "MTC / ABAG",
+   "region": "norcal",
+   "careersUrl": "https://iazcqy.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/jobs"
+  },
+  {
+   "id": "actransit",
+   "name": "AC Transit",
+   "short": "AC Transit",
+   "region": "norcal",
+   "careersUrl": "https://www.governmentjobs.com/careers/actransit"
+  },
+  {
+   "id": "samtrans",
+   "name": "SamTrans / Caltrain",
+   "short": "SamTrans / Caltrain",
+   "region": "norcal",
+   "careersUrl": "https://www.governmentjobs.com/careers/smctd"
+  },
+  {
+   "id": "goldengate",
+   "name": "Golden Gate Bridge, Highway & Transportation District",
+   "short": "Golden Gate Transit",
+   "region": "norcal",
+   "careersUrl": "https://www.governmentjobs.com/careers/goldengate"
+  },
+  {
+   "id": "caltrans4",
+   "name": "Caltrans District 4 (Bay Area)",
+   "short": "Caltrans D4",
+   "region": "norcal",
+   "careersUrl": "https://calcareers.ca.gov/CalHRPublic/Search/JobSearchResults.aspx"
+  },
+  {
+   "id": "caltranshq",
+   "name": "Caltrans Headquarters (Sacramento)",
+   "short": "Caltrans HQ",
+   "region": "norcal",
+   "careersUrl": "https://calcareers.ca.gov/CalHRPublic/Search/JobSearchResults.aspx"
   }
  ],
  "sources": [
@@ -142,9 +400,10 @@
   },
   {
    "id": "caltrans7",
-   "name": "Caltrans District 7",
-   "ok": false,
-   "error": "CalCareers: no postings found on results page"
+   "name": "Caltrans District 7 (LA & Ventura)",
+   "ok": true,
+   "total": 12,
+   "listed": 3
   },
   {
    "id": "longbeach",
@@ -158,7 +417,7 @@
    "name": "City of Pasadena",
    "ok": true,
    "total": 20,
-   "listed": 3
+   "listed": 2
   },
   {
    "id": "santamonica",
@@ -200,20 +459,20 @@
    "name": "City of Beverly Hills",
    "ok": true,
    "total": 7,
-   "listed": 2
+   "listed": 1
   },
   {
    "id": "torrance",
    "name": "City of Torrance (incl. Torrance Transit)",
    "ok": true,
    "total": 31,
-   "listed": 6
+   "listed": 5
   },
   {
    "id": "inglewood",
    "name": "City of Inglewood",
    "ok": true,
-   "total": 6,
+   "total": 4,
    "listed": 0
   },
   {
@@ -222,6 +481,237 @@
    "ok": true,
    "total": 5,
    "listed": 1
+  },
+  {
+   "id": "sf",
+   "name": "City & County of San Francisco (incl. SFMTA)",
+   "ok": true,
+   "total": 156,
+   "listed": 5
+  },
+  {
+   "id": "oakland",
+   "name": "City of Oakland",
+   "ok": true,
+   "total": 36,
+   "listed": 3
+  },
+  {
+   "id": "sanjose",
+   "name": "City of San José",
+   "ok": true,
+   "total": 35,
+   "listed": 2
+  },
+  {
+   "id": "santaclara",
+   "name": "City of Santa Clara",
+   "ok": true,
+   "total": 38,
+   "listed": 1
+  },
+  {
+   "id": "emeryville",
+   "name": "City of Emeryville",
+   "ok": true,
+   "total": 10,
+   "listed": 1
+  },
+  {
+   "id": "berkeley",
+   "name": "City of Berkeley",
+   "ok": true,
+   "total": 13,
+   "listed": 2
+  },
+  {
+   "id": "fremont",
+   "name": "City of Fremont",
+   "ok": true,
+   "total": 17,
+   "listed": 4
+  },
+  {
+   "id": "hayward",
+   "name": "City of Hayward",
+   "ok": true,
+   "total": 9,
+   "listed": 0
+  },
+  {
+   "id": "alameda",
+   "name": "City of Alameda",
+   "ok": true,
+   "total": 21,
+   "listed": 0
+  },
+  {
+   "id": "richmond",
+   "name": "City of Richmond",
+   "ok": true,
+   "total": 16,
+   "listed": 0
+  },
+  {
+   "id": "concord",
+   "name": "City of Concord",
+   "ok": true,
+   "total": 20,
+   "listed": 1
+  },
+  {
+   "id": "walnutcreek",
+   "name": "City of Walnut Creek",
+   "ok": true,
+   "total": 2,
+   "listed": 0
+  },
+  {
+   "id": "paloalto",
+   "name": "City of Palo Alto",
+   "ok": true,
+   "total": 12,
+   "listed": 0
+  },
+  {
+   "id": "mountainview",
+   "name": "City of Mountain View",
+   "ok": true,
+   "total": 5,
+   "listed": 1
+  },
+  {
+   "id": "sunnyvale",
+   "name": "City of Sunnyvale",
+   "ok": true,
+   "total": 21,
+   "listed": 0
+  },
+  {
+   "id": "vallejo",
+   "name": "City of Vallejo",
+   "ok": true,
+   "total": 9,
+   "listed": 1
+  },
+  {
+   "id": "santarosa",
+   "name": "City of Santa Rosa",
+   "ok": true,
+   "total": 12,
+   "listed": 1
+  },
+  {
+   "id": "petaluma",
+   "name": "City of Petaluma",
+   "ok": true,
+   "total": 3,
+   "listed": 0
+  },
+  {
+   "id": "santaclaracounty",
+   "name": "County of Santa Clara",
+   "ok": true,
+   "total": 55,
+   "listed": 2
+  },
+  {
+   "id": "sanmateocounty",
+   "name": "County of San Mateo",
+   "ok": true,
+   "total": 89,
+   "listed": 0
+  },
+  {
+   "id": "contracosta",
+   "name": "County of Contra Costa",
+   "ok": true,
+   "total": 70,
+   "listed": 0
+  },
+  {
+   "id": "marin",
+   "name": "County of Marin",
+   "ok": true,
+   "total": 39,
+   "listed": 2
+  },
+  {
+   "id": "sonoma",
+   "name": "County of Sonoma",
+   "ok": true,
+   "total": 35,
+   "listed": 0
+  },
+  {
+   "id": "solano",
+   "name": "County of Solano",
+   "ok": true,
+   "total": 61,
+   "listed": 3
+  },
+  {
+   "id": "napa",
+   "name": "County of Napa",
+   "ok": true,
+   "total": 16,
+   "listed": 0
+  },
+  {
+   "id": "bart",
+   "name": "BART",
+   "ok": true,
+   "total": 21,
+   "listed": 2
+  },
+  {
+   "id": "vta",
+   "name": "VTA (Santa Clara Valley Transportation Authority)",
+   "ok": true,
+   "total": 9,
+   "listed": 3
+  },
+  {
+   "id": "mtc",
+   "name": "MTC / ABAG (Bay Area Metro)",
+   "ok": true,
+   "total": 6,
+   "listed": 0
+  },
+  {
+   "id": "actransit",
+   "name": "AC Transit",
+   "ok": true,
+   "total": 4,
+   "listed": 0
+  },
+  {
+   "id": "samtrans",
+   "name": "SamTrans / Caltrain",
+   "ok": true,
+   "total": 20,
+   "listed": 9
+  },
+  {
+   "id": "goldengate",
+   "name": "Golden Gate Bridge, Highway & Transportation District",
+   "ok": true,
+   "total": 13,
+   "listed": 1
+  },
+  {
+   "id": "caltrans4",
+   "name": "Caltrans District 4 (Bay Area)",
+   "ok": true,
+   "total": 19,
+   "listed": 4
+  },
+  {
+   "id": "caltranshq",
+   "name": "Caltrans Headquarters (Sacramento)",
+   "ok": true,
+   "total": 40,
+   "listed": 16
   }
  ],
  "jobs": [
@@ -246,6 +736,7 @@
     "pm"
    ],
    "core": false,
+   "region": "socal",
    "firstSeen": "2026-11-06"
   },
   {
@@ -269,6 +760,1600 @@
     "pm"
    ],
    "core": true,
+   "region": "socal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "samtrans:5536126",
+   "agency": "samtrans",
+   "title": "Manager, Bus Transportation",
+   "department": "Bus Operations",
+   "location": "San Carlos, CA [South Base]",
+   "jobType": "Full-Time",
+   "salary": {
+    "min": 143142,
+    "max": 200398,
+    "interval": "year"
+   },
+   "posted": "2026-11-06",
+   "closes": "2026-11-29",
+   "url": "https://www.governmentjobs.com/careers/smctd/jobs/5536126-0",
+   "summary": "The Manager, Bus Transportation reports to the Director, Bus Transportation, and is responsible for overseeing bus transportation services for San Mateo County Transit District (SamTrans).",
+   "internalOnly": false,
+   "categories": [
+    "pm"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "caltrans:538180",
+   "agency": "caltranshq",
+   "title": "Office Chief, Office of Program Management",
+   "department": "SUPERVISING TRANSPORTATION ENGINEER, CALTRANS",
+   "location": "Sacramento County",
+   "jobType": "Permanent Fulltime, Hybrid",
+   "salary": {
+    "min": 13892,
+    "max": 15782,
+    "interval": "month"
+   },
+   "posted": "2026-11-06",
+   "closes": "2026-11-23",
+   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=538180",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering",
+    "pm"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "caltrans:538214",
+   "agency": "caltranshq",
+   "title": "Office Chief",
+   "department": "SUPERVISING TRANSPORTATION ENGINEER, CALTRANS",
+   "location": "Sacramento County",
+   "jobType": "Permanent Fulltime, Hybrid",
+   "salary": {
+    "min": 13892,
+    "max": 15782,
+    "interval": "month"
+   },
+   "posted": "2026-11-06",
+   "closes": "2026-11-23",
+   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=538214",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "santarosa:5514550",
+   "agency": "santarosa",
+   "title": "Civil Engineering Technician I/II/III - Capital Projects Engineering- CPE",
+   "department": "Transportation and Public Works",
+   "location": "MSCS-69 Stony Circle Santa Rosa",
+   "jobType": "Full-Time",
+   "salary": {
+    "min": 97963,
+    "max": 118961,
+    "interval": "year"
+   },
+   "posted": "2026-11-05",
+   "closes": "2026-11-29",
+   "url": "https://www.governmentjobs.com/careers/srcity/jobs/5514550-0",
+   "summary": "THE CITY OF SANTA ROSA IS HIRING MULTIPLE CIVIL ENGINEERING TECHNICIANS! THIS IS AN EXCITING OPPORTUNITY FOR THOSE SEEKING TO APPLY THEIR TECHNICAL EXPERTISE IN A DYNAMIC CAREER PROVIDING CRITICAL SERVICES TO OUR LOCAL COMMUNITY! The City of Santa Rosa is committed to building a workforce reflective of our community and establishing a lasting culture of equity and belonging within our organization",
+   "internalOnly": false,
+   "categories": [
+    "engineering",
+    "pm"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "caltrans:538135",
+   "agency": "caltranshq",
+   "title": "Construction Oversight Program Manager",
+   "department": "SENIOR TRANSPORTATION ENGINEER, CALTRANS",
+   "location": "Sacramento County",
+   "jobType": "Permanent Fulltime, Hybrid",
+   "salary": {
+    "min": 11437,
+    "max": 14315,
+    "interval": "month"
+   },
+   "posted": "2026-11-05",
+   "closes": "2026-11-22",
+   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=538135",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering",
+    "pm"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "sanjose:5540569",
+   "agency": "sanjose",
+   "title": "Program Manager (Capital Improvement Program) - Environmental Services Department",
+   "department": "Environmental Services",
+   "location": "San Jose",
+   "jobType": "Full-Time",
+   "salary": {
+    "min": 138531.12,
+    "max": 180092.64,
+    "interval": "year"
+   },
+   "posted": "2026-11-04",
+   "closes": "2026-11-19",
+   "url": "https://www.governmentjobs.com/careers/sanjoseca/jobs/5540569-0",
+   "summary": "The City of San José's Environmental Services Department (ESD) is an award-winning department with a mission to deliver world-class utility services and programs to improve our health, environment and economy. The Department is a national leader in managing garbage and recycling services; watershed protection and pollution prevention; municipal drinking water and recycled water; sustainability ini",
+   "internalOnly": false,
+   "categories": [
+    "pm"
+   ],
+   "core": false,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "samtrans:5539811",
+   "agency": "samtrans",
+   "title": "Director, Government & Community Affairs",
+   "department": "Rail",
+   "location": "Millbrae, CA",
+   "jobType": "Full-Time",
+   "salary": {
+    "min": 191823,
+    "max": 268553,
+    "interval": "year"
+   },
+   "posted": "2026-11-04",
+   "closes": "2026-11-29",
+   "url": "https://www.governmentjobs.com/careers/smctd/jobs/5539811-0",
+   "summary": "The Director, Government and Community Affairs (GCA) reports to the Caltrain Chief of Staff and is responsible for the strategic development and management of government and community relations for Peninsula Corridor Joint Powers Board (Caltrain). The Director of GCA oversees and provides directions to the Managers of Caltrain Government and Community Affairs, Caltrain External Affairs Manager and",
+   "internalOnly": false,
+   "categories": [
+    "outreach"
+   ],
+   "core": false,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "caltrans:537883",
+   "agency": "caltrans4",
+   "title": "Community Planner",
+   "department": "ASSOCIATE TRANSPORTATION PLANNER",
+   "location": "Alameda County",
+   "jobType": "Permanent Fulltime, Hybrid",
+   "salary": {
+    "min": 7328,
+    "max": 9178,
+    "interval": "month"
+   },
+   "posted": "2026-11-04",
+   "closes": "2026-12-04",
+   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=537883",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "caltrans:537901",
+   "agency": "caltrans4",
+   "title": "District Hydraulics Engineer (Specialist)",
+   "department": "SENIOR TRANSPORTATION ENGINEER, CALTRANS",
+   "location": "Alameda County",
+   "jobType": "Permanent Fulltime, Hybrid",
+   "salary": {
+    "min": 11437,
+    "max": 14315,
+    "interval": "month"
+   },
+   "posted": "2026-11-04",
+   "closes": "2026-11-30",
+   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=537901",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "caltrans:537963",
+   "agency": "caltranshq",
+   "title": "Professional Development Coordinator",
+   "department": "SENIOR LANDSCAPE ARCHITECT, CALTRANS",
+   "location": "Sacramento County",
+   "jobType": "Permanent Fulltime, Hybrid",
+   "salary": {
+    "min": 11437,
+    "max": 14315,
+    "interval": "month"
+   },
+   "posted": "2026-11-04",
+   "closes": "2026-11-14",
+   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=537963",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": false,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "caltrans:537977",
+   "agency": "caltranshq",
+   "title": "Standards and Procedures Coordinator",
+   "department": "SENIOR LANDSCAPE ARCHITECT, CALTRANS",
+   "location": "Sacramento County",
+   "jobType": "Permanent Fulltime, Hybrid",
+   "salary": {
+    "min": 11437,
+    "max": 14315,
+    "interval": "month"
+   },
+   "posted": "2026-11-04",
+   "closes": "2026-11-21",
+   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=537977",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": false,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "caltrans:538058",
+   "agency": "caltranshq",
+   "title": "Project Support Engineer",
+   "department": "SENIOR TRANSPORTATION ENGINEER, CALTRANS",
+   "location": "Sacramento County",
+   "jobType": "Permanent Fulltime, Hybrid",
+   "salary": {
+    "min": 11437,
+    "max": 14315,
+    "interval": "month"
+   },
+   "posted": "2026-11-04",
+   "closes": "2026-11-14",
+   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=538058",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "caltrans:538011",
+   "agency": "caltranshq",
+   "title": "Construction Storm Water Coordinator",
+   "department": "SENIOR TRANSPORTATION ENGINEER, CALTRANS",
+   "location": "Sacramento County",
+   "jobType": "Permanent Fulltime, Hybrid",
+   "salary": {
+    "min": 11437,
+    "max": 14315,
+    "interval": "month"
+   },
+   "posted": "2026-11-04",
+   "closes": "2026-11-14",
+   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=538011",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "marin:5538411",
+   "agency": "marin",
+   "title": "Capital Planning and Project Manager I/II (Capital Projects)",
+   "department": "Department of Public Works",
+   "location": "San Rafael",
+   "jobType": "Full Time, Regular",
+   "salary": {
+    "min": 47.02,
+    "max": 65.73,
+    "interval": "hour"
+   },
+   "posted": "2026-11-03",
+   "closes": "2026-11-16",
+   "url": "https://www.governmentjobs.com/careers/marincounty/jobs/5538411-0",
+   "summary": "At the County of Marin, our employees overwhelmingly report feeling their work is meaningful, they like the work they do, and they are proud to tell people “I work for the County of Marin.” Discover more about us, our values and our organizational culture on the Department of Human Resources website. Read on to find out more about this opportunity. The mission of the Marin County Department of Pub",
+   "internalOnly": false,
+   "categories": [
+    "pm"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "caltrans:537742",
+   "agency": "caltranshq",
+   "title": "Chief, Office of Geotechnical Design – North",
+   "department": "SUPERVISING TRANSPORTATION ENGINEER, CALTRANS",
+   "location": "Sacramento County",
+   "jobType": "Permanent Fulltime, Hybrid",
+   "salary": {
+    "min": 13892,
+    "max": 15782,
+    "interval": "month"
+   },
+   "posted": "2026-11-03",
+   "closes": "2026-11-19",
+   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=537742",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "caltrans:537602",
+   "agency": "caltrans7",
+   "title": "Electrical Design/Functional Manager",
+   "department": "SENIOR TRANSPORTATION ELECTRICAL ENGINEER (SUPERVISOR)",
+   "location": "Los Angeles County",
+   "jobType": "Permanent Fulltime, Hybrid",
+   "salary": {
+    "min": 11437,
+    "max": 14315,
+    "interval": "month"
+   },
+   "posted": "2026-11-02",
+   "closes": "2026-11-18",
+   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=537602",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "pm"
+   ],
+   "core": true,
+   "region": "socal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "sf:3743990016565796",
+   "agency": "sf",
+   "title": "Exempt to Permanent – Public Information Officer (1312) – Citywide (168253)",
+   "department": "Municipal Transportation Agency",
+   "location": "San Francisco, CA",
+   "jobType": "Full-time",
+   "salary": null,
+   "posted": "2026-11-02",
+   "closes": null,
+   "url": "https://jobs.smartrecruiters.com/CityAndCountyOfSanFrancisco1/3743990016565796",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "outreach"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "sf:3743990016562146",
+   "agency": "sf",
+   "title": "Exempt to Permanent – Public Relations Assistant (1310) – Citywide (169008)",
+   "department": "Municipal Transportation Agency",
+   "location": "San Francisco, CA",
+   "jobType": "Full-time",
+   "salary": null,
+   "posted": "2026-11-02",
+   "closes": null,
+   "url": "https://jobs.smartrecruiters.com/CityAndCountyOfSanFrancisco1/3743990016562146",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "outreach"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "berkeley:5533717",
+   "agency": "berkeley",
+   "title": "Supervising Civil Engineer",
+   "department": "Public Works",
+   "location": "Berkeley",
+   "jobType": "Career",
+   "salary": {
+    "min": 78.1655,
+    "max": 94.3818,
+    "interval": "hour"
+   },
+   "posted": "2026-11-02",
+   "closes": "2026-11-23",
+   "url": "https://www.governmentjobs.com/careers/berkeley/jobs/5533717-0",
+   "summary": "The City of Berkeley invites you to apply for the position of Supervising Civil Engineer in the Public Works Department! The current vacancy will be assigned to the City’s Facilities Engineering Program, supporting the planning, design, construction, renovation, and rehabilitation of City-owned buildings and facilities. The City's diverse portfolio of public facilities includes buildings and infra",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "caltrans:537577",
+   "agency": "caltranshq",
+   "title": "Materials Plant Quality Program Engineer",
+   "department": "SENIOR TRANSPORTATION ENGINEER, CALTRANS",
+   "location": "Sacramento County",
+   "jobType": "Permanent Fulltime, Hybrid",
+   "salary": {
+    "min": 11437,
+    "max": 14315,
+    "interval": "month"
+   },
+   "posted": "2026-11-02",
+   "closes": "2026-11-12",
+   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=537577",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "caltrans:537429",
+   "agency": "caltrans7",
+   "title": "Office Engineer, Field Inspector",
+   "department": "TRANSPORTATION ENGINEERING TECHNICIAN",
+   "location": "Los Angeles County",
+   "jobType": "Permanent Fulltime, In Office",
+   "salary": {
+    "min": 4695,
+    "max": 7063,
+    "interval": "month"
+   },
+   "posted": "2026-10-30",
+   "closes": "2026-11-09",
+   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=537429",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "socal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "bart:5532855",
+   "agency": "bart",
+   "title": "Senior Administrative Analyst, AFSCME (Transportation)",
+   "department": "Operations",
+   "location": "BART Headquarters - 7th Fl",
+   "jobType": "Full-Time",
+   "salary": {
+    "min": 128356.8,
+    "max": 156020.8,
+    "interval": "year"
+   },
+   "posted": "2026-10-30",
+   "closes": "2026-11-13",
+   "url": "https://www.governmentjobs.com/careers/bartca/jobs/5532855-0",
+   "summary": "Pay Rate: AFSCME Pay Grade A13 Annual Salary: $128,356.80/year (Step 1) - $156,020.80/year (Step 5) Note: The negotiable salary offer will be commensurate with education and experience. Reports To: Group Manager, Operations Support and Review Days Off: Saturday/Sunday Who May Apply: All current BART employees and Future BART employees Current Assignment: This announcement will be used to create an",
+   "internalOnly": false,
+   "categories": [
+    "pm"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "samtrans:5536244",
+   "agency": "samtrans",
+   "title": "Associate Director, Engineering (Capital Projects)",
+   "department": "Bus Operations",
+   "location": "Millbrae, CA",
+   "jobType": "Full-Time",
+   "salary": {
+    "min": 173990,
+    "max": 243585,
+    "interval": "year"
+   },
+   "posted": "2026-10-30",
+   "closes": "2026-12-13",
+   "url": "https://www.governmentjobs.com/careers/smctd/jobs/5536244-0",
+   "summary": "The Associate Director, Engineering (Capital Projects) will be responsible for the engineering functions that support infrastructure and capital projects for the San Mateo County Transit District (SamTrans). The Bus Infrastructure and Capital Projects Department oversees the delivery of major bus fleet and facilities infrastructure projects for SamTrans. The department’s projects include design an",
+   "internalOnly": false,
+   "categories": [
+    "pm"
+   ],
+   "core": false,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "caltrans:537292",
+   "agency": "caltranshq",
+   "title": "Principal Transportation Engineer",
+   "department": "PRINCIPAL TRANSPORTATION ENGINEER, CALTRANS",
+   "location": "Sacramento County",
+   "jobType": "Permanent Fulltime, Hybrid",
+   "salary": {
+    "min": 15263,
+    "max": 17336,
+    "interval": "month"
+   },
+   "posted": "2026-10-30",
+   "closes": "2026-11-09",
+   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=537292",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "emeryville:5534483",
+   "agency": "emeryville",
+   "title": "Senior Civil Engineer",
+   "department": "Public Works",
+   "location": "Emeryville City Hall",
+   "jobType": "Full-Time",
+   "salary": {
+    "min": 153462.4,
+    "max": 186495.4,
+    "interval": "year"
+   },
+   "posted": "2026-10-29",
+   "closes": "2026-11-30",
+   "url": "https://www.governmentjobs.com/careers/emeryville/jobs/5534483-0",
+   "summary": "Under direction of the Public Works Director organizes, schedules, and coordinates engineering and construction functions within the Public Works Department; provides technical guidance and day-to-day direction to assigned engineering staff; performs professional and technical engineering work on a variety of projects associated with design, construction, and traffic engineering programs; performs",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "fremont:5534699",
+   "agency": "fremont",
+   "title": "Senior Engineer (Transportation)",
+   "department": "Public Works",
+   "location": "Fremont",
+   "jobType": "Full-time, regular",
+   "salary": {
+    "min": 140530.308,
+    "max": 189715.112,
+    "interval": "year"
+   },
+   "posted": "2026-10-29",
+   "closes": "2027-02-28",
+   "url": "https://www.governmentjobs.com/careers/fremontca/jobs/5534699-0",
+   "summary": "The City of Fremont's Public Works Department is recruiting for: Senior Engineer (Transportation) VIEW OUR RECRUITMENT BROCHURE The Public Works Department - Engineering Division The Engineering Division, which falls under Public Works, consists of Design Engineering, Development Engineering, Construction, Civic Facilities, Transportation, Survey, and Real Property sections. The division reviews a",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "caltrans:537311",
+   "agency": "caltranshq",
+   "title": "Rail/Transit Programs Coordinator",
+   "department": "SUPERVISOR I",
+   "location": "Sacramento County",
+   "jobType": "Limited Term Fulltime, Hybrid",
+   "salary": {
+    "min": 7172,
+    "max": 8910,
+    "interval": "month"
+   },
+   "posted": "2026-10-29",
+   "closes": "2026-11-08",
+   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=537311",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "pm"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "caltrans:537087",
+   "agency": "caltrans7",
+   "title": "Local Development Review Coordinator",
+   "department": "ASSOCIATE TRANSPORTATION PLANNER",
+   "location": "Los Angeles County",
+   "jobType": "Permanent Fulltime, Hybrid",
+   "salary": {
+    "min": 7328,
+    "max": 9178,
+    "interval": "month"
+   },
+   "posted": "2026-10-28",
+   "closes": "2026-11-30",
+   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=537087",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "socal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "mountainview:5507786",
+   "agency": "mountainview",
+   "title": "Senior Outreach Coordinator (Multicultural Engagement Program)",
+   "department": "City Manager's Office",
+   "location": "Mountain View City Hall",
+   "jobType": "Full-Time",
+   "salary": {
+    "min": 3924.48,
+    "max": 5309.58,
+    "interval": "biweekly"
+   },
+   "posted": "2026-10-28",
+   "closes": "2026-11-12",
+   "url": "https://www.governmentjobs.com/careers/mountainview/jobs/5507786-0",
+   "summary": "Help residents find their place in City of Mountain View life. You’ve built relationships, coordinated programs, and helped people get involved. Bring that experience to Mountain View, where you’ll lead a multilingual team and help guide an established citywide Multicultural Engagement Program in the City Manager's Office. You’ll have opportunities to enhance multilingual access to City services a",
+   "internalOnly": false,
+   "categories": [
+    "outreach"
+   ],
+   "core": false,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "santaclaracounty:5522235",
+   "agency": "santaclaracounty",
+   "title": "Senior Civil Engineer",
+   "department": "County-Wide Recruitment",
+   "location": "Throughout the County of Santa Clara",
+   "jobType": "Full-Time",
+   "salary": {
+    "min": 77.935,
+    "max": 94.974,
+    "interval": "hour"
+   },
+   "posted": "2026-10-28",
+   "closes": "2026-11-12",
+   "url": "https://www.governmentjobs.com/careers/santaclara/jobs/5522235-0",
+   "summary": "Under direction, to have charge of varied and difficult engineering work involving the supervision of professional engineers and others engaged in a variety of engineering activities, such as the planning and design of roads and bridges, special studies or services, and other public works projects.",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": false,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "bart:5520150",
+   "agency": "bart",
+   "title": "Manager of Access & Accessible Services",
+   "department": "Planning & Development",
+   "location": "BART Headquarters",
+   "jobType": "Full-Time",
+   "salary": {
+    "min": 160800,
+    "max": 243612,
+    "interval": "year"
+   },
+   "posted": "2026-10-28",
+   "closes": "2026-11-18",
+   "url": "https://www.governmentjobs.com/careers/bartca/jobs/5520150-0",
+   "summary": "Pay Rate Non-Rep Pay Band N09 Annual Salary Range: $160,800.00 (Minimum) - $243,612.00 (Maximum) Note: The starting negotiable salary offer for this position will be $160,800.00 - $201,251.25 to commensurate with education and experience. Report To Director of Customer Access & Accessibility Days Off Saturday & Sunday Who May Apply All current BART employees and Future BART employees Current Assig",
+   "internalOnly": false,
+   "categories": [
+    "pm"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "sanjose:5530365",
+   "agency": "sanjose",
+   "title": "Senior Construction Inspector - Public Works and Environmental Services Department",
+   "department": "Public Works",
+   "location": "San Jose Metropolitan Area",
+   "jobType": "Full-Time",
+   "salary": {
+    "min": 110488.56,
+    "max": 134403.36,
+    "interval": "year"
+   },
+   "posted": "2026-10-27",
+   "closes": "2026-11-16",
+   "url": "https://www.governmentjobs.com/careers/sanjoseca/jobs/5530365-0",
+   "summary": "The City of San José, the Capital of Silicon Valley, is one of the nation's best managed cities in which to live, work, and do business. Moreover, San José is the center of cultural, government and economic activity for the region. The employees of the City of San José have embraced the following values: Integrity, Innovation, Excellence, Collaboration, Respect and Celebration. The City's Departme",
+   "internalOnly": false,
+   "categories": [
+    "pm"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "caltrans:536876",
+   "agency": "caltrans4",
+   "title": "Construction Manager",
+   "department": "SUPERVISING TRANSPORTATION ENGINEER, CALTRANS",
+   "location": "Solano County",
+   "jobType": "Permanent Fulltime, In Office",
+   "salary": {
+    "min": 13892,
+    "max": 15782,
+    "interval": "month"
+   },
+   "posted": "2026-10-27",
+   "closes": "2026-11-17",
+   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=536876",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering",
+    "pm"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "sf:3743990016375096",
+   "agency": "sf",
+   "title": "Project Manager II - Streets Division - San Francisco Municipal Transportation Agency (5504)",
+   "department": "Municipal Transportation Agency",
+   "location": "San Francisco, CA",
+   "jobType": "Full-time",
+   "salary": null,
+   "posted": "2026-10-23",
+   "closes": null,
+   "url": "https://jobs.smartrecruiters.com/CityAndCountyOfSanFrancisco1/3743990016375096",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "pm"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "vallejo:5501255",
+   "agency": "vallejo",
+   "title": "Construction Inspector I/II",
+   "department": "Public Works - Admin and Engineering",
+   "location": "City Hall - 555 Santa Clara Street, Vallejo",
+   "jobType": "Regular Full-Time",
+   "salary": {
+    "min": 86977.07,
+    "max": 117117.52,
+    "interval": "year"
+   },
+   "posted": "2026-10-23",
+   "closes": "2026-11-16",
+   "url": "https://www.governmentjobs.com/careers/vallejo/jobs/5501255-0",
+   "summary": "PLEASE READ THIS BULLETIN IN ITS ENTIRETY THE POSITION This recruitment is being conducted to fill one full-time vacancy. The list established by this recruitment may be used to fill future full-time, part-time, limited term, and temporary vacancies for up to one year. The City of Vallejo is seeking qualified candidates for the role of Construction Inspector I/II as collaborative members of the Ci",
+   "internalOnly": false,
+   "categories": [
+    "pm"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "samtrans:5521690",
+   "agency": "samtrans",
+   "title": "Director, Project Delivery",
+   "department": "SMCTA Administration",
+   "location": "Millbrae, CA",
+   "jobType": "Full-Time",
+   "salary": {
+    "min": 211485,
+    "max": 296080,
+    "interval": "year"
+   },
+   "posted": "2026-10-23",
+   "closes": "2026-11-15",
+   "url": "https://www.governmentjobs.com/careers/smctd/jobs/5521690-0",
+   "summary": "The Director, Project Delivery reports to the Chief Officer, Transportation Authority (SMCTA) and is responsible for overseeing the delivery of a wide array of transportation programs and projects funded through SMCTA’s Measure A and W sales tax programs.",
+   "internalOnly": false,
+   "categories": [
+    "pm"
+   ],
+   "core": false,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "oakland:5515193",
+   "agency": "oakland",
+   "title": "ELDE - Transportation Planner III",
+   "department": "Department of Transportation",
+   "location": "Oakland",
+   "jobType": "Exempt Limited Duration Employee (ELDE)",
+   "salary": {
+    "min": 9290.41,
+    "max": 11407.51,
+    "interval": "month"
+   },
+   "posted": "2026-10-22",
+   "closes": "2026-11-12",
+   "url": "https://www.governmentjobs.com/careers/oaklandca/jobs/5515193-0",
+   "summary": "The City of Oakland is an equal opportunity employer that values workforce diversity, inclusion, and equity. Oakland has a long history of activism around issues of justice and equity. Both oppression and this resistance to oppression have shaped the city’s historical roots and the lives of its residents to this day. As public servants in one of the most diverse cities in the nation, we strive to ",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "caltrans:536373",
+   "agency": "caltranshq",
+   "title": "Senior Project Engineer - Signs & Overhead Structures",
+   "department": "SENIOR BRIDGE ENGINEER",
+   "location": "Sacramento County",
+   "jobType": "Permanent Fulltime, Hybrid",
+   "salary": {
+    "min": 11437,
+    "max": 14315,
+    "interval": "month"
+   },
+   "posted": "2026-10-21",
+   "closes": "2026-11-06",
+   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=536373",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "pm"
+   ],
+   "core": false,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "fremont:5521793",
+   "agency": "fremont",
+   "title": "Administrative Analyst (Council Aide)",
+   "department": "City Manager's Office",
+   "location": "Fremont",
+   "jobType": "Full-time, regular",
+   "salary": {
+    "min": 92917.955,
+    "max": 123045.835,
+    "interval": "year"
+   },
+   "posted": "2026-10-19",
+   "closes": "continuous",
+   "url": "https://www.governmentjobs.com/careers/fremontca/jobs/5521793-0",
+   "summary": "The City Manager’s Office is recruiting for Administrative Analyst (Council Aide). VIEW OUR RECRUITMENT BROCHURE THE DEPARTMENT The City Manager’s Office plays a central role in advancing the City of Fremont’s priorities and supporting the delivery of effective municipal services. Working closely with the Mayor and six-member City Council, the Office provides executive leadership, policy support, ",
+   "internalOnly": false,
+   "categories": [
+    "outreach"
+   ],
+   "core": false,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "caltrans:535994",
+   "agency": "caltranshq",
+   "title": "Project Delivery Liaison (Senior Right of Way Agent, Specialist)",
+   "department": "SENIOR RIGHT OF WAY AGENT",
+   "location": "Sacramento County",
+   "jobType": "Permanent Fulltime, Hybrid",
+   "salary": {
+    "min": 8678,
+    "max": 10783,
+    "interval": "month"
+   },
+   "posted": "2026-10-19",
+   "closes": "2026-11-19",
+   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=535994",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "pm"
+   ],
+   "core": false,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "caltrans:536004",
+   "agency": "caltranshq",
+   "title": "Construction Special Projects Engineer",
+   "department": "SENIOR TRANSPORTATION ENGINEER, CALTRANS",
+   "location": "Sacramento County",
+   "jobType": "Permanent Fulltime, Hybrid",
+   "salary": {
+    "min": 11437,
+    "max": 14315,
+    "interval": "month"
+   },
+   "posted": "2026-10-19",
+   "closes": "2026-11-20",
+   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=536004",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "samtrans:5520314",
+   "agency": "samtrans",
+   "title": "Public Information Officer",
+   "department": "Communications",
+   "location": "Millbrae, CA",
+   "jobType": "Full-Time",
+   "salary": {
+    "min": 3827.34,
+    "max": 5741.03,
+    "interval": "biweekly"
+   },
+   "posted": "2026-10-16",
+   "closes": "2026-11-08",
+   "url": "https://www.governmentjobs.com/careers/smctd/jobs/5520314-0",
+   "summary": "The Public Information Officer will report to the Manager, Communications and will manage media relations for the San Mateo County Transit District (SamTrans), the Peninsula Corridor Joint Powers Board (Caltrain) and the San Mateo County Transportation Authority (SMCTA), and the San Mateo 101 Express Lanes",
+   "internalOnly": false,
+   "categories": [
+    "outreach"
+   ],
+   "core": false,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "santaclaracounty:5499209",
+   "agency": "santaclaracounty",
+   "title": "Public Health Communications Officer",
+   "department": "Public Health",
+   "location": "Throughout the County of Santa Clara",
+   "jobType": "Full-Time",
+   "salary": {
+    "min": 70.962,
+    "max": 86.263,
+    "interval": "hour"
+   },
+   "posted": "2026-10-15",
+   "closes": "2026-11-13",
+   "url": "https://www.governmentjobs.com/careers/santaclara/jobs/5499209-0",
+   "summary": "Under general direction, to plan, develop, direct, coordinate, implement, organize, and evaluate a comprehensive health information and communications program for the Public Health Department within the County of Santa Clara; and to act as a consultant to Public Health management regarding communications strategies. The Public Health Communications Officer will report to the Program Manager III fo",
+   "internalOnly": false,
+   "categories": [
+    "outreach"
+   ],
+   "core": false,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "vta:5511023",
+   "agency": "vta",
+   "title": "Environmental Programs Manager (Transportation Planning Manager)",
+   "department": "Engineering & Program Delivery",
+   "location": "3331 N First St, San Jose, CA 95134",
+   "jobType": "Full-Time",
+   "salary": {
+    "min": 7240.86,
+    "max": 9414.26,
+    "interval": "biweekly"
+   },
+   "posted": "2026-10-15",
+   "closes": "2026-11-16",
+   "url": "https://www.governmentjobs.com/careers/vtasantaclara/jobs/5511023-0",
+   "summary": "VTA's Engineering and Program Delivery (EPD) Division is seeking qualified candidates for the position of Environmental Programs Manager (Transportation Planning Manager)! What You'll be Doing: Definition Under general direction, the Environmental Programs Department Manager (Transportation Planning Manager - Environmental Resource Planning) plans, organizes, and directs professional staff involve",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "caltrans:535541",
+   "agency": "caltranshq",
+   "title": "Contract Administration Engineer",
+   "department": "SENIOR TRANSPORTATION ENGINEER, CALTRANS",
+   "location": "Sacramento County",
+   "jobType": "Permanent Fulltime, Hybrid",
+   "salary": {
+    "min": 11437,
+    "max": 14315,
+    "interval": "month"
+   },
+   "posted": "2026-10-14",
+   "closes": "2026-11-13",
+   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=535541",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "santaclara:5512716",
+   "agency": "santaclara",
+   "title": "Senior Civil Engineer",
+   "department": "Public Works/Engineering",
+   "location": "1500 Warburton Ave., Santa Clara",
+   "jobType": "Full-Time",
+   "salary": {
+    "min": 179200.56,
+    "max": 228826.56,
+    "interval": "year"
+   },
+   "posted": "2026-10-13",
+   "closes": "2026-11-13",
+   "url": "https://www.governmentjobs.com/careers/cityofsantaclaraca/jobs/5512716-0",
+   "summary": "The Positions: The City of Santa Clara is seeking to fill multiple Senior Civil Engineer positions to perform high-level civil engineering tasks to manage and support capital improvement projects. Current openings are in the Department of Public Works (DPW). Currently, DPW has one (1) open position in the Design Division, one (1) open position in the Land and Property Development Division, and two",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "fremont:5512067",
+   "agency": "fremont",
+   "title": "Associate Engineer - Civil (Development Section)",
+   "department": "Public Works",
+   "location": "Fremont",
+   "jobType": "Full-time, regular",
+   "salary": {
+    "min": 138521.458,
+    "max": 168370.542,
+    "interval": "year"
+   },
+   "posted": "2026-10-09",
+   "closes": "2027-02-01",
+   "url": "https://www.governmentjobs.com/careers/fremontca/jobs/5512067-0",
+   "summary": "The City of Fremont's Public Works Department is recruiting for Associate Engineer - Civil (Development Section) VIEW OUR RECRUITMENT BROCHURE The Public Works Department - Engineering Division The Engineering Division, which falls under Public Works, consists of Design Engineering, Development Engineering, Construction, Civic Facilities, Transportation, Survey, and Real Property sections. The div",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "caltrans:534795",
+   "agency": "caltrans4",
+   "title": "Field Survey Crew Chief",
+   "department": "TRANSPORTATION SURVEYOR PARTY CHIEF (CALTRANS)",
+   "location": "Alameda County",
+   "jobType": "Permanent Fulltime, Hybrid",
+   "salary": {
+    "min": 10198,
+    "max": 12761,
+    "interval": "month"
+   },
+   "posted": "2026-10-07",
+   "closes": "2026-11-06",
+   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=534795",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "caltrans:533881",
+   "agency": "caltranshq",
+   "title": "Senior TMS Maintenance Engineer",
+   "department": "SENIOR TRANSPORTATION ELECTRICAL ENGINEER (SUPERVISOR)",
+   "location": "Sacramento County",
+   "jobType": "Permanent Fulltime, Hybrid",
+   "salary": {
+    "min": 11437,
+    "max": 14315,
+    "interval": "month"
+   },
+   "posted": "2026-10-05",
+   "closes": "2026-11-06",
+   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=533881",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "solano:5465569",
+   "agency": "solano",
+   "title": "Cadastral Mapping Technician II",
+   "department": "Dept of Information Technology",
+   "location": "675 Texas Street, Fairfield",
+   "jobType": "Full-Time",
+   "salary": {
+    "min": 33.076409,
+    "max": 40.204579,
+    "interval": "hour"
+   },
+   "posted": "2026-09-25",
+   "closes": "2026-11-06",
+   "url": "https://www.governmentjobs.com/careers/solanocounty/jobs/5465569-0",
+   "summary": "Solano County Department of Information Technology (DoIT) provides customer-oriented and convenient access to information and services through the use of technology; anytime - anywhere. The County strives for cost-effective use of technology, with interactive exchange and sharing of data within departments, with constituents, with other governments and business partners. The guiding principles of ",
+   "internalOnly": false,
+   "categories": [
+    "gis"
+   ],
+   "core": false,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "goldengate:5489693",
+   "agency": "goldengate",
+   "title": "Manager of Traffic Engineering & Transit Facilities",
+   "department": "District Division",
+   "location": "1011 Andersen Drive, San Rafael",
+   "jobType": "Regular, Full-Time",
+   "salary": {
+    "min": 79.82,
+    "max": 96.46,
+    "interval": "hour"
+   },
+   "posted": "2026-09-22",
+   "closes": "continuous",
+   "url": "https://www.governmentjobs.com/careers/goldengate/jobs/5489693-0",
+   "summary": "A leadership opportunity for an experienced professional in traffic engineering, transportation planning, and transit facilities, with a valid California Civil Engineer (C.E.) or Traffic Engineer (T.E.) license. Under general direction from the Director of Planning, manages projects, leads and supervises staff or consultants and performs difficult and complex traffic engineering and transit facili",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "vta:5458617",
+   "agency": "vta",
+   "title": "SENIOR CONSTRUCTION INSPECTOR",
+   "department": "Finance & Budget",
+   "location": "San Jose, CA 95134-1927",
+   "jobType": "Full-Time",
+   "salary": {
+    "min": 111192.12,
+    "max": 144560.52,
+    "interval": "year"
+   },
+   "posted": "2026-09-17",
+   "closes": "2026-11-29",
+   "url": "https://www.governmentjobs.com/careers/vtasantaclara/jobs/5458617-0",
+   "summary": "Senior Construction Inspector – Prevailing Wage Specialist VTA’s Procurement, Contract and Business Development Department is seeking a Senior Construction Inspector – Prevailing Wage Specialist to oversee and support the administration, monitoring, and enforcement of prevailing wage and labor compliance requirements for public works and construction contracts. This position plays a key role in en",
+   "internalOnly": false,
+   "categories": [
+    "pm"
+   ],
+   "core": false,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "marin:5483900",
+   "agency": "marin",
+   "title": "Engineering Division Manager (Principal Civil Engineer)",
+   "department": "Department of Public Works",
+   "location": "San Rafael",
+   "jobType": "Full Time, Regular",
+   "salary": {
+    "min": 83.16,
+    "max": 101.1,
+    "interval": "hour"
+   },
+   "posted": "2026-09-15",
+   "closes": "continuous",
+   "url": "https://www.governmentjobs.com/careers/marincounty/jobs/5483900-0",
+   "summary": "At the County of Marin, our employees overwhelmingly report feeling their work is meaningful, they like the work they do, and they are proud to tell people “I work for the County of Marin.” Discover more about us, our values and our organizational culture on the Department of Human Resources website. Read on to find out more about this opportunity. The mission of the Marin County Department of Pub",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "solano:5437534",
+   "agency": "solano",
+   "title": "Civil Engineer (Senior)",
+   "department": "Resource Management",
+   "location": "Fairfield",
+   "jobType": "Full-Time",
+   "salary": {
+    "min": 70.082124,
+    "max": 85.18526,
+    "interval": "hour"
+   },
+   "posted": "2026-09-11",
+   "closes": "continuous",
+   "url": "https://www.governmentjobs.com/careers/solanocounty/jobs/5437534-0",
+   "summary": "Delivering Solutions for a Safe Community The Department of Resource Management is a comprehensive agency comprised of the Public Works, Building and Safety, Planning Services, Environmental Health Services, Parks, and Administrative Services Divisions. The department provides for the well-being of Solano County's present and future residents and the public at-large through administration and enfo",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": false,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "concord:5446532",
+   "agency": "concord",
+   "title": "Senior Civil Engineer (Construction Manager)",
+   "department": "Community Development",
+   "location": "City of Concord",
+   "jobType": "Full Time",
+   "salary": {
+    "min": 67.32,
+    "max": 92.57,
+    "interval": "hour"
+   },
+   "posted": "2026-08-21",
+   "closes": "continuous",
+   "url": "https://www.governmentjobs.com/careers/concord/jobs/5446532-0",
+   "summary": "***OPEN & PROMOTIONAL JOB OPPORTUNITY*** Senior Civil Engineer (Construction Manager) The City of Concord is seeking to fill one Senior Civil Engineer (Construction Manager) in the Engineering Division of the Community Development Department. The Construction Manager should be a registered Professional Engineer (PE) with extensive technical knowledge and experience with the construction associated",
+   "internalOnly": false,
+   "categories": [
+    "engineering",
+    "pm"
+   ],
+   "core": false,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "sf:3743990014237186",
+   "agency": "sf",
+   "title": "Transportation Planner III - Transit Division - SF Municipal Transportation Agency (5289)",
+   "department": "Municipal Transportation Agency",
+   "location": "San Francisco, CA",
+   "jobType": "Full-time",
+   "salary": null,
+   "posted": "2026-07-22",
+   "closes": null,
+   "url": "https://jobs.smartrecruiters.com/CityAndCountyOfSanFrancisco1/3743990014237186",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "oakland:5410461",
+   "agency": "oakland",
+   "title": "Civil Engineer (Office) (Continuous)",
+   "department": "Citywide",
+   "location": "Oakland",
+   "jobType": "Full Time Civil Service",
+   "salary": {
+    "min": 10993.04,
+    "max": 13497.14,
+    "interval": "month"
+   },
+   "posted": "2026-07-18",
+   "closes": "continuous",
+   "url": "https://www.governmentjobs.com/careers/oaklandca/jobs/5410461-0",
+   "summary": "***Continuous Recruitment*** Recruitment may close at any time, candidates are encouraged to apply immediately The City of Oakland is an equal opportunity employer that values workforce diversity, inclusion, and equity. Oakland has a long history of activism around issues of justice and equity. Both oppression and this resistance to oppression have shaped the city's historical roots and the lives ",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": false,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "oakland:5410462",
+   "agency": "oakland",
+   "title": "Transportation Engineer (Continuous)",
+   "department": "Department of Transportation",
+   "location": "Oakland",
+   "jobType": "Full Time Civil Service",
+   "salary": {
+    "min": 10993.04,
+    "max": 13497.14,
+    "interval": "month"
+   },
+   "posted": "2026-07-18",
+   "closes": "continuous",
+   "url": "https://www.governmentjobs.com/careers/oaklandca/jobs/5410462-0",
+   "summary": "***Continuous Recruitment*** Recruitment may close at any time Interested candidates are encouraged to apply immediately The City of Oakland is an equal-opportunity employer that values workforce diversity, inclusion, and equity. Oakland has a long history of activism around issues of justice and equity. Both oppression and this resistance to oppression have shaped the city’s historical roots and ",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "samtrans:5396765",
+   "agency": "samtrans",
+   "title": "Principal Transportation Planner/Principal Transportation Engineer (Major Corridors)",
+   "department": "Planning",
+   "location": "Millbrae, CA",
+   "jobType": "Full-Time",
+   "salary": {
+    "min": 114493,
+    "max": 171739,
+    "interval": "year"
+   },
+   "posted": "2026-07-03",
+   "closes": "continuous",
+   "url": "https://www.governmentjobs.com/careers/smctd/jobs/5396765-0",
+   "summary": "This is an exciting and rare opportunity to help shape transportation improvements along some of the Peninsula’s most important corridors through complex, high-visibility projects that require strong coordination across agencies, jurisdictions, and stakeholder groups. Limited-Term Appointment: This is a limited-term position. The duration of the assignment is contingent upon project length and fun",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "samtrans:5398563",
+   "agency": "samtrans",
+   "title": "Project Manager, Diridon Station Redevelopment Program",
+   "department": "Rail Executive",
+   "location": "Millbrae, CA",
+   "jobType": "Full-Time",
+   "salary": {
+    "min": 143142,
+    "max": 200398,
+    "interval": "year"
+   },
+   "posted": "2026-07-02",
+   "closes": "continuous",
+   "url": "https://www.governmentjobs.com/careers/smctd/jobs/5398563-0",
+   "summary": "The Project Manager reports to the Program Director, Diridon Station Redevelopment Program, and is responsible for managing and administering Diridon Station Redevelopment projects, activities, and processes. This is a limited three (3) year term position. This position will report to two locations as required (Millbrae and San Jose, CA).",
+   "internalOnly": false,
+   "categories": [
+    "pm"
+   ],
+   "core": false,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "sf:3743990013647436",
+   "agency": "sf",
+   "title": "Resident Engineer (Civil Engineer) - Transit Division - SF Municipal Transportation Agency (5241)",
+   "department": "Municipal Transportation Agency",
+   "location": "San Francisco, CA",
+   "jobType": "Full-time",
+   "salary": null,
+   "posted": "2026-06-16",
+   "closes": null,
+   "url": "https://jobs.smartrecruiters.com/CityAndCountyOfSanFrancisco1/3743990013647436",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "samtrans:5368449",
+   "agency": "samtrans",
+   "title": "Project Manager II",
+   "department": "Rail",
+   "location": "Millbrae, CA",
+   "jobType": "Full-Time",
+   "salary": {
+    "min": 143142,
+    "max": 200398,
+    "interval": "year"
+   },
+   "posted": "2026-06-05",
+   "closes": "continuous",
+   "url": "https://www.governmentjobs.com/careers/smctd/jobs/5368449-0",
+   "summary": "The Project Manager reports to the Director, Capital Program Delivery, and is responsible for developing, managing, and administering assigned Mid-range to small rail projects from design through construction phase for the Peninsula Corridor Joint Powers Board (Caltrain)",
+   "internalOnly": false,
+   "categories": [
+    "pm"
+   ],
+   "core": false,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "fremont:5365257",
+   "agency": "fremont",
+   "title": "Public Affairs Manager",
+   "department": "Fire",
+   "location": "Fremont",
+   "jobType": "Full-time, regular",
+   "salary": {
+    "min": 131308.881,
+    "max": 177266.977,
+    "interval": "year"
+   },
+   "posted": "2026-06-03",
+   "closes": "continuous",
+   "url": "https://www.governmentjobs.com/careers/fremontca/jobs/5365257-0",
+   "summary": "The Fremont Fire Department is recruiting for the position of Public Affairs Manager. VIEW OUR RECRUITMENT BROCHURE THE DEPARTMENT The Fremont Fire Department is committed to protecting life, property, and the environment through emergency response, prevention, preparedness, and community engagement. Serving a diverse and dynamic community in the heart of the Bay Area, the Department values innova",
+   "internalOnly": false,
+   "categories": [
+    "outreach"
+   ],
+   "core": false,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "solano:5316486",
+   "agency": "solano",
+   "title": "Engineer Assistant",
+   "department": "Res Mgmt-Public Works",
+   "location": "675 Texas Street, Fairfield",
+   "jobType": "Full-Time",
+   "salary": {
+    "min": 46.411177,
+    "max": 56.413076,
+    "interval": "hour"
+   },
+   "posted": "2026-05-22",
+   "closes": "continuous",
+   "url": "https://www.governmentjobs.com/careers/solanocounty/jobs/5316486-0",
+   "summary": "Delivering Solutions for a Safe Community The Department of Resource Management is a comprehensive agency comprised of the Public Works, Building and Safety, Planning Services, Environmental Health Services, Parks, and Administrative Services Divisions. The department provides for the well-being of Solano County's present and future residents and the public at-large through administration and enfo",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "vta:5242744",
+   "agency": "vta",
+   "title": "Senior Transportation Engineer - QA",
+   "department": "Engineering & Program Delivery",
+   "location": "San Jose, CA 95134-1927",
+   "jobType": "Full-Time",
+   "salary": {
+    "min": 170830.14,
+    "max": 207624.56,
+    "interval": "year"
+   },
+   "posted": "2026-03-09",
+   "closes": "continuous",
+   "url": "https://www.governmentjobs.com/careers/vtasantaclara/jobs/5242744-0",
+   "summary": "VTA’s Engineering and Program Delivery (EPD) Division is seeking a Senior Transportation Engineer for the Quality Assurance (QA) Group under the Technical Services Department. Quality Assurance Group: The QA Group supports all capital improvement programs for the Division during planning, design, procurement, construction and closeout phases of highway, rail, transit and facilities projects. As a ",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "samtrans:5238313",
+   "agency": "samtrans",
+   "title": "Senior Project Manager",
+   "department": "Rail",
+   "location": "Millbrae, CA",
+   "jobType": "Full-Time",
+   "salary": {
+    "min": 157814,
+    "max": 220939,
+    "interval": "year"
+   },
+   "posted": "2026-02-13",
+   "closes": "continuous",
+   "url": "https://www.governmentjobs.com/careers/smctd/jobs/5238313-0",
+   "summary": "The Senior Project Manager reports to the Director, Capital Program Delivery Infrastructure, and is responsible for developing, managing, and delivering of rail capital projects from capital planning, design, construction, and close out phases for the Peninsula Corridor Joint Powers Board (Caltrain).",
+   "internalOnly": false,
+   "categories": [
+    "pm"
+   ],
+   "core": false,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "berkeley:3801567",
+   "agency": "berkeley",
+   "title": "Associate Civil Engineer",
+   "department": "Public Works",
+   "location": "Berkeley",
+   "jobType": "Career",
+   "salary": {
+    "min": 68.9644,
+    "max": 83.3318,
+    "interval": "hour"
+   },
+   "posted": "2024-10-28",
+   "closes": "continuous",
+   "url": "https://www.governmentjobs.com/careers/berkeley/jobs/3801567-0",
+   "summary": "The City of Berkeley is seeking PE-licensed candidates who are passionate about improving infrastructure for a more sustainable and resilient city. As an Associate Civil Engineer, you'll have the opportunity to apply your engineering knowledge and experience toward the creation and maintenance of state-of-the-art infrastructure, amenities, and facilities. When assigned to Public Works, the Associa",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
    "firstSeen": "2026-11-06"
   },
   {
@@ -292,6 +2377,7 @@
     "engineering"
    ],
    "core": true,
+   "region": "socal",
    "firstSeen": "2026-11-05"
   },
   {
@@ -315,29 +2401,7 @@
     "engineering"
    ],
    "core": true,
-   "firstSeen": "2026-11-05"
-  },
-  {
-   "id": "beverlyhills:5351532",
-   "agency": "beverlyhills",
-   "title": "Parking Services Manager",
-   "department": "Public Works",
-   "location": "Beverly Hills Public Works Building",
-   "jobType": "Full-time",
-   "salary": {
-    "min": 11957.39,
-    "max": 14855.69,
-    "interval": "month"
-   },
-   "posted": "2026-10-30",
-   "closes": "2026-11-27",
-   "url": "https://www.governmentjobs.com/careers/beverlyhills/jobs/5351532-0",
-   "summary": "Who We Are The City of Beverly Hills has a long-standing reputation for providing superior customer service to residents, businesses, and visitors. This characteristic, combined with outstanding staff in all departments, has been a hallmark of success for this high-performance organization. The municipal government (approximately 1,000+ full-time and part-time employees) provides the highest quali",
-   "internalOnly": false,
-   "categories": [
-    "pm"
-   ],
-   "core": true,
+   "region": "socal",
    "firstSeen": "2026-11-05"
   },
   {
@@ -361,29 +2425,7 @@
     "engineering"
    ],
    "core": false,
-   "firstSeen": "2026-11-05"
-  },
-  {
-   "id": "torrance:5513235",
-   "agency": "torrance",
-   "title": "LANDSCAPE ARCHITECT / PARK DEVELOPMENT MANAGER",
-   "department": "COMMUNITY SERVICES",
-   "location": "Torrance",
-   "jobType": "Permanent Full-time",
-   "salary": {
-    "min": 12767,
-    "max": 17618,
-    "interval": "month"
-   },
-   "posted": "2026-10-27",
-   "closes": "continuous",
-   "url": "https://www.governmentjobs.com/careers/torranceca/jobs/5513235-0",
-   "summary": "WE STRONGLY ENCOURAGE APPLICANTS TO READ THE JOB ANNOUNCEMENT IN ITS ENTIRETY BEFORE SUBMITTING AN APPLICATION FOR THIS POSITION. ____________________________________________________________ The City of Torrance recognizes the principles of diversity and inclusion, and strives to ensure equal opportunities for its workforce, applicants and community members. If you are a person who wants to make a",
-   "internalOnly": false,
-   "categories": [
-    "engineering"
-   ],
-   "core": false,
+   "region": "socal",
    "firstSeen": "2026-11-05"
   },
   {
@@ -407,6 +2449,7 @@
     "gis"
    ],
    "core": true,
+   "region": "socal",
    "firstSeen": "2026-11-05"
   },
   {
@@ -430,6 +2473,7 @@
     "engineering"
    ],
    "core": true,
+   "region": "socal",
    "firstSeen": "2026-11-05"
   },
   {
@@ -453,6 +2497,7 @@
     "gis"
    ],
    "core": false,
+   "region": "socal",
    "firstSeen": "2026-11-05"
   },
   {
@@ -476,6 +2521,7 @@
     "outreach"
    ],
    "core": false,
+   "region": "socal",
    "firstSeen": "2026-11-05"
   },
   {
@@ -500,6 +2546,7 @@
     "gis"
    ],
    "core": false,
+   "region": "socal",
    "firstSeen": "2026-11-05"
   },
   {
@@ -519,6 +2566,7 @@
     "pm"
    ],
    "core": false,
+   "region": "socal",
    "firstSeen": "2026-11-05"
   },
   {
@@ -542,6 +2590,7 @@
     "outreach"
    ],
    "core": false,
+   "region": "socal",
    "firstSeen": "2026-11-05"
   },
   {
@@ -565,29 +2614,7 @@
     "pm"
    ],
    "core": true,
-   "firstSeen": "2026-11-05"
-  },
-  {
-   "id": "pasadena:5470812",
-   "agency": "pasadena",
-   "title": "Permit Services Specialist",
-   "department": "Planning & Community Development",
-   "location": "City of Pasadena",
-   "jobType": "2025 - REGULAR FULLTIME 40+ HRS A WK",
-   "salary": {
-    "min": 38.8897,
-    "max": 46.1887,
-    "interval": "hour"
-   },
-   "posted": "2026-09-03",
-   "closes": "continuous",
-   "url": "https://www.governmentjobs.com/careers/pasadena/jobs/5470812-0",
-   "summary": "The City of Pasadena's Planning and Community Development Department is currently seeking an enthusiastic and skilled Permit Services Specialist. The Permit Services Specialist may lead the permit technicians and supports the e-permit services for the Department’s Land Management System (LMS). The position is essential in LMS management, ensuring that the LMS is maintained and operated efficiently",
-   "internalOnly": false,
-   "categories": [
-    "pm"
-   ],
-   "core": true,
+   "region": "socal",
    "firstSeen": "2026-11-05"
   },
   {
@@ -611,6 +2638,7 @@
     "engineering"
    ],
    "core": true,
+   "region": "socal",
    "firstSeen": "2026-11-05"
   },
   {
@@ -634,6 +2662,7 @@
     "gis"
    ],
    "core": false,
+   "region": "socal",
    "firstSeen": "2026-11-05"
   },
   {
@@ -657,6 +2686,7 @@
     "pm"
    ],
    "core": false,
+   "region": "socal",
    "firstSeen": "2026-11-05"
   },
   {
@@ -680,6 +2710,7 @@
     "engineering"
    ],
    "core": false,
+   "region": "socal",
    "firstSeen": "2026-11-05"
   },
   {
@@ -703,6 +2734,7 @@
     "outreach"
    ],
    "core": false,
+   "region": "socal",
    "firstSeen": "2026-11-05"
   },
   {
@@ -726,6 +2758,7 @@
     "engineering"
    ],
    "core": true,
+   "region": "socal",
    "firstSeen": "2026-11-05"
   },
   {
@@ -749,6 +2782,7 @@
     "engineering"
    ],
    "core": true,
+   "region": "socal",
    "firstSeen": "2026-11-05"
   },
   {
@@ -772,6 +2806,7 @@
     "engineering"
    ],
    "core": false,
+   "region": "socal",
    "firstSeen": "2026-11-05"
   },
   {
@@ -795,6 +2830,7 @@
     "engineering"
    ],
    "core": true,
+   "region": "socal",
    "firstSeen": "2026-11-05"
   },
   {
@@ -818,6 +2854,7 @@
     "outreach"
    ],
    "core": false,
+   "region": "socal",
    "firstSeen": "2026-11-05"
   },
   {
@@ -841,6 +2878,7 @@
     "pm"
    ],
    "core": true,
+   "region": "socal",
    "firstSeen": "2026-11-05"
   },
   {
@@ -864,6 +2902,7 @@
     "engineering"
    ],
    "core": false,
+   "region": "socal",
    "firstSeen": "2026-11-05"
   },
   {
@@ -887,6 +2926,7 @@
     "engineering"
    ],
    "core": false,
+   "region": "socal",
    "firstSeen": "2026-11-05"
   }
  ]
