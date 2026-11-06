@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05T21:12:56.459Z",
+ "updated": "2026-11-06T20:32:54.737Z",
  "agencies": [
   {
    "id": "lacity",
@@ -109,14 +109,14 @@
    "id": "lacity",
    "name": "City of Los Angeles",
    "ok": true,
-   "total": 49,
+   "total": 53,
    "listed": 3
   },
   {
    "id": "lacounty",
    "name": "County of Los Angeles",
    "ok": true,
-   "total": 422,
+   "total": 420,
    "listed": 7
   },
   {
@@ -150,22 +150,22 @@
    "id": "longbeach",
    "name": "City of Long Beach",
    "ok": true,
-   "total": 29,
-   "listed": 3
+   "total": 35,
+   "listed": 4
   },
   {
    "id": "pasadena",
    "name": "City of Pasadena",
    "ok": true,
-   "total": 21,
-   "listed": 4
+   "total": 20,
+   "listed": 3
   },
   {
    "id": "santamonica",
    "name": "City of Santa Monica (incl. Big Blue Bus)",
    "ok": true,
-   "total": 11,
-   "listed": 0
+   "total": 13,
+   "listed": 1
   },
   {
    "id": "glendale",
@@ -178,7 +178,7 @@
    "id": "burbank",
    "name": "City of Burbank",
    "ok": true,
-   "total": 11,
+   "total": 12,
    "listed": 0
   },
   {
@@ -199,32 +199,78 @@
    "id": "beverlyhills",
    "name": "City of Beverly Hills",
    "ok": true,
-   "total": 6,
+   "total": 7,
    "listed": 2
   },
   {
    "id": "torrance",
    "name": "City of Torrance (incl. Torrance Transit)",
    "ok": true,
-   "total": 30,
+   "total": 31,
    "listed": 6
   },
   {
    "id": "inglewood",
    "name": "City of Inglewood",
    "ok": true,
-   "total": 3,
+   "total": 6,
    "listed": 0
   },
   {
    "id": "lbtransit",
    "name": "Long Beach Transit",
    "ok": true,
-   "total": 6,
+   "total": 5,
    "listed": 1
   }
  ],
  "jobs": [
+  {
+   "id": "longbeach:5541432",
+   "agency": "longbeach",
+   "title": "ADMINISTRATIVE INTERN - (NON-CAREER) - CONSTRUCTION MANAGEMENT",
+   "department": "Harbor - (UC)",
+   "location": "City of Long Beach",
+   "jobType": "Unclassified - Part-Time, Temporary",
+   "salary": {
+    "min": 26.79,
+    "max": null,
+    "interval": "hour"
+   },
+   "posted": "2026-11-06",
+   "closes": "2026-11-20",
+   "url": "https://www.governmentjobs.com/careers/longbeach/jobs/5541432-0",
+   "summary": "THE PORT OF LONG BEACH IS SEEKING ONE (1) ADMINISTRATIVE INTERN IN THE CONSTRUCTION MANAGEMENT DIVISION. (This is an at-will position) HOURLY PAY: $26.79 The Port of Choice: The Port of Long Beach is an international gateway for the reliable, efficient and sustainable movement of goods and is a leader in environmental stewardship. Credited with moving $300 billion in trade, the Port serves as a cr",
+   "internalOnly": false,
+   "categories": [
+    "pm"
+   ],
+   "core": false,
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "santamonica:5534475",
+   "agency": "santamonica",
+   "title": "CIP PROJECT MANAGER",
+   "department": "Public Works",
+   "location": "City of Santa Monica",
+   "jobType": "Full-Time Regular",
+   "salary": {
+    "min": 10852,
+    "max": 13397,
+    "interval": "month"
+   },
+   "posted": "2026-11-06",
+   "closes": "2026-11-20",
+   "url": "https://www.governmentjobs.com/careers/santamonica/jobs/5534475-0",
+   "summary": "Performs a variety of complex professional duties in the administration, development and execution of public works Capital Improvement Projects (CIPs). Coordinates and manages the activities of assigned staff, consultants and contractors.",
+   "internalOnly": false,
+   "categories": [
+    "pm"
+   ],
+   "core": true,
+   "firstSeen": "2026-11-06"
+  },
   {
    "id": "culvercity:5537114",
    "agency": "culvercity",
@@ -405,29 +451,6 @@
    "internalOnly": false,
    "categories": [
     "gis"
-   ],
-   "core": false,
-   "firstSeen": "2026-11-05"
-  },
-  {
-   "id": "pasadena:5334614",
-   "agency": "pasadena",
-   "title": "Communications Specialist",
-   "department": "Water & Power",
-   "location": "City of Pasadena",
-   "jobType": "2025 - REGULAR FULLTIME 40+ HRS A WK",
-   "salary": {
-    "min": 33.1582,
-    "max": 39.3815,
-    "interval": "hour"
-   },
-   "posted": "2026-10-22",
-   "closes": "2026-11-05",
-   "url": "https://www.governmentjobs.com/careers/pasadena/jobs/5334614-0",
-   "summary": "Please Note: Online Applications will ONLY be accepted beginning on Thursday, October 22, 2026, and will close on Thursday, November 5, 2026, at 11:59PM. The Pasadena Water and Power Department is seeking a Communications Specialist to support and implement marketing, social media, and interactive communication strategies for the utility. This role involves a range of paraprofessional responsibili",
-   "internalOnly": false,
-   "categories": [
-    "outreach"
    ],
    "core": false,
    "firstSeen": "2026-11-05"
