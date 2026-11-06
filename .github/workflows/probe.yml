@@ -1,0 +1,25 @@
+name: probe
+
+# Manual helper: check candidate job-feed slugs before adding an agency.
+on:
+  workflow_dispatch:
+    inputs:
+      slugs:
+        description: "Space-separated NEOGOV slugs and/or sr:SmartRecruitersCompanyId"
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: "22"
+          cache: "npm"
+      - run: npm ci
+      - run: node scripts/probe.js ${{ github.event.inputs.slugs }}
