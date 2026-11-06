@@ -1,120 +1,126 @@
-// CalCareers (State of California) — used for Caltrans District 7.
+// CalCareers (State of California) — used for Caltrans.
 //
-// CalCareers has no feed or API and ignores GET query parameters; its search is an
-// ASP.NET WebForms page. We do what a browser does: load the search page, read the
-// hidden form state (__VIEWSTATE etc.), and POST the department + county filters.
-// Results link to stable JobPosting.aspx?JobControlId=N pages.
+// CalCareers has no feed or API, and its search page builds results with client-side
+// DevExpress controls and ASP.NET postbacks, so a plain HTTP fetch sees an empty page.
+// We drive it with headless Chromium (Playwright) the way a person would:
+//   1. open the search page
+//   2. pick Department = Department of Transportation (id 141) and run the search
+//   3. show 100 per page and walk the pager
+// One browser session serves every Caltrans entry (District 7, District 4, HQ); each
+// entry then keeps the postings in its own counties.
 //
-// This is the most fragile source on the board. If CalCareers changes its form, this
-// fetcher fails on its own and the rest of the board keeps working; the site footer
-// marks Caltrans as not refreshed and keeps the previous listings.
+// If CalCareers changes its page, only the Caltrans entries fail; the rest of the board
+// keeps working and the site marks Caltrans as not refreshed.
 
-import { stripHtml, toISODate } from "../util.js";
+import { toISODate } from "../util.js";
 
 const SEARCH = "https://calcareers.ca.gov/CalHRPublic/Search/JobSearchResults.aspx";
-const UA = "StreetsForAll-JobBoard/1.0 (+https://jobs.streetsforall.org)";
+const CALTRANS_DEPT_ID = "141";
+const MAX_PAGES = 20;
 
-function hiddenFields(html) {
-  const fields = {};
-  for (const m of html.matchAll(/<input[^>]+type="hidden"[^>]*>/gi)) {
-    const name = m[0].match(/name="([^"]+)"/)?.[1];
-    const value = m[0].match(/value="([^"]*)"/)?.[1] ?? "";
-    if (name) fields[name] = value.replace(/&amp;/g, "&").replace(/&quot;/g, '"').replace(/&lt;/g, "<").replace(/&gt;/g, ">");
+let allPostings = null; // shared promise across the Caltrans entries in one run
+
+async function scrapeAll() {
+  let chromium;
+  try {
+    ({ chromium } = await import("playwright"));
+  } catch {
+    throw new Error("CalCareers needs Playwright (npm i playwright && npx playwright install chromium)");
   }
-  return fields;
+  const browser = await chromium.launch();
+  try {
+    const page = await browser.newPage({ userAgent: "Mozilla/5.0 (compatible; StreetsForAll-JobBoard/1.0; +https://jobs.streetsforall.org)" });
+    page.setDefaultTimeout(60_000);
+    await page.goto(SEARCH, { waitUntil: "networkidle" });
+
+    // Department filter is a DevExpress combobox; set it through its client API.
+    await page.waitForFunction(() => window.ASPx && ASPx.GetControlCollection().Get("cphMainContent_ddlDepartment"));
+    await page.evaluate((id) => ASPx.GetControlCollection().Get("cphMainContent_ddlDepartment").SetValue(id), CALTRANS_DEPT_ID);
+    await Promise.all([
+      page.waitForSelector("#cphMainContent_lblTotalResultCount"),
+      page.click('[name="ctl00$cphMainContent$btnUpdateResults"]'),
+    ]);
+
+    // 100 per page.
+    await Promise.all([
+      page.waitForLoadState("networkidle"),
+      page.selectOption("#cphMainContent_ddlRowCount", "100"),
+    ]);
+    await page.waitForFunction(() => document.querySelectorAll('[id^="cphMainContent_rptResults_hlViewJobPosting_"]').length > 10 ||
+      Number(document.getElementById("cphMainContent_lblTotalResultCount")?.innerText) <= 10);
+
+    const total = Number(await page.textContent("#cphMainContent_lblTotalResultCount"));
+    const seen = new Map();
+    for (let p = 1; p <= MAX_PAGES; p++) {
+      const rows = await page.evaluate(() =>
+        [...document.querySelectorAll('[id^="cphMainContent_rptResults_hlViewJobPosting_"]')].map((a) => {
+          let card = a;
+          while (card && !/Filing Deadline/.test(card.innerText || "")) card = card.parentElement;
+          const text = card ? card.innerText : "";
+          const field = (label) => (text.match(new RegExp(label + ":\\s*\\n?\\s*([^\\n]+)"))?.[1] || "").trim();
+          return {
+            classification: a.innerText.trim(),
+            href: a.href,
+            workingTitle: field("Working Title"),
+            jobControl: field("Job Control"),
+            salary: field("Salary Range"),
+            schedule: field("Work Type/Schedule"),
+            department: field("Department"),
+            location: field("Location"),
+            telework: field("Telework"),
+            published: field("Publish Date"),
+            deadline: field("Filing Deadline"),
+          };
+        }),
+      );
+      for (const r of rows) seen.set(r.jobControl || r.href, r);
+      if (seen.size >= total) break;
+
+      const next = page.locator('[id^="cphMainContent_ucRepeaterPager_rptPager_btnPagerItem_"]', { hasText: new RegExp(`^${p + 1}$`) });
+      if (!(await next.count())) break;
+      const firstId = rows[0]?.jobControl;
+      await next.first().click();
+      await page.waitForFunction(
+        (prev) => {
+          const a = document.getElementById("cphMainContent_rptResults_hlViewJobPosting_0");
+          return a && !a.getAttribute("aria-label")?.includes(`(${prev})`);
+        },
+        firstId,
+      );
+    }
+    console.log(`calcareers: ${seen.size} of ${total} Caltrans postings read`);
+    if (!seen.size) throw new Error("CalCareers: search returned no Caltrans postings — the page may have changed");
+    return [...seen.values()];
+  } finally {
+    await browser.close();
+  }
 }
 
-// Find a <select> whose id/name contains `key` and return [name, value] for the
-// option whose text matches `label`.
-function selectOption(html, key, label) {
-  const sel = [...html.matchAll(/<select[^>]*name="([^"]+)"[^>]*>([\s\S]*?)<\/select>/gi)].find((m) => m[1].toLowerCase().includes(key.toLowerCase()));
-  if (!sel) {
-    const names = [...html.matchAll(/<select[^>]*name="([^"]+)"/gi)].map((m) => m[1]);
-    throw new Error(`CalCareers: no ${key} dropdown on search page (selects: ${names.join(", ") || "none"}; page ${html.length} bytes, title "${stripHtml(html.match(/<title>([\s\S]*?)<\/title>/i)?.[1] || "")}")`);
-  }
-  const opt = [...sel[2].matchAll(/<option[^>]*value="([^"]*)"[^>]*>([^<]*)<\/option>/gi)].find((o) => stripHtml(o[2]).toLowerCase() === label.toLowerCase());
-  if (!opt) throw new Error(`CalCareers: option "${label}" not found in ${sel[1]}`);
-  return [sel[1], opt[1]];
-}
-
-function cookieHeader(res) {
-  return (res.headers.getSetCookie?.() || []).map((c) => c.split(";")[0]).join("; ");
-}
-
-function parseResults(html, agency) {
-  const jobs = [];
-  // Each result is a block containing a JobPosting link; slice the page at each link.
-  const parts = html.split(/(?=<a[^>]+JobPosting\.aspx\?JobControlId=\d+)/i).slice(1);
-  for (const part of parts) {
-    const id = part.match(/JobControlId=(\d+)/i)[1];
-    const block = part.slice(0, 4000);
-    const title = stripHtml(block.match(/<a[^>]*>([\s\S]*?)<\/a>/i)?.[1] || "");
-    const text = stripHtml(block);
-    const pay = text.match(/\$([\d,]+(?:\.\d+)?)\s*-\s*\$([\d,]+(?:\.\d+)?)/);
-    const close = text.match(/(?:Final Filing Date|Filing Deadline)[:\s]*(\d{1,2}\/\d{1,2}\/\d{4}|Until Filled)/i)?.[1];
-    const loc = text.match(/Location[:\s]*([A-Za-z .]+? County)/i)?.[1] || "";
-    jobs.push({
-      id: `${agency.id}:${id}`,
-      agency: agency.id,
-      title,
-      department: "",
-      location: loc,
-      jobType: text.match(/(Permanent|Limited Term|Temporary Authorization|Seasonal)[^,;]*/i)?.[0]?.trim() || "",
-      // CalCareers lists state pay as monthly.
-      salary: pay ? { min: Number(pay[1].replace(/,/g, "")), max: Number(pay[2].replace(/,/g, "")), interval: "month" } : null,
-      posted: null,
-      closes: !close ? null : /until filled/i.test(close) ? "continuous" : toISODate(close),
-      url: `https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=${id}`,
-      summary: "",
-      internalOnly: false,
-      _text: text,
-    });
-  }
-  return jobs;
+function toJob(agency, r) {
+  const pay = r.salary.match(/\$\s?([\d,]+(?:\.\d+)?)\s*-\s*\$\s?([\d,]+(?:\.\d+)?)/);
+  const num = (s) => Number(s.replace(/,/g, ""));
+  const working = r.workingTitle && r.workingTitle.toLowerCase() !== r.classification.toLowerCase() ? r.workingTitle : "";
+  return {
+    id: `caltrans:${r.jobControl}`,
+    agency: agency.id,
+    title: working || r.classification,
+    // Classification is matched along with the working title, and shown as the subtitle.
+    classifyText: `${r.workingTitle} ${r.classification}`,
+    department: working ? r.classification : "",
+    location: r.location,
+    jobType: [r.schedule, r.telework && r.telework !== "Office" ? r.telework : ""].filter(Boolean).join(", "),
+    salary: pay ? { min: num(pay[1]), max: num(pay[2]), interval: "month" } : null, // state pay is monthly
+    posted: toISODate(r.published),
+    closes: /until filled/i.test(r.deadline) ? "continuous" : toISODate(r.deadline),
+    url: `https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=${r.jobControl}`,
+    summary: "",
+    internalOnly: false,
+  };
 }
 
 export async function fetchCalCareers(agency) {
-  const first = await fetch(SEARCH, { headers: { "User-Agent": UA }, signal: AbortSignal.timeout(45_000) });
-  if (!first.ok) throw new Error(`CalCareers search page HTTP ${first.status}`);
-  const html = await first.text();
-  const cookies = cookieHeader(first);
-
-  // CalCareers now opens straight onto a results page (newest first) with no filter
-  // dropdowns. In that case read the results and filter by department + county text.
-  if (!/<select[^>]*name="[^"]*Department/i.test(html)) {
-    const all = parseResults(html, agency);
-    const dept = /transportation/i;
-    const county = new RegExp(agency.county.replace(/ County$/i, ""), "i");
-    const jobs = all.filter((j) => dept.test(j._text) && county.test(j._text));
-    console.log(`caltrans7: results page has ${all.length} postings, ${jobs.length} Caltrans in ${agency.county}`);
-    if (!all.length || process.env.DEBUG_CALCAREERS) {
-      const i = html.search(/JobControlId=/i);
-      console.log(`caltrans7 sample: ${stripHtml(html.slice(Math.max(0, i - 1500), i + 2500)).slice(0, 1500)}`);
-    }
-    if (!all.length) throw new Error("CalCareers: no postings found on results page");
-    return jobs.map(({ _text, ...j }) => j);
-  }
-
-  const form = new URLSearchParams(hiddenFields(html));
-  const [deptName, deptVal] = selectOption(html, "Department", agency.department);
-  const [locName, locVal] = selectOption(html, "Location", agency.county);
-  form.set(deptName, deptVal);
-  form.set(locName, locVal);
-  // Submit via the page's search button.
-  const btn = html.match(/<input[^>]+type="submit"[^>]+name="([^"]*Search[^"]*)"[^>]*value="([^"]*)"/i);
-  if (btn) form.set(btn[1], btn[2]);
-
-  const res = await fetch(SEARCH, {
-    method: "POST",
-    headers: { "User-Agent": UA, "Content-Type": "application/x-www-form-urlencoded", Cookie: cookies, Referer: SEARCH },
-    body: form,
-    signal: AbortSignal.timeout(60_000),
-  });
-  if (!res.ok) throw new Error(`CalCareers search POST HTTP ${res.status}`);
-  const jobs = parseResults(await res.text(), agency).map(({ _text, ...j }) => j);
-  if (!jobs.length) throw new Error("CalCareers returned no results — the search form may have changed");
-  // District 7 covers LA + Ventura; the county filter already limits to LA County.
-  return jobs;
+  allPostings ||= scrapeAll();
+  const rows = await allPostings;
+  const counties = agency.counties.map((c) => c.toLowerCase());
+  return rows.filter((r) => counties.includes(r.location.toLowerCase())).map((r) => toJob(agency, r));
 }
-
-export { parseResults as _parseResults };

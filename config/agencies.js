@@ -1,52 +1,108 @@
 // Every agency on the board and where its openings come from.
+//
+// region: "socal" | "norcal" — drives the region switch on the site and the grouping
+// in the Slack post.
+//
 // platform:
-//   neogov      NEOGOV/GovernmentJobs.com official RSS job feed (slug = the part after
-//               governmentjobs.com/careers/)
-//   calcareers  State of California CalCareers search, filtered to department + county
-//   civicplus   CivicPlus "Jobs" module RSS (city websites built on CivicPlus)
-//   oraclehcm   Oracle Cloud HCM Candidate Experience public requisitions API
+//   neogov           NEOGOV/GovernmentJobs.com official RSS job feed (slug = the part
+//                    after governmentjobs.com/careers/). Check a new slug first with the
+//                    `probe` workflow — wrong slugs return an empty feed, not an error.
+//   smartrecruiters  SmartRecruiters public postings API (company id)
+//   calcareers       State of California CalCareers, Department of Transportation,
+//                    filtered to `counties` (headless browser; see the fetcher)
+//   civicplus        CivicPlus "Jobs" module RSS
+//   oraclehcm        Oracle Cloud HCM Candidate Experience requisitions API
 //
-// Several transit operators are city departments and post under their city:
-// Big Blue Bus (Santa Monica), Culver CityBus (Culver City), Torrance Transit (Torrance),
-// LADOT Transit (City of LA). LADWP also posts under City of LA ("lacity").
+// Transit operators that are city departments post under their city: Big Blue Bus
+// (Santa Monica), Culver CityBus (Culver City), Torrance Transit (Torrance), LADOT
+// Transit (City of LA), SFMTA/Muni (San Francisco). Caltrain is administered by
+// SamTrans and posts under it.
 //
-// To add an agency: append an entry, run `npm run dry-run -- --only=<id>`, check the output.
+// A newly added agency's current openings are recorded without a Slack post on its
+// first run; only postings that appear after that are announced.
+
+export const REGIONS = [
+  { id: "socal", name: "Southern California" },
+  { id: "norcal", name: "Northern California" },
+];
+
+const ng = (slug) => ({ platform: "neogov", slug, careersUrl: `https://www.governmentjobs.com/careers/${slug}` });
+const CALCAREERS = "https://calcareers.ca.gov/CalHRPublic/Search/JobSearchResults.aspx";
 
 export const AGENCIES = [
-  // Core
-  { id: "lacity", name: "City of Los Angeles", short: "City of LA", platform: "neogov", slug: "lacity", careersUrl: "https://www.governmentjobs.com/careers/lacity" },
-  { id: "lacounty", name: "County of Los Angeles", short: "LA County", platform: "neogov", slug: "lacounty", careersUrl: "https://www.governmentjobs.com/careers/lacounty" },
-  { id: "metro", name: "LA Metro", platform: "neogov", slug: "lametro", careersUrl: "https://www.governmentjobs.com/careers/lametro" },
-  { id: "metrolink", name: "Metrolink (SCRRA)", short: "Metrolink", platform: "neogov", slug: "scrra", careersUrl: "https://www.governmentjobs.com/careers/scrra" },
-  { id: "scag", name: "Southern California Association of Governments", short: "SCAG", platform: "neogov", slug: "scag", careersUrl: "https://www.governmentjobs.com/careers/scag" },
+  // ── Southern California ────────────────────────────────────────────────────
+  { id: "lacity", region: "socal", name: "City of Los Angeles", short: "City of LA", ...ng("lacity") },
+  { id: "lacounty", region: "socal", name: "County of Los Angeles", short: "LA County", ...ng("lacounty") },
+  { id: "metro", region: "socal", name: "LA Metro", ...ng("lametro") },
+  { id: "metrolink", region: "socal", name: "Metrolink (SCRRA)", short: "Metrolink", ...ng("scrra") },
+  { id: "scag", region: "socal", name: "Southern California Association of Governments", short: "SCAG", ...ng("scag") },
   {
-    id: "caltrans7", name: "Caltrans District 7", platform: "calcareers",
-    department: "Department of Transportation", county: "Los Angeles County",
-    careersUrl: "https://calcareers.ca.gov/CalHRPublic/Search/JobSearchResults.aspx",
+    id: "caltrans7", region: "socal", name: "Caltrans District 7 (LA & Ventura)", short: "Caltrans D7",
+    platform: "calcareers", counties: ["Los Angeles County", "Ventura County"], careersUrl: CALCAREERS,
   },
-
-  // Surrounding cities
-  { id: "longbeach", name: "City of Long Beach", short: "Long Beach", platform: "neogov", slug: "longbeach", careersUrl: "https://www.governmentjobs.com/careers/longbeach" },
-  { id: "pasadena", name: "City of Pasadena", short: "Pasadena", platform: "neogov", slug: "pasadena", careersUrl: "https://www.governmentjobs.com/careers/pasadena" },
-  { id: "santamonica", name: "City of Santa Monica (incl. Big Blue Bus)", short: "Santa Monica", platform: "neogov", slug: "santamonica", careersUrl: "https://www.governmentjobs.com/careers/santamonica" },
-  { id: "glendale", name: "City of Glendale", short: "Glendale", platform: "neogov", slug: "glendaleca", careersUrl: "https://www.governmentjobs.com/careers/glendaleca" },
-  { id: "burbank", name: "City of Burbank", short: "Burbank", platform: "neogov", slug: "burbankca", careersUrl: "https://www.governmentjobs.com/careers/burbankca" },
-  { id: "culvercity", name: "Culver City (incl. CityBus)", short: "Culver City", platform: "neogov", slug: "culvercity", careersUrl: "https://www.governmentjobs.com/careers/culvercity" },
-  { id: "weho", name: "City of West Hollywood", short: "West Hollywood", platform: "neogov", slug: "weho", careersUrl: "https://www.governmentjobs.com/careers/weho" },
-  { id: "beverlyhills", name: "City of Beverly Hills", short: "Beverly Hills", platform: "neogov", slug: "beverlyhills", careersUrl: "https://www.governmentjobs.com/careers/beverlyhills" },
-  { id: "torrance", name: "City of Torrance (incl. Torrance Transit)", short: "Torrance", platform: "neogov", slug: "torranceca", careersUrl: "https://www.governmentjobs.com/careers/torranceca" },
+  { id: "longbeach", region: "socal", name: "City of Long Beach", short: "Long Beach", ...ng("longbeach") },
+  { id: "pasadena", region: "socal", name: "City of Pasadena", short: "Pasadena", ...ng("pasadena") },
+  { id: "santamonica", region: "socal", name: "City of Santa Monica (incl. Big Blue Bus)", short: "Santa Monica", ...ng("santamonica") },
+  { id: "glendale", region: "socal", name: "City of Glendale", short: "Glendale", ...ng("glendaleca") },
+  { id: "burbank", region: "socal", name: "City of Burbank", short: "Burbank", ...ng("burbankca") },
+  { id: "culvercity", region: "socal", name: "Culver City (incl. CityBus)", short: "Culver City", ...ng("culvercity") },
+  { id: "weho", region: "socal", name: "City of West Hollywood", short: "West Hollywood", ...ng("weho") },
+  { id: "beverlyhills", region: "socal", name: "City of Beverly Hills", short: "Beverly Hills", ...ng("beverlyhills") },
+  { id: "torrance", region: "socal", name: "City of Torrance (incl. Torrance Transit)", short: "Torrance", ...ng("torranceca") },
   {
-    id: "inglewood", name: "City of Inglewood", short: "Inglewood", platform: "civicplus",
+    id: "inglewood", region: "socal", name: "City of Inglewood", short: "Inglewood", platform: "civicplus",
     feedUrl: "https://www.cityofinglewood.org/RSSFeed.aspx?ModID=66&CID=All-jobs.xml",
     careersUrl: "https://www.cityofinglewood.org/Jobs.aspx",
   },
-
-  // Regional transit with its own hiring system
   {
-    id: "lbtransit", name: "Long Beach Transit", platform: "oraclehcm",
+    id: "lbtransit", region: "socal", name: "Long Beach Transit", platform: "oraclehcm",
     host: "https://ibcrqy.fa.ocs.oraclecloud.com", siteNumber: "CX_1",
     careersUrl: "https://ibcrqy.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/jobs",
   },
-  // Foothill Transit has no online job system (emailed PDF applications) and its
-  // operations staff are hired by contractors, so it is not scraped.
+  // Foothill Transit: emailed PDF applications, operations staff hired by contractors.
+
+  // ── Northern California: Bay Area ──────────────────────────────────────────
+  {
+    id: "sf", region: "norcal", name: "City & County of San Francisco (incl. SFMTA)", short: "San Francisco",
+    platform: "smartrecruiters", company: "CityAndCountyOfSanFrancisco1", careersUrl: "https://careers.sf.gov/",
+  },
+  { id: "oakland", region: "norcal", name: "City of Oakland", short: "Oakland", ...ng("oaklandca") },
+  { id: "sanjose", region: "norcal", name: "City of San José", short: "San José", ...ng("sanjoseca") },
+  { id: "berkeley", region: "norcal", name: "City of Berkeley", short: "Berkeley", ...ng("berkeley") },
+  { id: "fremont", region: "norcal", name: "City of Fremont", short: "Fremont", ...ng("fremontca") },
+  { id: "hayward", region: "norcal", name: "City of Hayward", short: "Hayward", ...ng("haywardca") },
+  { id: "alameda", region: "norcal", name: "City of Alameda", short: "Alameda", ...ng("alamedaca") },
+  { id: "richmond", region: "norcal", name: "City of Richmond", short: "Richmond", ...ng("richmondca") },
+  { id: "concord", region: "norcal", name: "City of Concord", short: "Concord", ...ng("concord") },
+  { id: "walnutcreek", region: "norcal", name: "City of Walnut Creek", short: "Walnut Creek", ...ng("walnutcreek") },
+  { id: "paloalto", region: "norcal", name: "City of Palo Alto", short: "Palo Alto", ...ng("paloaltoca") },
+  { id: "mountainview", region: "norcal", name: "City of Mountain View", short: "Mountain View", ...ng("mountainview") },
+  { id: "sunnyvale", region: "norcal", name: "City of Sunnyvale", short: "Sunnyvale", ...ng("sunnyvale") },
+  { id: "vallejo", region: "norcal", name: "City of Vallejo", short: "Vallejo", ...ng("vallejo") },
+  { id: "santarosa", region: "norcal", name: "City of Santa Rosa", short: "Santa Rosa", ...ng("srcity") },
+  { id: "petaluma", region: "norcal", name: "City of Petaluma", short: "Petaluma", ...ng("petaluma") },
+
+  { id: "santaclaracounty", region: "norcal", name: "County of Santa Clara", short: "Santa Clara County", ...ng("santaclara") },
+  { id: "sanmateocounty", region: "norcal", name: "County of San Mateo", short: "San Mateo County", ...ng("sanmateo") },
+  { id: "contracosta", region: "norcal", name: "County of Contra Costa", short: "Contra Costa County", ...ng("contracosta") },
+  { id: "marin", region: "norcal", name: "County of Marin", short: "Marin County", ...ng("marincounty") },
+  { id: "sonoma", region: "norcal", name: "County of Sonoma", short: "Sonoma County", ...ng("sonoma") },
+  { id: "solano", region: "norcal", name: "County of Solano", short: "Solano County", ...ng("solanocounty") },
+  { id: "napa", region: "norcal", name: "County of Napa", short: "Napa County", ...ng("napacounty") },
+
+  { id: "actransit", region: "norcal", name: "AC Transit", ...ng("actransit") },
+  { id: "samtrans", region: "norcal", name: "SamTrans / Caltrain", ...ng("smctd") },
+  { id: "goldengate", region: "norcal", name: "Golden Gate Bridge, Highway & Transportation District", short: "Golden Gate Transit", ...ng("goldengate") },
+
+  {
+    id: "caltrans4", region: "norcal", name: "Caltrans District 4 (Bay Area)", short: "Caltrans D4",
+    platform: "calcareers", careersUrl: CALCAREERS,
+    counties: ["Alameda County", "Contra Costa County", "Marin County", "Napa County", "San Francisco County", "San Mateo County", "Santa Clara County", "Solano County", "Sonoma County"],
+  },
+
+  // ── Northern California: Sacramento ────────────────────────────────────────
+  {
+    id: "caltranshq", region: "norcal", name: "Caltrans Headquarters (Sacramento)", short: "Caltrans HQ",
+    platform: "calcareers", counties: ["Sacramento County"], careersUrl: CALCAREERS,
+  },
 ];

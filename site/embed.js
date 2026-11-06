@@ -16,6 +16,11 @@
   var CSS = [
     ".sfaj{--sfaj-navy:#173861;--sfaj-blue:#245ad8;--sfaj-teal:#10b5b0;--sfaj-green:#25c764;--sfaj-orange:#f97a43;--sfaj-line:#e3e3e3;--sfaj-muted:#6b6b6b;font:inherit;color:inherit;text-align:left}",
     ".sfaj *{box-sizing:border-box}",
+    ".sfaj-regions{display:inline-flex;border:2px solid var(--sfaj-navy);border-radius:10px;overflow:hidden;margin:0 0 14px}",
+    ".sfaj-region{font:inherit;font-size:16px;font-weight:600;line-height:1.2;cursor:pointer;border:0;background:#fff;color:var(--sfaj-navy);padding:10px 18px;margin:0;transition:background .3s,color .3s}",
+    ".sfaj-region+.sfaj-region{border-left:2px solid var(--sfaj-navy)}",
+    ".sfaj-region[aria-pressed=true]{background:var(--sfaj-navy);color:#fff}",
+    ".sfaj-region:hover:not([aria-pressed=true]){background:#eef2f8}",
     ".sfaj-bar{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 12px}",
     ".sfaj input,.sfaj select{font:inherit;font-size:16px;color:#222;background:#fff;border:1.5px solid #cfcfcf;border-radius:10px;padding:10px 12px;min-height:44px;margin:0}",
     ".sfaj input{flex:1 1 260px}.sfaj select{flex:0 1 220px}",
@@ -42,7 +47,7 @@
     ".sfaj-foot{font-size:14px;color:var(--sfaj-muted);margin-top:22px}",
     ".sfaj-foot a{color:inherit}.sfaj-down{color:#b42318!important}",
     ".sfaj-sources{display:flex;flex-wrap:wrap;gap:4px 14px;margin-top:6px}",
-    "@media (max-width:640px){.sfaj-job{grid-template-columns:1fr}.sfaj-side{text-align:left}.sfaj select{flex:1 1 100%}}",
+    "@media (max-width:640px){.sfaj-regions{display:flex}.sfaj-region{flex:1 1 50%;padding:10px 8px}.sfaj-job{grid-template-columns:1fr}.sfaj-side{text-align:left}.sfaj select{flex:1 1 100%}}",
   ].join("");
 
   var CATS = [
@@ -107,6 +112,7 @@
     document.head.appendChild(style);
     root.classList.add("sfaj");
     root.innerHTML =
+      '<div class="sfaj-regions" role="group" aria-label="Region"></div>' +
       '<div class="sfaj-bar">' +
       '<input type="search" placeholder="Search titles, departments, agencies" aria-label="Search jobs" autocomplete="off">' +
       '<select aria-label="Agency"><option value="">All agencies</option></select>' +
@@ -121,13 +127,17 @@
 
     var q = root.querySelector("input"), sels = root.querySelectorAll("select"), agencySel = sels[0], sortSel = sels[1];
     var list = root.querySelector(".sfaj-list"), count = root.querySelector(".sfaj-count"), foot = root.querySelector(".sfaj-foot");
-    var state = { q: "", agency: "", cats: {}, sort: "new" }, DATA = { jobs: [], agencies: [] }, names = {};
+    var regionBox = root.querySelector(".sfaj-regions");
+    var params = new URLSearchParams(location.search);
+    var state = { q: "", agency: "", cats: {}, sort: "new", region: params.get("region") || "socal" },
+      DATA = { jobs: [], agencies: [] }, names = {}, regionOf = {};
 
     function anyCat() { for (var k in state.cats) if (state.cats[k]) return true; return false; }
     function render() {
       var term = state.q.toLowerCase().trim();
       var jobs = DATA.jobs.filter(function (j) {
-        return (!state.agency || j.agency === state.agency) &&
+        return (regionOf[j.agency] || "socal") === state.region &&
+          (!state.agency || j.agency === state.agency) &&
           (!anyCat() || j.categories.some(function (c) { return state.cats[c]; })) &&
           (!term || (j.title + " " + (j.department || "") + " " + (names[j.agency] || "")).toLowerCase().indexOf(term) >= 0);
       });
@@ -164,25 +174,52 @@
     agencySel.addEventListener("change", function () { state.agency = agencySel.value; render(); });
     sortSel.addEventListener("change", function () { state.sort = sortSel.value; render(); });
 
+    function fillAgencies() {
+      var counts = {};
+      DATA.jobs.forEach(function (j) { counts[j.agency] = (counts[j.agency] || 0) + 1; });
+      agencySel.innerHTML = '<option value="">All agencies</option>' + DATA.agencies
+        .filter(function (a) { return regionOf[a.id] === state.region; })
+        .sort(function (a, b) { return (a.short || a.name).localeCompare(b.short || b.name); })
+        .map(function (a) { return '<option value="' + esc(a.id) + '">' + esc(a.short || a.name) + " (" + (counts[a.id] || 0) + ")</option>"; }).join("");
+      agencySel.value = state.agency;
+    }
+    var footIntro = "";
+    function renderFoot() {
+      var down = {};
+      (DATA.sources || []).forEach(function (s) { if (!s.ok) down[s.id] = true; });
+      foot.innerHTML = footIntro + '<div class="sfaj-sources">' + DATA.agencies
+        .filter(function (a) { return regionOf[a.id] === state.region; })
+        .map(function (a) {
+          return '<a href="' + esc(a.careersUrl || "#") + '" target="_blank" rel="noopener"' +
+            (down[a.id] ? ' class="sfaj-down" title="Not refreshed today; showing its last known listings."' : "") + ">" + esc(a.name) + "</a>";
+        }).join("") + "</div>";
+    }
+
     fetch(base + "jobs.json", { cache: "no-cache" })
       .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
       .then(function (d) {
         DATA = d;
         DATA.agencies.forEach(function (a) { names[a.id] = a.short || a.name; });
-        var counts = {};
-        DATA.jobs.forEach(function (j) { counts[j.agency] = (counts[j.agency] || 0) + 1; });
-        agencySel.innerHTML += DATA.agencies.slice()
-          .sort(function (a, b) { return (a.short || a.name).localeCompare(b.short || b.name); })
-          .map(function (a) { return '<option value="' + esc(a.id) + '">' + esc(a.short || a.name) + " (" + (counts[a.id] || 0) + ")</option>"; }).join("");
-        var down = {};
-        (DATA.sources || []).forEach(function (s) { if (!s.ok) down[s.id] = true; });
+        DATA.agencies.forEach(function (a) { regionOf[a.id] = a.region || "socal"; });
+        var regions = DATA.regions || [{ id: "socal", name: "Southern California" }];
+        if (!regions.some(function (r) { return r.id === state.region; })) state.region = regions[0].id;
+        regionBox.innerHTML = regions.map(function (r) {
+          return '<button type="button" class="sfaj-region" data-region="' + esc(r.id) + '" aria-pressed="' + (r.id === state.region) + '">' + esc(r.name) + "</button>";
+        }).join("");
+        regionBox.addEventListener("click", function (e) {
+          var b = e.target.closest(".sfaj-region"); if (!b || b.getAttribute("data-region") === state.region) return;
+          state.region = b.getAttribute("data-region"); state.agency = "";
+          regionBox.querySelectorAll(".sfaj-region").forEach(function (x) { x.setAttribute("aria-pressed", x === b); });
+          try {
+            var u = new URL(location.href); u.searchParams.set("region", state.region); history.replaceState(null, "", u);
+          } catch (err) {}
+          fillAgencies(); renderFoot(); render();
+        });
+        fillAgencies();
         var when = DATA.updated ? new Date(DATA.updated).toLocaleString("en-US", { dateStyle: "medium", timeStyle: "short", timeZone: "America/Los_Angeles" }) : "";
-        foot.innerHTML = "<p>Listings come from each agency's official job site and link there to apply. Civil service jobs usually require an exam, so read the bulletin and apply before the filing deadline." +
-          (when ? " Updated " + esc(when) + "." : "") + "</p>" +
-          '<div class="sfaj-sources">' + DATA.agencies.map(function (a) {
-            return '<a href="' + esc(a.careersUrl || "#") + '" target="_blank" rel="noopener"' +
-              (down[a.id] ? ' class="sfaj-down" title="Not refreshed today; showing its last known listings."' : "") + ">" + esc(a.name) + "</a>";
-          }).join("") + "</div>";
+        footIntro = "<p>Listings come from each agency's official job site and link there to apply. Civil service jobs usually require an exam, so read the bulletin and apply before the filing deadline." +
+          (when ? " Updated " + esc(when) + "." : "") + " Agencies covered:</p>";
+        renderFoot();
         render();
       })
       .catch(function () { count.textContent = "The job list didn't load. Refresh the page to try again."; });

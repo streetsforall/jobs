@@ -39,12 +39,15 @@ test("Slack message groups by category and caps the list", () => {
     id: `a:${i}`, agency: "lacity", title: `Job <${i}>`, url: `https://x/${i}`,
     categories: [i % 2 ? "gis" : "engineering"], salary: null, closes: "continuous",
   }));
-  const msg = buildMessage(jobs, { lacity: "City of LA" });
+  jobs[1].agency = "oakland";
+  const msg = buildMessage(jobs, [{ id: "lacity", short: "City of LA", region: "socal" }, { id: "oakland", short: "Oakland", region: "norcal" }]);
   const text = JSON.stringify(msg.blocks);
   assert.match(msg.blocks[0].text.text, /40 new public-sector jobs/);
   assert.match(text, /Engineering & Planning/);
+  assert.match(text, /Southern California\* \(39\)/);
+  assert.match(text, /Northern California\* \(1\)/);
   assert.match(text, /GIS & Data/);
-  assert.match(text, /\+10 more/);
+  assert.match(text, /\+19 more in Southern California/);
   assert.match(text, /Job &lt;0&gt;/);
   assert.ok(msg.blocks.length <= 50);
 });

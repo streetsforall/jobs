@@ -13,17 +13,19 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { AGENCIES } from "../config/agencies.js";
+import { AGENCIES, REGIONS } from "../config/agencies.js";
 import { classify } from "../config/categories.js";
 import { fetchNeogov } from "./fetchers/neogov.js";
 import { fetchCalCareers } from "./fetchers/calcareers.js";
 import { fetchCivicPlus } from "./fetchers/civicplus.js";
 import { fetchOracleHcm } from "./fetchers/oraclehcm.js";
+import { fetchSmartRecruiters } from "./fetchers/smartrecruiters.js";
 import { buildMessage, postToSlack } from "./slack.js";
 import { log, warn, todayLA } from "./util.js";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const STATE_FILE = path.join(ROOT, "state", "seen.json");
+const AGENCY_STATE_FILE = path.join(ROOT, "state", "agencies.json");
 const OUT_FILE = path.join(ROOT, "site", "jobs.json");
 
 const args = new Set(process.argv.slice(2));
@@ -31,7 +33,7 @@ const DRY = args.has("--dry-run");
 let BASELINE = args.has("--baseline");
 const ONLY = [...args].find((a) => a.startsWith("--only="))?.split("=")[1];
 
-const FETCHERS = { neogov: fetchNeogov, calcareers: fetchCalCareers, civicplus: fetchCivicPlus, oraclehcm: fetchOracleHcm };
+const FETCHERS = { neogov: fetchNeogov, calcareers: fetchCalCareers, civicplus: fetchCivicPlus, oraclehcm: fetchOracleHcm, smartrecruiters: fetchSmartRecruiters };
 
 const readJSON = (f, fallback) => {
   try { return JSON.parse(fs.readFileSync(f, "utf8")); } catch { return fallback; }
@@ -52,6 +54,13 @@ async function main() {
     BASELINE = true;
   }
   const previous = readJSON(OUT_FILE, { jobs: [] });
+  // Agencies whose listings we've already recorded. A newly added agency's current
+  // openings are recorded silently on its first successful run instead of being posted
+  // to Slack as "new". (Before this file existed, infer it from saved state.)
+  const known = new Set(
+    readJSON(AGENCY_STATE_FILE, null) ??
+      [...previous.jobs.map((j) => j.agency), ...Object.keys(seen).map((id) => id.split(":")[0])],
+  );
 
   const results = await Promise.allSettled(
     agencies.map(async (a) => {
@@ -70,9 +79,12 @@ async function main() {
       for (const j of r.value) {
         if (j.internalOnly) continue;
         if (j.closes && j.closes !== "continuous" && j.closes < today) continue;
-        const c = classify(j);
+        // Some sources (Caltrans) supply extra text to classify on, e.g. the civil
+        // service classification alongside the working title.
+        const c = j.classifyText ? classify({ title: j.classifyText, department: "" }) : classify(j);
         if (!c) continue;
-        kept.push({ ...j, ...c });
+        const { classifyText, ...rest } = j;
+        kept.push({ ...rest, ...c, region: a.region });
       }
       sources.push({ id: a.id, name: a.name, ok: true, total: r.value.length, listed: kept.length });
       log(`${a.id}: ${r.value.length} open, ${kept.length} relevant`);
@@ -82,7 +94,7 @@ async function main() {
       sources.push({ id: a.id, name: a.name, ok: false, error: String(r.reason?.message || r.reason).slice(0, 200) });
       // Keep yesterday's listings for a source that failed today, so one flaky feed
       // doesn't blank that agency on the site.
-      jobs.push(...previous.jobs.filter((j) => j.agency === a.id && (!j.closes || j.closes === "continuous" || j.closes >= today)));
+      jobs.push(...previous.jobs.filter((j) => j.agency === a.id && (!j.closes || j.closes === "continuous" || j.closes >= today)).map((j) => ({ ...j, region: a.region })));
     }
   });
 
@@ -91,23 +103,25 @@ async function main() {
   for (const j of jobs) if (!byId.has(j.id)) byId.set(j.id, j);
   jobs = [...byId.values()];
 
-  const fresh = jobs.filter((j) => !seen[j.id]);
+  const fresh = jobs.filter((j) => !seen[j.id] && known.has(j.agency));
+  const quietlyAdded = jobs.filter((j) => !seen[j.id] && !known.has(j.agency)).length;
+  for (const s of sources) if (s.ok) known.add(s.id);
   for (const j of jobs) {
     seen[j.id] ||= today;
     j.firstSeen = seen[j.id];
   }
   jobs.sort((a, b) => (b.firstSeen || "").localeCompare(a.firstSeen || "") || (b.posted || "").localeCompare(a.posted || ""));
 
-  log(`\n${jobs.length} listings, ${fresh.length} new today${BASELINE ? " (baseline: not posting)" : ""}`);
+  log(`\n${jobs.length} listings, ${fresh.length} new today${BASELINE ? " (baseline: not posting)" : ""}${quietlyAdded ? `, ${quietlyAdded} from newly added agencies recorded without posting` : ""}`);
   if (DRY) {
     for (const j of fresh) log(`  NEW [${j.categories.join(",")}] ${j.agency} — ${j.title}`);
     return;
   }
 
-  const agencyNames = Object.fromEntries(AGENCIES.map((a) => [a.id, a.name]));
   writeJSON(OUT_FILE, {
     updated: new Date().toISOString(),
-    agencies: AGENCIES.filter((a) => !a.disabled).map((a) => ({ id: a.id, name: a.name, short: a.short || a.name, careersUrl: a.careersUrl })),
+    regions: REGIONS,
+    agencies: AGENCIES.filter((a) => !a.disabled).map((a) => ({ id: a.id, name: a.name, short: a.short || a.name, region: a.region, careersUrl: a.careersUrl })),
     sources,
     jobs,
   });
@@ -119,11 +133,12 @@ async function main() {
   for (const [id, d] of Object.entries(seen)) if (!live.has(id) && d < cutoff) delete seen[id];
 
   if (fresh.length && !BASELINE) {
-    const ts = await postToSlack(buildMessage(fresh, agencyNames));
+    const ts = await postToSlack(buildMessage(fresh, AGENCIES));
     log(`posted to Slack (ts ${ts})`);
   }
   // Save state only after a successful post: if Slack fails, tomorrow re-announces.
   writeJSON(STATE_FILE, seen);
+  writeJSON(AGENCY_STATE_FILE, [...known].sort());
 
   if (sources.every((s) => !s.ok)) throw new Error("every source failed");
   const failed = sources.filter((s) => !s.ok);

@@ -3,9 +3,11 @@
 // agenda-watch uses) into SLACK_JOBS_CHANNEL_ID. Invite the bot to #jobs first.
 
 import { CATEGORY_LABELS, CATEGORIES } from "../config/categories.js";
+import { REGIONS } from "../config/agencies.js";
 
-const SITE = process.env.SITE_URL || "https://jobs.streetsforall.org";
-const MAX_LISTED = 30;
+const SITE = process.env.SITE_URL || "https://www.streetsforall.org/jobs";
+// Per region, so a busy day in one region never crowds the other out of the post.
+const MAX_PER_REGION = 20;
 
 const esc = (s = "") => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
@@ -25,38 +27,45 @@ function formatClose(c) {
   return `closes ${d.toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone: "UTC" })}`;
 }
 
-export function buildMessage(newJobs, agencyNames) {
+export function buildMessage(newJobs, agencies) {
+  const byId = Object.fromEntries(agencies.map((a) => [a.id, a]));
   const n = newJobs.length;
   const blocks = [
     { type: "header", text: { type: "plain_text", text: `🚲 ${n} new public-sector job${n === 1 ? "" : "s"} today` } },
-    { type: "context", elements: [{ type: "mrkdwn", text: `Planning, engineering, outreach, GIS and project roles at LA-area agencies. Full board: <${SITE}|jobs.streetsforall.org>` }] },
+    { type: "context", elements: [{ type: "mrkdwn", text: `Planning, engineering, outreach, GIS and project roles at California agencies. Full board: <${SITE}|streetsforall.org/jobs>` }] },
   ];
-  let listed = 0;
-  for (const cat of CATEGORIES) {
-    const jobs = newJobs.filter((j) => j.categories[0] === cat.id);
-    if (!jobs.length || listed >= MAX_LISTED) continue;
-    const lines = [];
-    for (const j of jobs) {
-      if (listed >= MAX_LISTED) break;
-      const meta = [agencyNames[j.agency] || j.agency, formatSalary(j.salary), formatClose(j.closes)].filter(Boolean).join(" · ");
-      lines.push(`• <${j.url}|${esc(j.title)}> — ${esc(meta)}`);
-      listed++;
-    }
-    // Section text caps at 3000 chars; split long categories across sections.
-    let chunk = `*${CATEGORY_LABELS[cat.id]}*`;
-    for (const line of lines) {
-      if (chunk.length + line.length + 1 > 2900) {
-        blocks.push({ type: "section", text: { type: "mrkdwn", text: chunk } });
-        chunk = "";
+  for (const region of REGIONS) {
+    const inRegion = newJobs.filter((j) => (byId[j.agency]?.region || "socal") === region.id);
+    if (!inRegion.length) continue;
+    let listed = 0;
+    blocks.push({ type: "section", text: { type: "mrkdwn", text: `*${region.name}* (${inRegion.length}) · <${SITE}?region=${region.id}|see all>` } });
+    for (const cat of CATEGORIES) {
+      const jobs = inRegion.filter((j) => j.categories[0] === cat.id);
+      if (!jobs.length || listed >= MAX_PER_REGION) continue;
+      const lines = [];
+      for (const j of jobs) {
+        if (listed >= MAX_PER_REGION) break;
+        const a = byId[j.agency];
+        const meta = [a?.short || a?.name || j.agency, formatSalary(j.salary), formatClose(j.closes)].filter(Boolean).join(" · ");
+        lines.push(`• <${j.url}|${esc(j.title)}> — ${esc(meta)}`);
+        listed++;
       }
-      chunk += `\n${line}`;
+      // Section text caps at 3000 chars; split long categories across sections.
+      let chunk = `_${CATEGORY_LABELS[cat.id]}_`;
+      for (const line of lines) {
+        if (chunk.length + line.length + 1 > 2900) {
+          blocks.push({ type: "section", text: { type: "mrkdwn", text: chunk } });
+          chunk = "";
+        }
+        chunk += `\n${line}`;
+      }
+      blocks.push({ type: "section", text: { type: "mrkdwn", text: chunk } });
     }
-    blocks.push({ type: "section", text: { type: "mrkdwn", text: chunk } });
+    if (inRegion.length > listed) {
+      blocks.push({ type: "context", elements: [{ type: "mrkdwn", text: `+${inRegion.length - listed} more in ${region.name} on <${SITE}?region=${region.id}|the job board>` }] });
+    }
   }
-  if (n > listed) {
-    blocks.push({ type: "context", elements: [{ type: "mrkdwn", text: `+${n - listed} more on <${SITE}|the job board>` }] });
-  }
-  return { text: `${n} new public-sector job${n === 1 ? "" : "s"} today — ${SITE}`, blocks, unfurl_links: false, unfurl_media: false };
+  return { text: `${n} new public-sector job${n === 1 ? "" : "s"} today — ${SITE}`, blocks: blocks.slice(0, 50), unfurl_links: false, unfurl_media: false };
 }
 
 export async function postToSlack(message) {
