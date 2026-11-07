@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06T21:48:36.903Z",
+ "updated": "2026-11-07T19:01:36.012Z",
  "regions": [
   {
    "id": "socal",
@@ -374,21 +374,21 @@
    "id": "lacounty",
    "name": "County of Los Angeles",
    "ok": true,
-   "total": 420,
+   "total": 416,
    "listed": 7
   },
   {
    "id": "metro",
    "name": "LA Metro",
    "ok": true,
-   "total": 11,
+   "total": 10,
    "listed": 0
   },
   {
    "id": "metrolink",
    "name": "Metrolink (SCRRA)",
    "ok": true,
-   "total": 7,
+   "total": 4,
    "listed": 0
   },
   {
@@ -402,49 +402,49 @@
    "id": "caltrans7",
    "name": "Caltrans District 7 (LA & Ventura)",
    "ok": true,
-   "total": 12,
+   "total": 10,
    "listed": 3
   },
   {
    "id": "longbeach",
    "name": "City of Long Beach",
    "ok": true,
-   "total": 35,
+   "total": 34,
    "listed": 4
   },
   {
    "id": "pasadena",
    "name": "City of Pasadena",
    "ok": true,
-   "total": 20,
+   "total": 19,
    "listed": 2
   },
   {
    "id": "santamonica",
    "name": "City of Santa Monica (incl. Big Blue Bus)",
    "ok": true,
-   "total": 13,
+   "total": 10,
    "listed": 1
   },
   {
    "id": "glendale",
    "name": "City of Glendale",
    "ok": true,
-   "total": 8,
+   "total": 9,
    "listed": 1
   },
   {
    "id": "burbank",
    "name": "City of Burbank",
    "ok": true,
-   "total": 12,
+   "total": 10,
    "listed": 0
   },
   {
    "id": "culvercity",
    "name": "Culver City (incl. CityBus)",
    "ok": true,
-   "total": 7,
+   "total": 5,
    "listed": 1
   },
   {
@@ -465,7 +465,7 @@
    "id": "torrance",
    "name": "City of Torrance (incl. Torrance Transit)",
    "ok": true,
-   "total": 31,
+   "total": 30,
    "listed": 5
   },
   {
@@ -486,14 +486,14 @@
    "id": "sf",
    "name": "City & County of San Francisco (incl. SFMTA)",
    "ok": true,
-   "total": 156,
-   "listed": 5
+   "total": 158,
+   "listed": 8
   },
   {
    "id": "oakland",
    "name": "City of Oakland",
    "ok": true,
-   "total": 36,
+   "total": 34,
    "listed": 3
   },
   {
@@ -501,13 +501,13 @@
    "name": "City of San José",
    "ok": true,
    "total": 35,
-   "listed": 2
+   "listed": 3
   },
   {
    "id": "santaclara",
    "name": "City of Santa Clara",
    "ok": true,
-   "total": 38,
+   "total": 39,
    "listed": 1
   },
   {
@@ -570,7 +570,7 @@
    "id": "paloalto",
    "name": "City of Palo Alto",
    "ok": true,
-   "total": 12,
+   "total": 11,
    "listed": 0
   },
   {
@@ -612,28 +612,28 @@
    "id": "santaclaracounty",
    "name": "County of Santa Clara",
    "ok": true,
-   "total": 55,
+   "total": 53,
    "listed": 2
   },
   {
    "id": "sanmateocounty",
    "name": "County of San Mateo",
    "ok": true,
-   "total": 89,
+   "total": 87,
    "listed": 0
   },
   {
    "id": "contracosta",
    "name": "County of Contra Costa",
    "ok": true,
-   "total": 70,
+   "total": 69,
    "listed": 0
   },
   {
    "id": "marin",
    "name": "County of Marin",
    "ok": true,
-   "total": 39,
+   "total": 37,
    "listed": 2
   },
   {
@@ -647,29 +647,29 @@
    "id": "solano",
    "name": "County of Solano",
    "ok": true,
-   "total": 61,
-   "listed": 3
+   "total": 60,
+   "listed": 2
   },
   {
    "id": "napa",
    "name": "County of Napa",
    "ok": true,
-   "total": 16,
+   "total": 17,
    "listed": 0
   },
   {
    "id": "bart",
    "name": "BART",
    "ok": true,
-   "total": 21,
+   "total": 20,
    "listed": 2
   },
   {
    "id": "vta",
    "name": "VTA (Santa Clara Valley Transportation Authority)",
    "ok": true,
-   "total": 9,
-   "listed": 3
+   "total": 8,
+   "listed": 2
   },
   {
    "id": "mtc",
@@ -703,18 +703,122 @@
    "id": "caltrans4",
    "name": "Caltrans District 4 (Bay Area)",
    "ok": true,
-   "total": 19,
-   "listed": 4
+   "total": 16,
+   "listed": 3
   },
   {
    "id": "caltranshq",
    "name": "Caltrans Headquarters (Sacramento)",
    "ok": true,
-   "total": 40,
-   "listed": 16
+   "total": 34,
+   "listed": 14
   }
  ],
  "jobs": [
+  {
+   "id": "sf:3743990016714826",
+   "agency": "sf",
+   "title": "San Francisco Municipal Transportation Agency Student Intern Program, Summer 2027 – 5380 Engineering Intern (Level 1)",
+   "department": "Municipal Transportation Agency",
+   "location": "San Francisco, CA",
+   "jobType": "",
+   "salary": null,
+   "posted": "2026-11-07",
+   "closes": null,
+   "url": "https://jobs.smartrecruiters.com/CityAndCountyOfSanFrancisco1/3743990016714826",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-07"
+  },
+  {
+   "id": "sf:3743990016714676",
+   "agency": "sf",
+   "title": "San Francisco Municipal Transportation Agency Student Intern Program, Summer 2027 – 5380 Planning Intern (Level 1)",
+   "department": "Municipal Transportation Agency",
+   "location": "San Francisco, CA",
+   "jobType": "",
+   "salary": null,
+   "posted": "2026-11-07",
+   "closes": null,
+   "url": "https://jobs.smartrecruiters.com/CityAndCountyOfSanFrancisco1/3743990016714676",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-07"
+  },
+  {
+   "id": "sf:3743990016714546",
+   "agency": "sf",
+   "title": "San Francisco Municipal Transportation Agency Student Intern Program, Summer 2027 – 5381 Engineering Intern (Level 2)",
+   "department": "Municipal Transportation Agency",
+   "location": "San Francisco, CA",
+   "jobType": "",
+   "salary": null,
+   "posted": "2026-11-07",
+   "closes": null,
+   "url": "https://jobs.smartrecruiters.com/CityAndCountyOfSanFrancisco1/3743990016714546",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-07"
+  },
+  {
+   "id": "sf:3743990016714356",
+   "agency": "sf",
+   "title": "San Francisco Municipal Transportation Agency Student Intern Program, Summer 2027 – 5381 Planning Intern (Level 2)",
+   "department": "Municipal Transportation Agency",
+   "location": "San Francisco, CA",
+   "jobType": "",
+   "salary": null,
+   "posted": "2026-11-07",
+   "closes": null,
+   "url": "https://jobs.smartrecruiters.com/CityAndCountyOfSanFrancisco1/3743990016714356",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-07"
+  },
+  {
+   "id": "sanjose:5543719",
+   "agency": "sanjose",
+   "title": "Public Information Representative I/ II - Library Department",
+   "department": "Library",
+   "location": "San Jose",
+   "jobType": "Full-Time",
+   "salary": {
+    "min": 110313.84,
+    "max": 121605.12,
+    "interval": "year"
+   },
+   "posted": "2026-11-06",
+   "closes": "2026-11-23",
+   "url": "https://www.governmentjobs.com/careers/sanjoseca/jobs/5543719-0",
+   "summary": "The award-winning San José Public Library (SJPL) consists of more than 550 employees and has a 23% bilingual workforce, with 24 branch libraries across San José, in addition to the Dr. Martin Luther King, Jr. Library, the city’s main library jointly operated through a unique partnership with San José State University. SJPL currently has more than 760,000 members and serves a diverse community of r",
+   "internalOnly": false,
+   "categories": [
+    "outreach"
+   ],
+   "core": false,
+   "region": "norcal",
+   "firstSeen": "2026-11-07"
+  },
   {
    "id": "longbeach:5541432",
    "agency": "longbeach",
@@ -788,6 +892,30 @@
    "firstSeen": "2026-11-06"
   },
   {
+   "id": "caltrans:538214",
+   "agency": "caltranshq",
+   "title": "Office Chief",
+   "department": "SUPERVISING TRANSPORTATION ENGINEER, CALTRANS",
+   "location": "Sacramento County",
+   "jobType": "Permanent Fulltime, Hybrid",
+   "salary": {
+    "min": 13892,
+    "max": 15782,
+    "interval": "month"
+   },
+   "posted": "2026-11-06",
+   "closes": "2026-11-23",
+   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=538214",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
    "id": "caltrans:538180",
    "agency": "caltranshq",
    "title": "Office Chief, Office of Program Management",
@@ -807,30 +935,6 @@
    "categories": [
     "engineering",
     "pm"
-   ],
-   "core": true,
-   "region": "norcal",
-   "firstSeen": "2026-11-06"
-  },
-  {
-   "id": "caltrans:538214",
-   "agency": "caltranshq",
-   "title": "Office Chief",
-   "department": "SUPERVISING TRANSPORTATION ENGINEER, CALTRANS",
-   "location": "Sacramento County",
-   "jobType": "Permanent Fulltime, Hybrid",
-   "salary": {
-    "min": 13892,
-    "max": 15782,
-    "interval": "month"
-   },
-   "posted": "2026-11-06",
-   "closes": "2026-11-23",
-   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=538214",
-   "summary": "",
-   "internalOnly": false,
-   "categories": [
-    "engineering"
    ],
    "core": true,
    "region": "norcal",
@@ -1031,30 +1135,6 @@
    "firstSeen": "2026-11-06"
   },
   {
-   "id": "caltrans:538058",
-   "agency": "caltranshq",
-   "title": "Project Support Engineer",
-   "department": "SENIOR TRANSPORTATION ENGINEER, CALTRANS",
-   "location": "Sacramento County",
-   "jobType": "Permanent Fulltime, Hybrid",
-   "salary": {
-    "min": 11437,
-    "max": 14315,
-    "interval": "month"
-   },
-   "posted": "2026-11-04",
-   "closes": "2026-11-14",
-   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=538058",
-   "summary": "",
-   "internalOnly": false,
-   "categories": [
-    "engineering"
-   ],
-   "core": true,
-   "region": "norcal",
-   "firstSeen": "2026-11-06"
-  },
-  {
    "id": "caltrans:538011",
    "agency": "caltranshq",
    "title": "Construction Storm Water Coordinator",
@@ -1069,6 +1149,30 @@
    "posted": "2026-11-04",
    "closes": "2026-11-14",
    "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=538011",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "caltrans:538058",
+   "agency": "caltranshq",
+   "title": "Project Support Engineer",
+   "department": "SENIOR TRANSPORTATION ENGINEER, CALTRANS",
+   "location": "Sacramento County",
+   "jobType": "Permanent Fulltime, Hybrid",
+   "salary": {
+    "min": 11437,
+    "max": 14315,
+    "interval": "month"
+   },
+   "posted": "2026-11-04",
+   "closes": "2026-11-14",
+   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=538058",
    "summary": "",
    "internalOnly": false,
    "categories": [
@@ -1552,26 +1656,6 @@
    "firstSeen": "2026-11-06"
   },
   {
-   "id": "sf:3743990016375096",
-   "agency": "sf",
-   "title": "Project Manager II - Streets Division - San Francisco Municipal Transportation Agency (5504)",
-   "department": "Municipal Transportation Agency",
-   "location": "San Francisco, CA",
-   "jobType": "Full-time",
-   "salary": null,
-   "posted": "2026-10-23",
-   "closes": null,
-   "url": "https://jobs.smartrecruiters.com/CityAndCountyOfSanFrancisco1/3743990016375096",
-   "summary": "",
-   "internalOnly": false,
-   "categories": [
-    "pm"
-   ],
-   "core": true,
-   "region": "norcal",
-   "firstSeen": "2026-11-06"
-  },
-  {
    "id": "vallejo:5501255",
    "agency": "vallejo",
    "title": "Construction Inspector I/II",
@@ -1640,30 +1724,6 @@
     "engineering"
    ],
    "core": true,
-   "region": "norcal",
-   "firstSeen": "2026-11-06"
-  },
-  {
-   "id": "caltrans:536373",
-   "agency": "caltranshq",
-   "title": "Senior Project Engineer - Signs & Overhead Structures",
-   "department": "SENIOR BRIDGE ENGINEER",
-   "location": "Sacramento County",
-   "jobType": "Permanent Fulltime, Hybrid",
-   "salary": {
-    "min": 11437,
-    "max": 14315,
-    "interval": "month"
-   },
-   "posted": "2026-10-21",
-   "closes": "2026-11-06",
-   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=536373",
-   "summary": "",
-   "internalOnly": false,
-   "categories": [
-    "pm"
-   ],
-   "core": false,
    "region": "norcal",
    "firstSeen": "2026-11-06"
   },
@@ -1880,78 +1940,6 @@
     "engineering"
    ],
    "core": true,
-   "region": "norcal",
-   "firstSeen": "2026-11-06"
-  },
-  {
-   "id": "caltrans:534795",
-   "agency": "caltrans4",
-   "title": "Field Survey Crew Chief",
-   "department": "TRANSPORTATION SURVEYOR PARTY CHIEF (CALTRANS)",
-   "location": "Alameda County",
-   "jobType": "Permanent Fulltime, Hybrid",
-   "salary": {
-    "min": 10198,
-    "max": 12761,
-    "interval": "month"
-   },
-   "posted": "2026-10-07",
-   "closes": "2026-11-06",
-   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=534795",
-   "summary": "",
-   "internalOnly": false,
-   "categories": [
-    "engineering"
-   ],
-   "core": true,
-   "region": "norcal",
-   "firstSeen": "2026-11-06"
-  },
-  {
-   "id": "caltrans:533881",
-   "agency": "caltranshq",
-   "title": "Senior TMS Maintenance Engineer",
-   "department": "SENIOR TRANSPORTATION ELECTRICAL ENGINEER (SUPERVISOR)",
-   "location": "Sacramento County",
-   "jobType": "Permanent Fulltime, Hybrid",
-   "salary": {
-    "min": 11437,
-    "max": 14315,
-    "interval": "month"
-   },
-   "posted": "2026-10-05",
-   "closes": "2026-11-06",
-   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=533881",
-   "summary": "",
-   "internalOnly": false,
-   "categories": [
-    "engineering"
-   ],
-   "core": true,
-   "region": "norcal",
-   "firstSeen": "2026-11-06"
-  },
-  {
-   "id": "solano:5465569",
-   "agency": "solano",
-   "title": "Cadastral Mapping Technician II",
-   "department": "Dept of Information Technology",
-   "location": "675 Texas Street, Fairfield",
-   "jobType": "Full-Time",
-   "salary": {
-    "min": 33.076409,
-    "max": 40.204579,
-    "interval": "hour"
-   },
-   "posted": "2026-09-25",
-   "closes": "2026-11-06",
-   "url": "https://www.governmentjobs.com/careers/solanocounty/jobs/5465569-0",
-   "summary": "Solano County Department of Information Technology (DoIT) provides customer-oriented and convenient access to information and services through the use of technology; anytime - anywhere. The County strives for cost-effective use of technology, with interactive exchange and sharing of data within departments, with constituents, with other governments and business partners. The guiding principles of ",
-   "internalOnly": false,
-   "categories": [
-    "gis"
-   ],
-   "core": false,
    "region": "norcal",
    "firstSeen": "2026-11-06"
   },
@@ -2276,30 +2264,6 @@
    "closes": "continuous",
    "url": "https://www.governmentjobs.com/careers/solanocounty/jobs/5316486-0",
    "summary": "Delivering Solutions for a Safe Community The Department of Resource Management is a comprehensive agency comprised of the Public Works, Building and Safety, Planning Services, Environmental Health Services, Parks, and Administrative Services Divisions. The department provides for the well-being of Solano County's present and future residents and the public at-large through administration and enfo",
-   "internalOnly": false,
-   "categories": [
-    "engineering"
-   ],
-   "core": true,
-   "region": "norcal",
-   "firstSeen": "2026-11-06"
-  },
-  {
-   "id": "vta:5242744",
-   "agency": "vta",
-   "title": "Senior Transportation Engineer - QA",
-   "department": "Engineering & Program Delivery",
-   "location": "San Jose, CA 95134-1927",
-   "jobType": "Full-Time",
-   "salary": {
-    "min": 170830.14,
-    "max": 207624.56,
-    "interval": "year"
-   },
-   "posted": "2026-03-09",
-   "closes": "continuous",
-   "url": "https://www.governmentjobs.com/careers/vtasantaclara/jobs/5242744-0",
-   "summary": "VTA’s Engineering and Program Delivery (EPD) Division is seeking a Senior Transportation Engineer for the Quality Assurance (QA) Group under the Technical Services Department. Quality Assurance Group: The QA Group supports all capital improvement programs for the Division during planning, design, procurement, construction and closeout phases of highway, rail, transit and facilities projects. As a ",
    "internalOnly": false,
    "categories": [
     "engineering"
