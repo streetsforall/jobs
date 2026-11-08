@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T19:01:36.012Z",
+ "updated": "2026-11-08T19:05:56.421Z",
  "regions": [
   {
    "id": "socal",
@@ -409,7 +409,7 @@
    "id": "longbeach",
    "name": "City of Long Beach",
    "ok": true,
-   "total": 34,
+   "total": 32,
    "listed": 4
   },
   {
@@ -633,7 +633,7 @@
    "id": "marin",
    "name": "County of Marin",
    "ok": true,
-   "total": 37,
+   "total": 36,
    "listed": 2
   },
   {
@@ -710,7 +710,7 @@
    "id": "caltranshq",
    "name": "Caltrans Headquarters (Sacramento)",
    "ok": true,
-   "total": 34,
+   "total": 33,
    "listed": 14
   }
  ],
@@ -892,30 +892,6 @@
    "firstSeen": "2026-11-06"
   },
   {
-   "id": "caltrans:538214",
-   "agency": "caltranshq",
-   "title": "Office Chief",
-   "department": "SUPERVISING TRANSPORTATION ENGINEER, CALTRANS",
-   "location": "Sacramento County",
-   "jobType": "Permanent Fulltime, Hybrid",
-   "salary": {
-    "min": 13892,
-    "max": 15782,
-    "interval": "month"
-   },
-   "posted": "2026-11-06",
-   "closes": "2026-11-23",
-   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=538214",
-   "summary": "",
-   "internalOnly": false,
-   "categories": [
-    "engineering"
-   ],
-   "core": true,
-   "region": "norcal",
-   "firstSeen": "2026-11-06"
-  },
-  {
    "id": "caltrans:538180",
    "agency": "caltranshq",
    "title": "Office Chief, Office of Program Management",
@@ -935,6 +911,30 @@
    "categories": [
     "engineering",
     "pm"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "caltrans:538214",
+   "agency": "caltranshq",
+   "title": "Office Chief",
+   "department": "SUPERVISING TRANSPORTATION ENGINEER, CALTRANS",
+   "location": "Sacramento County",
+   "jobType": "Permanent Fulltime, Hybrid",
+   "salary": {
+    "min": 13892,
+    "max": 15782,
+    "interval": "month"
+   },
+   "posted": "2026-11-06",
+   "closes": "2026-11-23",
+   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=538214",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
    ],
    "core": true,
    "region": "norcal",
