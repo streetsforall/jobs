@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T19:05:56.421Z",
+ "updated": "2026-11-09T23:33:44.080Z",
  "regions": [
   {
    "id": "socal",
@@ -367,28 +367,28 @@
    "id": "lacity",
    "name": "City of Los Angeles",
    "ok": true,
-   "total": 53,
+   "total": 52,
    "listed": 3
   },
   {
    "id": "lacounty",
    "name": "County of Los Angeles",
    "ok": true,
-   "total": 416,
+   "total": 418,
    "listed": 7
   },
   {
    "id": "metro",
    "name": "LA Metro",
    "ok": true,
-   "total": 10,
+   "total": 11,
    "listed": 0
   },
   {
    "id": "metrolink",
    "name": "Metrolink (SCRRA)",
    "ok": true,
-   "total": 4,
+   "total": 3,
    "listed": 0
   },
   {
@@ -409,7 +409,7 @@
    "id": "longbeach",
    "name": "City of Long Beach",
    "ok": true,
-   "total": 32,
+   "total": 33,
    "listed": 4
   },
   {
@@ -423,14 +423,14 @@
    "id": "santamonica",
    "name": "City of Santa Monica (incl. Big Blue Bus)",
    "ok": true,
-   "total": 10,
+   "total": 11,
    "listed": 1
   },
   {
    "id": "glendale",
    "name": "City of Glendale",
    "ok": true,
-   "total": 9,
+   "total": 13,
    "listed": 1
   },
   {
@@ -444,7 +444,7 @@
    "id": "culvercity",
    "name": "Culver City (incl. CityBus)",
    "ok": true,
-   "total": 5,
+   "total": 7,
    "listed": 1
   },
   {
@@ -486,22 +486,22 @@
    "id": "sf",
    "name": "City & County of San Francisco (incl. SFMTA)",
    "ok": true,
-   "total": 158,
+   "total": 164,
    "listed": 8
   },
   {
    "id": "oakland",
    "name": "City of Oakland",
    "ok": true,
-   "total": 34,
+   "total": 33,
    "listed": 3
   },
   {
    "id": "sanjose",
    "name": "City of San José",
    "ok": true,
-   "total": 35,
-   "listed": 3
+   "total": 38,
+   "listed": 4
   },
   {
    "id": "santaclara",
@@ -521,7 +521,7 @@
    "id": "berkeley",
    "name": "City of Berkeley",
    "ok": true,
-   "total": 13,
+   "total": 18,
    "listed": 2
   },
   {
@@ -570,7 +570,7 @@
    "id": "paloalto",
    "name": "City of Palo Alto",
    "ok": true,
-   "total": 11,
+   "total": 9,
    "listed": 0
   },
   {
@@ -598,7 +598,7 @@
    "id": "santarosa",
    "name": "City of Santa Rosa",
    "ok": true,
-   "total": 12,
+   "total": 11,
    "listed": 1
   },
   {
@@ -612,7 +612,7 @@
    "id": "santaclaracounty",
    "name": "County of Santa Clara",
    "ok": true,
-   "total": 53,
+   "total": 55,
    "listed": 2
   },
   {
@@ -640,7 +640,7 @@
    "id": "sonoma",
    "name": "County of Sonoma",
    "ok": true,
-   "total": 35,
+   "total": 36,
    "listed": 0
   },
   {
@@ -661,21 +661,21 @@
    "id": "bart",
    "name": "BART",
    "ok": true,
-   "total": 20,
-   "listed": 2
+   "total": 22,
+   "listed": 3
   },
   {
    "id": "vta",
    "name": "VTA (Santa Clara Valley Transportation Authority)",
    "ok": true,
-   "total": 8,
-   "listed": 2
+   "total": 10,
+   "listed": 3
   },
   {
    "id": "mtc",
    "name": "MTC / ABAG (Bay Area Metro)",
    "ok": true,
-   "total": 6,
+   "total": 5,
    "listed": 0
   },
   {
@@ -689,14 +689,14 @@
    "id": "samtrans",
    "name": "SamTrans / Caltrain",
    "ok": true,
-   "total": 20,
-   "listed": 9
+   "total": 18,
+   "listed": 8
   },
   {
    "id": "goldengate",
    "name": "Golden Gate Bridge, Highway & Transportation District",
    "ok": true,
-   "total": 13,
+   "total": 15,
    "listed": 1
   },
   {
@@ -710,22 +710,22 @@
    "id": "caltranshq",
    "name": "Caltrans Headquarters (Sacramento)",
    "ok": true,
-   "total": 33,
+   "total": 34,
    "listed": 14
   }
  ],
  "jobs": [
   {
-   "id": "sf:3743990016714826",
+   "id": "sf:3743990016732506",
    "agency": "sf",
    "title": "San Francisco Municipal Transportation Agency Student Intern Program, Summer 2027 – 5380 Engineering Intern (Level 1)",
    "department": "Municipal Transportation Agency",
    "location": "San Francisco, CA",
    "jobType": "",
    "salary": null,
-   "posted": "2026-11-07",
+   "posted": "2026-11-09",
    "closes": null,
-   "url": "https://jobs.smartrecruiters.com/CityAndCountyOfSanFrancisco1/3743990016714826",
+   "url": "https://jobs.smartrecruiters.com/CityAndCountyOfSanFrancisco1/3743990016732506",
    "summary": "",
    "internalOnly": false,
    "categories": [
@@ -733,7 +733,103 @@
    ],
    "core": true,
    "region": "norcal",
-   "firstSeen": "2026-11-07"
+   "firstSeen": "2026-11-09"
+  },
+  {
+   "id": "sanjose:5544586",
+   "agency": "sanjose",
+   "title": "Associate Engineer - Public Works, Transportation and Hydraulics Services",
+   "department": "Public Works",
+   "location": "San Jose Metropolitan Area",
+   "jobType": "Full-Time",
+   "salary": {
+    "min": 140059.92,
+    "max": 177253.44,
+    "interval": "year"
+   },
+   "posted": "2026-11-09",
+   "closes": "2026-11-23",
+   "url": "https://www.governmentjobs.com/careers/sanjoseca/jobs/5544586-0",
+   "summary": "The City of San José, the Capital of Silicon Valley, is one of the nation's best managed cities in which to live, work, and do business. Moreover, San José is the center of cultural, government and economic activity for the region. The employees of the City of San José have embraced the following values: Integrity, Innovation, Excellence, Collaboration, Respect and Celebration. The City's Departme",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-09"
+  },
+  {
+   "id": "bart:5537232",
+   "agency": "bart",
+   "title": "Project Manager, Accessibility",
+   "department": "Infrastructure Delivery",
+   "location": "BART Headquarters",
+   "jobType": "Full-Time",
+   "salary": {
+    "min": 160800,
+    "max": 243612,
+    "interval": "year"
+   },
+   "posted": "2026-11-09",
+   "closes": "2026-11-20",
+   "url": "https://www.governmentjobs.com/careers/bartca/jobs/5537232-0",
+   "summary": "Pay Rate: Non-Rep Salary Grade E09 Annual Salary Range: $160,800.00 (Minimum) - $243,612.00 (Maximum) *The starting negotiable annual salary for this position will be $160,800.00 (minimum) - $202,206.00 (midpoint) to commensurate with education and experience. Reports To: Senior Manager of Engineering Programs Days Off: Saturday and Sunday Who May Apply: All current BART employees and Future BART ",
+   "internalOnly": false,
+   "categories": [
+    "pm"
+   ],
+   "core": false,
+   "region": "norcal",
+   "firstSeen": "2026-11-09"
+  },
+  {
+   "id": "vta:5521222",
+   "agency": "vta",
+   "title": "Transit Service Planning Manager",
+   "department": "Planning",
+   "location": "San Jose, CA 95134-1927",
+   "jobType": "Full-Time",
+   "salary": {
+    "min": 6595.64,
+    "max": 8017.11,
+    "interval": "biweekly"
+   },
+   "posted": "2026-11-09",
+   "closes": "2026-12-11",
+   "url": "https://www.governmentjobs.com/careers/vtasantaclara/jobs/5521222-0",
+   "summary": "VTA's Planning Division is seeking qualified candidates for the position of Transit Service Planning Manager! Help shape how more than four million residents and visitors move through Silicon Valley by leading transit service planning for one of the Bay Area’s largest multimodal transit networks. Planning Division VTA’s Planning Division includes approximately 80 staff across four functional areas",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-09"
+  },
+  {
+   "id": "caltrans:538408",
+   "agency": "caltranshq",
+   "title": "SENIOR TRANSPORTATION ELECTRICAL ENGINEER (SPECIALIST)",
+   "department": "",
+   "location": "Sacramento County",
+   "jobType": "Permanent Fulltime, Hybrid",
+   "salary": {
+    "min": 11437,
+    "max": 14315,
+    "interval": "month"
+   },
+   "posted": "2026-11-09",
+   "closes": "2026-11-28",
+   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=538408",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-09"
   },
   {
    "id": "sf:3743990016714676",
@@ -1135,30 +1231,6 @@
    "firstSeen": "2026-11-06"
   },
   {
-   "id": "caltrans:538011",
-   "agency": "caltranshq",
-   "title": "Construction Storm Water Coordinator",
-   "department": "SENIOR TRANSPORTATION ENGINEER, CALTRANS",
-   "location": "Sacramento County",
-   "jobType": "Permanent Fulltime, Hybrid",
-   "salary": {
-    "min": 11437,
-    "max": 14315,
-    "interval": "month"
-   },
-   "posted": "2026-11-04",
-   "closes": "2026-11-14",
-   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=538011",
-   "summary": "",
-   "internalOnly": false,
-   "categories": [
-    "engineering"
-   ],
-   "core": true,
-   "region": "norcal",
-   "firstSeen": "2026-11-06"
-  },
-  {
    "id": "caltrans:538058",
    "agency": "caltranshq",
    "title": "Project Support Engineer",
@@ -1173,6 +1245,30 @@
    "posted": "2026-11-04",
    "closes": "2026-11-14",
    "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=538058",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "caltrans:538011",
+   "agency": "caltranshq",
+   "title": "Construction Storm Water Coordinator",
+   "department": "SENIOR TRANSPORTATION ENGINEER, CALTRANS",
+   "location": "Sacramento County",
+   "jobType": "Permanent Fulltime, Hybrid",
+   "salary": {
+    "min": 11437,
+    "max": 14315,
+    "interval": "month"
+   },
+   "posted": "2026-11-04",
+   "closes": "2026-11-14",
+   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=538011",
    "summary": "",
    "internalOnly": false,
    "categories": [
@@ -1487,30 +1583,6 @@
    "firstSeen": "2026-11-06"
   },
   {
-   "id": "caltrans:537311",
-   "agency": "caltranshq",
-   "title": "Rail/Transit Programs Coordinator",
-   "department": "SUPERVISOR I",
-   "location": "Sacramento County",
-   "jobType": "Limited Term Fulltime, Hybrid",
-   "salary": {
-    "min": 7172,
-    "max": 8910,
-    "interval": "month"
-   },
-   "posted": "2026-10-29",
-   "closes": "2026-11-08",
-   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=537311",
-   "summary": "",
-   "internalOnly": false,
-   "categories": [
-    "pm"
-   ],
-   "core": true,
-   "region": "norcal",
-   "firstSeen": "2026-11-06"
-  },
-  {
    "id": "caltrans:537087",
    "agency": "caltrans7",
    "title": "Local Development Review Coordinator",
@@ -1796,30 +1868,6 @@
     "engineering"
    ],
    "core": true,
-   "region": "norcal",
-   "firstSeen": "2026-11-06"
-  },
-  {
-   "id": "samtrans:5520314",
-   "agency": "samtrans",
-   "title": "Public Information Officer",
-   "department": "Communications",
-   "location": "Millbrae, CA",
-   "jobType": "Full-Time",
-   "salary": {
-    "min": 3827.34,
-    "max": 5741.03,
-    "interval": "biweekly"
-   },
-   "posted": "2026-10-16",
-   "closes": "2026-11-08",
-   "url": "https://www.governmentjobs.com/careers/smctd/jobs/5520314-0",
-   "summary": "The Public Information Officer will report to the Manager, Communications and will manage media relations for the San Mateo County Transit District (SamTrans), the Peninsula Corridor Joint Powers Board (Caltrain) and the San Mateo County Transportation Authority (SMCTA), and the San Mateo 101 Express Lanes",
-   "internalOnly": false,
-   "categories": [
-    "outreach"
-   ],
-   "core": false,
    "region": "norcal",
    "firstSeen": "2026-11-06"
   },
