@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09T23:33:44.080Z",
+ "updated": "2026-11-12T15:29:20.384Z",
  "regions": [
   {
    "id": "socal",
@@ -374,14 +374,14 @@
    "id": "lacounty",
    "name": "County of Los Angeles",
    "ok": true,
-   "total": 418,
-   "listed": 7
+   "total": 414,
+   "listed": 6
   },
   {
    "id": "metro",
    "name": "LA Metro",
    "ok": true,
-   "total": 11,
+   "total": 12,
    "listed": 0
   },
   {
@@ -402,14 +402,14 @@
    "id": "caltrans7",
    "name": "Caltrans District 7 (LA & Ventura)",
    "ok": true,
-   "total": 10,
-   "listed": 3
+   "total": 9,
+   "listed": 2
   },
   {
    "id": "longbeach",
    "name": "City of Long Beach",
    "ok": true,
-   "total": 33,
+   "total": 32,
    "listed": 4
   },
   {
@@ -423,7 +423,7 @@
    "id": "santamonica",
    "name": "City of Santa Monica (incl. Big Blue Bus)",
    "ok": true,
-   "total": 11,
+   "total": 12,
    "listed": 1
   },
   {
@@ -444,14 +444,14 @@
    "id": "culvercity",
    "name": "Culver City (incl. CityBus)",
    "ok": true,
-   "total": 7,
+   "total": 8,
    "listed": 1
   },
   {
    "id": "weho",
    "name": "City of West Hollywood",
    "ok": true,
-   "total": 1,
+   "total": 0,
    "listed": 0
   },
   {
@@ -465,7 +465,7 @@
    "id": "torrance",
    "name": "City of Torrance (incl. Torrance Transit)",
    "ok": true,
-   "total": 30,
+   "total": 32,
    "listed": 5
   },
   {
@@ -486,21 +486,21 @@
    "id": "sf",
    "name": "City & County of San Francisco (incl. SFMTA)",
    "ok": true,
-   "total": 164,
-   "listed": 8
+   "total": 161,
+   "listed": 9
   },
   {
    "id": "oakland",
    "name": "City of Oakland",
    "ok": true,
-   "total": 33,
+   "total": 34,
    "listed": 3
   },
   {
    "id": "sanjose",
    "name": "City of San José",
    "ok": true,
-   "total": 38,
+   "total": 41,
    "listed": 4
   },
   {
@@ -521,14 +521,14 @@
    "id": "berkeley",
    "name": "City of Berkeley",
    "ok": true,
-   "total": 18,
+   "total": 17,
    "listed": 2
   },
   {
    "id": "fremont",
    "name": "City of Fremont",
    "ok": true,
-   "total": 17,
+   "total": 16,
    "listed": 4
   },
   {
@@ -549,14 +549,14 @@
    "id": "richmond",
    "name": "City of Richmond",
    "ok": true,
-   "total": 16,
+   "total": 15,
    "listed": 0
   },
   {
    "id": "concord",
    "name": "City of Concord",
    "ok": true,
-   "total": 20,
+   "total": 19,
    "listed": 1
   },
   {
@@ -584,21 +584,21 @@
    "id": "sunnyvale",
    "name": "City of Sunnyvale",
    "ok": true,
-   "total": 21,
+   "total": 20,
    "listed": 0
   },
   {
    "id": "vallejo",
    "name": "City of Vallejo",
    "ok": true,
-   "total": 9,
+   "total": 8,
    "listed": 1
   },
   {
    "id": "santarosa",
    "name": "City of Santa Rosa",
    "ok": true,
-   "total": 11,
+   "total": 10,
    "listed": 1
   },
   {
@@ -612,7 +612,7 @@
    "id": "santaclaracounty",
    "name": "County of Santa Clara",
    "ok": true,
-   "total": 55,
+   "total": 52,
    "listed": 2
   },
   {
@@ -626,21 +626,21 @@
    "id": "contracosta",
    "name": "County of Contra Costa",
    "ok": true,
-   "total": 69,
+   "total": 68,
    "listed": 0
   },
   {
    "id": "marin",
    "name": "County of Marin",
    "ok": true,
-   "total": 36,
+   "total": 38,
    "listed": 2
   },
   {
    "id": "sonoma",
    "name": "County of Sonoma",
    "ok": true,
-   "total": 36,
+   "total": 32,
    "listed": 0
   },
   {
@@ -654,21 +654,21 @@
    "id": "napa",
    "name": "County of Napa",
    "ok": true,
-   "total": 17,
+   "total": 16,
    "listed": 0
   },
   {
    "id": "bart",
    "name": "BART",
    "ok": true,
-   "total": 22,
-   "listed": 3
+   "total": 24,
+   "listed": 4
   },
   {
    "id": "vta",
    "name": "VTA (Santa Clara Valley Transportation Authority)",
    "ok": true,
-   "total": 10,
+   "total": 9,
    "listed": 3
   },
   {
@@ -696,7 +696,7 @@
    "id": "goldengate",
    "name": "Golden Gate Bridge, Highway & Transportation District",
    "ok": true,
-   "total": 15,
+   "total": 14,
    "listed": 1
   },
   {
@@ -704,17 +704,85 @@
    "name": "Caltrans District 4 (Bay Area)",
    "ok": true,
    "total": 16,
-   "listed": 3
+   "listed": 4
   },
   {
    "id": "caltranshq",
    "name": "Caltrans Headquarters (Sacramento)",
    "ok": true,
-   "total": 34,
-   "listed": 14
+   "total": 33,
+   "listed": 13
   }
  ],
  "jobs": [
+  {
+   "id": "sf:3743990016783326",
+   "agency": "sf",
+   "title": "Senior Administrative Analyst, Transit Division, SFMTA (1823)",
+   "department": "Municipal Transportation Agency",
+   "location": "San Francisco, CA",
+   "jobType": "Full-time",
+   "salary": null,
+   "posted": "2026-11-11",
+   "closes": null,
+   "url": "https://jobs.smartrecruiters.com/CityAndCountyOfSanFrancisco1/3743990016783326",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "pm"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-12"
+  },
+  {
+   "id": "caltrans:538534",
+   "agency": "caltrans4",
+   "title": "CEA B, Deputy District Director, Traffic Operations",
+   "department": "C. E. A.",
+   "location": "Alameda County",
+   "jobType": "Non-Tenured Fulltime, Hybrid",
+   "salary": {
+    "min": 12131,
+    "max": 18376,
+    "interval": "month"
+   },
+   "posted": "2026-11-10",
+   "closes": "2026-12-04",
+   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=538534",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-12"
+  },
+  {
+   "id": "bart:5521785",
+   "agency": "bart",
+   "title": "Project Manager (Transit-Oriented Development)",
+   "department": "Infrastructure Delivery",
+   "location": "BART Headquarters",
+   "jobType": "Full-Time",
+   "salary": {
+    "min": 160800,
+    "max": 243612,
+    "interval": "year"
+   },
+   "posted": "2026-11-09",
+   "closes": "2026-11-20",
+   "url": "https://www.governmentjobs.com/careers/bartca/jobs/5521785-0",
+   "summary": "Pay Rate Non-Represented Salary Grade E09 Annual Salary Range: $160,800.00 (minimum) - $243,612.00 (maximum) Note: The starting negotiable annual salary offer will be between $160.800.00 (minimum) - $210,042.48 (midpoint) to commensurate with education and experience. Reports To Engineering Manager Days Off Saturday/Sunday Who May Apply All current BART employees and Future BART employees Current ",
+   "internalOnly": false,
+   "categories": [
+    "pm"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-12"
+  },
   {
    "id": "sf:3743990016732506",
    "agency": "sf",
@@ -899,7 +967,7 @@
    "location": "San Jose",
    "jobType": "Full-Time",
    "salary": {
-    "min": 110313.84,
+    "min": 90657.84,
     "max": 121605.12,
     "interval": "year"
    },
@@ -988,6 +1056,30 @@
    "firstSeen": "2026-11-06"
   },
   {
+   "id": "caltrans:538214",
+   "agency": "caltranshq",
+   "title": "Office Chief",
+   "department": "SUPERVISING TRANSPORTATION ENGINEER, CALTRANS",
+   "location": "Sacramento County",
+   "jobType": "Permanent Fulltime, Hybrid",
+   "salary": {
+    "min": 13892,
+    "max": 15782,
+    "interval": "month"
+   },
+   "posted": "2026-11-06",
+   "closes": "2026-11-23",
+   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=538214",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
    "id": "caltrans:538180",
    "agency": "caltranshq",
    "title": "Office Chief, Office of Program Management",
@@ -1007,30 +1099,6 @@
    "categories": [
     "engineering",
     "pm"
-   ],
-   "core": true,
-   "region": "norcal",
-   "firstSeen": "2026-11-06"
-  },
-  {
-   "id": "caltrans:538214",
-   "agency": "caltranshq",
-   "title": "Office Chief",
-   "department": "SUPERVISING TRANSPORTATION ENGINEER, CALTRANS",
-   "location": "Sacramento County",
-   "jobType": "Permanent Fulltime, Hybrid",
-   "salary": {
-    "min": 13892,
-    "max": 15782,
-    "interval": "month"
-   },
-   "posted": "2026-11-06",
-   "closes": "2026-11-23",
-   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=538214",
-   "summary": "",
-   "internalOnly": false,
-   "categories": [
-    "engineering"
    ],
    "core": true,
    "region": "norcal",
@@ -1439,30 +1507,6 @@
    "firstSeen": "2026-11-06"
   },
   {
-   "id": "caltrans:537429",
-   "agency": "caltrans7",
-   "title": "Office Engineer, Field Inspector",
-   "department": "TRANSPORTATION ENGINEERING TECHNICIAN",
-   "location": "Los Angeles County",
-   "jobType": "Permanent Fulltime, In Office",
-   "salary": {
-    "min": 4695,
-    "max": 7063,
-    "interval": "month"
-   },
-   "posted": "2026-10-30",
-   "closes": "2026-11-09",
-   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=537429",
-   "summary": "",
-   "internalOnly": false,
-   "categories": [
-    "engineering"
-   ],
-   "core": true,
-   "region": "socal",
-   "firstSeen": "2026-11-06"
-  },
-  {
    "id": "bart:5532855",
    "agency": "bart",
    "title": "Senior Administrative Analyst, AFSCME (Transportation)",
@@ -1507,30 +1551,6 @@
     "pm"
    ],
    "core": false,
-   "region": "norcal",
-   "firstSeen": "2026-11-06"
-  },
-  {
-   "id": "caltrans:537292",
-   "agency": "caltranshq",
-   "title": "Principal Transportation Engineer",
-   "department": "PRINCIPAL TRANSPORTATION ENGINEER, CALTRANS",
-   "location": "Sacramento County",
-   "jobType": "Permanent Fulltime, Hybrid",
-   "salary": {
-    "min": 15263,
-    "max": 17336,
-    "interval": "month"
-   },
-   "posted": "2026-10-30",
-   "closes": "2026-11-09",
-   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=537292",
-   "summary": "",
-   "internalOnly": false,
-   "categories": [
-    "engineering"
-   ],
-   "core": true,
    "region": "norcal",
    "firstSeen": "2026-11-06"
   },
@@ -2381,7 +2401,7 @@
     "interval": "hour"
    },
    "posted": "2026-11-02",
-   "closes": "2026-11-12",
+   "closes": "2026-11-30",
    "url": "https://www.governmentjobs.com/careers/culvercity/jobs/5537114-0",
    "summary": "Culver City is a Charter City incorporated in 1917, and is a destination filled with outdoor cafes, unique shops and galleries opening onto pedestrian-friendly boulevards. Culver City has dedicated staff of approximately 800 employees with an overall operating budget of over $370 million. The City provides a full range of municipal services including Fire, Police, Housing & Human Services, Plannin",
    "internalOnly": false,
@@ -2437,30 +2457,6 @@
     "engineering"
    ],
    "core": false,
-   "region": "socal",
-   "firstSeen": "2026-11-05"
-  },
-  {
-   "id": "lacounty:5265302",
-   "agency": "lacounty",
-   "title": "SURVEY-MAPPING TECHNICIAN",
-   "department": "PUBLIC WORKS",
-   "location": "Los Angeles County",
-   "jobType": "Full time",
-   "salary": {
-    "min": 6306,
-    "max": 8049,
-    "interval": "month"
-   },
-   "posted": "2026-10-26",
-   "closes": "2026-11-09",
-   "url": "https://www.governmentjobs.com/careers/lacounty/jobs/5265302-0",
-   "summary": "EXAM NUMBER C3619K FILING PERIOD We will be accepting online applications from Tuesday, October 27, 2026, at 8:00 a.m. (PT) until Monday, November 9, 2026, 5:00 p.m. (PT). All applications must be received before 5:00 p.m. (PT) on Monday, November 9, 2026, to be accepted. TYPE OF RECRUITMENT We welcome applications from everyone! Why work for us?With almost 10 million residents, Los Angeles County",
-   "internalOnly": false,
-   "categories": [
-    "gis"
-   ],
-   "core": true,
    "region": "socal",
    "firstSeen": "2026-11-05"
   },
@@ -2849,7 +2845,7 @@
    "id": "torrance:5182381",
    "agency": "torrance",
    "title": "INTERACTIVE COMMUNICATIONS OFFICER (STAFF ASSISTANT) (ON-CALL/PART-TIME/AT-WILL)",
-   "department": "xVARIES",
+   "department": "VARIES",
    "location": "Torrance",
    "jobType": "Recurrent - Variable Hours",
    "salary": {
