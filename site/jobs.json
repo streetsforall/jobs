@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T15:29:20.384Z",
+ "updated": "2026-11-12T21:35:22.727Z",
  "regions": [
   {
    "id": "socal",
@@ -374,7 +374,7 @@
    "id": "lacounty",
    "name": "County of Los Angeles",
    "ok": true,
-   "total": 414,
+   "total": 418,
    "listed": 6
   },
   {
@@ -402,8 +402,8 @@
    "id": "caltrans7",
    "name": "Caltrans District 7 (LA & Ventura)",
    "ok": true,
-   "total": 9,
-   "listed": 2
+   "total": 11,
+   "listed": 3
   },
   {
    "id": "longbeach",
@@ -465,7 +465,7 @@
    "id": "torrance",
    "name": "City of Torrance (incl. Torrance Transit)",
    "ok": true,
-   "total": 32,
+   "total": 33,
    "listed": 5
   },
   {
@@ -486,7 +486,7 @@
    "id": "sf",
    "name": "City & County of San Francisco (incl. SFMTA)",
    "ok": true,
-   "total": 161,
+   "total": 167,
    "listed": 9
   },
   {
@@ -500,7 +500,7 @@
    "id": "sanjose",
    "name": "City of San José",
    "ok": true,
-   "total": 41,
+   "total": 42,
    "listed": 4
   },
   {
@@ -542,7 +542,7 @@
    "id": "alameda",
    "name": "City of Alameda",
    "ok": true,
-   "total": 21,
+   "total": 20,
    "listed": 0
   },
   {
@@ -584,7 +584,7 @@
    "id": "sunnyvale",
    "name": "City of Sunnyvale",
    "ok": true,
-   "total": 20,
+   "total": 21,
    "listed": 0
   },
   {
@@ -612,7 +612,7 @@
    "id": "santaclaracounty",
    "name": "County of Santa Clara",
    "ok": true,
-   "total": 52,
+   "total": 54,
    "listed": 2
   },
   {
@@ -626,21 +626,21 @@
    "id": "contracosta",
    "name": "County of Contra Costa",
    "ok": true,
-   "total": 68,
+   "total": 67,
    "listed": 0
   },
   {
    "id": "marin",
    "name": "County of Marin",
    "ok": true,
-   "total": 38,
+   "total": 39,
    "listed": 2
   },
   {
    "id": "sonoma",
    "name": "County of Sonoma",
    "ok": true,
-   "total": 32,
+   "total": 33,
    "listed": 0
   },
   {
@@ -654,7 +654,7 @@
    "id": "napa",
    "name": "County of Napa",
    "ok": true,
-   "total": 16,
+   "total": 15,
    "listed": 0
   },
   {
@@ -703,18 +703,138 @@
    "id": "caltrans4",
    "name": "Caltrans District 4 (Bay Area)",
    "ok": true,
-   "total": 16,
+   "total": 17,
    "listed": 4
   },
   {
    "id": "caltranshq",
    "name": "Caltrans Headquarters (Sacramento)",
    "ok": true,
-   "total": 33,
-   "listed": 13
+   "total": 41,
+   "listed": 17
   }
  ],
  "jobs": [
+  {
+   "id": "caltrans:538693",
+   "agency": "caltrans7",
+   "title": "RESIDENT ENGINEER",
+   "department": "SENIOR TRANSPORTATION ELECTRICAL ENGINEER (SUPERVISOR)",
+   "location": "Los Angeles County",
+   "jobType": "Limited Term Fulltime, In Office",
+   "salary": {
+    "min": 11437,
+    "max": 14315,
+    "interval": "month"
+   },
+   "posted": "2026-11-12",
+   "closes": "2026-11-29",
+   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=538693",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "socal",
+   "firstSeen": "2026-11-12"
+  },
+  {
+   "id": "caltrans:538786",
+   "agency": "caltranshq",
+   "title": "Complete Streets Liaison",
+   "department": "SENIOR LANDSCAPE ARCHITECT, CALTRANS",
+   "location": "Sacramento County",
+   "jobType": "Permanent Fulltime, Hybrid",
+   "salary": {
+    "min": 11437,
+    "max": 14315,
+    "interval": "month"
+   },
+   "posted": "2026-11-12",
+   "closes": "2026-11-22",
+   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=538786",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-12"
+  },
+  {
+   "id": "caltrans:538743",
+   "agency": "caltranshq",
+   "title": "Performance Engineer, Design Delegations",
+   "department": "SENIOR TRANSPORTATION ENGINEER, CALTRANS",
+   "location": "Sacramento County",
+   "jobType": "Permanent Fulltime, Hybrid",
+   "salary": {
+    "min": 11437,
+    "max": 14315,
+    "interval": "month"
+   },
+   "posted": "2026-11-12",
+   "closes": "2026-11-22",
+   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=538743",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-12"
+  },
+  {
+   "id": "caltrans:538756",
+   "agency": "caltranshq",
+   "title": "Complete Streets Liaison",
+   "department": "SENIOR TRANSPORTATION ENGINEER, CALTRANS",
+   "location": "Sacramento County",
+   "jobType": "Permanent Fulltime, Hybrid",
+   "salary": {
+    "min": 11437,
+    "max": 14315,
+    "interval": "month"
+   },
+   "posted": "2026-11-12",
+   "closes": "2026-11-22",
+   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=538756",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-12"
+  },
+  {
+   "id": "caltrans:538673",
+   "agency": "caltranshq",
+   "title": "Statewide Maintenance Stormwater Coordinator",
+   "department": "SENIOR TRANSPORTATION ENGINEER, CALTRANS",
+   "location": "Sacramento County",
+   "jobType": "Permanent Fulltime, Hybrid",
+   "salary": {
+    "min": 11437,
+    "max": 14315,
+    "interval": "month"
+   },
+   "posted": "2026-11-12",
+   "closes": "2026-11-22",
+   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=538673",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-12"
+  },
   {
    "id": "sf:3743990016783326",
    "agency": "sf",
@@ -1663,7 +1783,7 @@
     "interval": "hour"
    },
    "posted": "2026-10-28",
-   "closes": "2026-11-12",
+   "closes": "2026-11-30",
    "url": "https://www.governmentjobs.com/careers/santaclara/jobs/5522235-0",
    "summary": "Under direction, to have charge of varied and difficult engineering work involving the supervision of professional engineers and others engaged in a variety of engineering activities, such as the planning and design of roads and bridges, special studies or services, and other public works projects.",
    "internalOnly": false,
@@ -2153,30 +2273,6 @@
    "firstSeen": "2026-11-06"
   },
   {
-   "id": "oakland:5410461",
-   "agency": "oakland",
-   "title": "Civil Engineer (Office) (Continuous)",
-   "department": "Citywide",
-   "location": "Oakland",
-   "jobType": "Full Time Civil Service",
-   "salary": {
-    "min": 10993.04,
-    "max": 13497.14,
-    "interval": "month"
-   },
-   "posted": "2026-07-18",
-   "closes": "continuous",
-   "url": "https://www.governmentjobs.com/careers/oaklandca/jobs/5410461-0",
-   "summary": "***Continuous Recruitment*** Recruitment may close at any time, candidates are encouraged to apply immediately The City of Oakland is an equal opportunity employer that values workforce diversity, inclusion, and equity. Oakland has a long history of activism around issues of justice and equity. Both oppression and this resistance to oppression have shaped the city's historical roots and the lives ",
-   "internalOnly": false,
-   "categories": [
-    "engineering"
-   ],
-   "core": false,
-   "region": "norcal",
-   "firstSeen": "2026-11-06"
-  },
-  {
    "id": "oakland:5410462",
    "agency": "oakland",
    "title": "Transportation Engineer (Continuous)",
@@ -2197,6 +2293,30 @@
     "engineering"
    ],
    "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "oakland:5410461",
+   "agency": "oakland",
+   "title": "Civil Engineer (Office) (Continuous)",
+   "department": "Citywide",
+   "location": "Oakland",
+   "jobType": "Full Time Civil Service",
+   "salary": {
+    "min": 10993.04,
+    "max": 13497.14,
+    "interval": "month"
+   },
+   "posted": "2026-07-18",
+   "closes": "continuous",
+   "url": "https://www.governmentjobs.com/careers/oaklandca/jobs/5410461-0",
+   "summary": "***Continuous Recruitment*** Recruitment may close at any time, candidates are encouraged to apply immediately The City of Oakland is an equal opportunity employer that values workforce diversity, inclusion, and equity. Oakland has a long history of activism around issues of justice and equity. Both oppression and this resistance to oppression have shaped the city's historical roots and the lives ",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": false,
    "region": "norcal",
    "firstSeen": "2026-11-06"
   },
