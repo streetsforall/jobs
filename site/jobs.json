@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T21:35:22.727Z",
+ "updated": "2026-11-13T20:58:51.607Z",
  "regions": [
   {
    "id": "socal",
@@ -367,8 +367,8 @@
    "id": "lacity",
    "name": "City of Los Angeles",
    "ok": true,
-   "total": 52,
-   "listed": 3
+   "total": 51,
+   "listed": 2
   },
   {
    "id": "lacounty",
@@ -395,28 +395,28 @@
    "id": "scag",
    "name": "Southern California Association of Governments",
    "ok": true,
-   "total": 1,
+   "total": 2,
    "listed": 0
   },
   {
    "id": "caltrans7",
    "name": "Caltrans District 7 (LA & Ventura)",
    "ok": true,
-   "total": 11,
-   "listed": 3
+   "total": 12,
+   "listed": 4
   },
   {
    "id": "longbeach",
    "name": "City of Long Beach",
    "ok": true,
-   "total": 32,
-   "listed": 4
+   "total": 34,
+   "listed": 5
   },
   {
    "id": "pasadena",
    "name": "City of Pasadena",
    "ok": true,
-   "total": 19,
+   "total": 17,
    "listed": 2
   },
   {
@@ -465,7 +465,7 @@
    "id": "torrance",
    "name": "City of Torrance (incl. Torrance Transit)",
    "ok": true,
-   "total": 33,
+   "total": 35,
    "listed": 5
   },
   {
@@ -486,15 +486,15 @@
    "id": "sf",
    "name": "City & County of San Francisco (incl. SFMTA)",
    "ok": true,
-   "total": 167,
-   "listed": 9
+   "total": 181,
+   "listed": 16
   },
   {
    "id": "oakland",
    "name": "City of Oakland",
    "ok": true,
-   "total": 34,
-   "listed": 3
+   "total": 32,
+   "listed": 2
   },
   {
    "id": "sanjose",
@@ -570,7 +570,7 @@
    "id": "paloalto",
    "name": "City of Palo Alto",
    "ok": true,
-   "total": 9,
+   "total": 10,
    "listed": 0
   },
   {
@@ -578,13 +578,13 @@
    "name": "City of Mountain View",
    "ok": true,
    "total": 5,
-   "listed": 1
+   "listed": 0
   },
   {
    "id": "sunnyvale",
    "name": "City of Sunnyvale",
    "ok": true,
-   "total": 21,
+   "total": 20,
    "listed": 0
   },
   {
@@ -612,7 +612,7 @@
    "id": "santaclaracounty",
    "name": "County of Santa Clara",
    "ok": true,
-   "total": 54,
+   "total": 53,
    "listed": 2
   },
   {
@@ -633,8 +633,8 @@
    "id": "marin",
    "name": "County of Marin",
    "ok": true,
-   "total": 39,
-   "listed": 2
+   "total": 25,
+   "listed": 4
   },
   {
    "id": "sonoma",
@@ -647,7 +647,7 @@
    "id": "solano",
    "name": "County of Solano",
    "ok": true,
-   "total": 60,
+   "total": 58,
    "listed": 2
   },
   {
@@ -661,14 +661,14 @@
    "id": "bart",
    "name": "BART",
    "ok": true,
-   "total": 24,
+   "total": 25,
    "listed": 4
   },
   {
    "id": "vta",
    "name": "VTA (Santa Clara Valley Transportation Authority)",
    "ok": true,
-   "total": 9,
+   "total": 8,
    "listed": 3
   },
   {
@@ -703,18 +703,326 @@
    "id": "caltrans4",
    "name": "Caltrans District 4 (Bay Area)",
    "ok": true,
-   "total": 17,
+   "total": 16,
    "listed": 4
   },
   {
    "id": "caltranshq",
    "name": "Caltrans Headquarters (Sacramento)",
    "ok": true,
-   "total": 41,
+   "total": 43,
    "listed": 17
   }
  ],
  "jobs": [
+  {
+   "id": "sf:3743990016854336",
+   "agency": "sf",
+   "title": "Senior Landscape Architect - Citywide (5211) - (C00486)",
+   "department": "Citywide",
+   "location": "San Francisco, CA",
+   "jobType": "Full-time",
+   "salary": null,
+   "posted": "2026-11-13",
+   "closes": null,
+   "url": "https://jobs.smartrecruiters.com/CityAndCountyOfSanFrancisco1/3743990016854336",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": false,
+   "region": "norcal",
+   "firstSeen": "2026-11-13"
+  },
+  {
+   "id": "sf:3743990016852166",
+   "agency": "sf",
+   "title": "Engineer - Transportation - Citywide (5241) - (C00493)",
+   "department": "Citywide",
+   "location": "San Francisco, CA",
+   "jobType": "Full-time",
+   "salary": null,
+   "posted": "2026-11-13",
+   "closes": null,
+   "url": "https://jobs.smartrecruiters.com/CityAndCountyOfSanFrancisco1/3743990016852166",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-13"
+  },
+  {
+   "id": "sf:3743990016848906",
+   "agency": "sf",
+   "title": "Associate Engineer - Environmental- Citywide (5207) - (C00476)",
+   "department": "Citywide",
+   "location": "San Francisco, CA",
+   "jobType": "Full-time",
+   "salary": null,
+   "posted": "2026-11-13",
+   "closes": null,
+   "url": "https://jobs.smartrecruiters.com/CityAndCountyOfSanFrancisco1/3743990016848906",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": false,
+   "region": "norcal",
+   "firstSeen": "2026-11-13"
+  },
+  {
+   "id": "sf:3743990016848786",
+   "agency": "sf",
+   "title": "Associate Engineer - Electrical - Citywide (5207) - (C00475)",
+   "department": "Citywide",
+   "location": "San Francisco, CA",
+   "jobType": "Full-time",
+   "salary": null,
+   "posted": "2026-11-13",
+   "closes": null,
+   "url": "https://jobs.smartrecruiters.com/CityAndCountyOfSanFrancisco1/3743990016848786",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": false,
+   "region": "norcal",
+   "firstSeen": "2026-11-13"
+  },
+  {
+   "id": "sf:3743990016848676",
+   "agency": "sf",
+   "title": "Associate Engineer - Mechanical - Citywide (5207) - (C00477)",
+   "department": "Citywide",
+   "location": "San Francisco, CA",
+   "jobType": "Full-time",
+   "salary": null,
+   "posted": "2026-11-13",
+   "closes": null,
+   "url": "https://jobs.smartrecruiters.com/CityAndCountyOfSanFrancisco1/3743990016848676",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": false,
+   "region": "norcal",
+   "firstSeen": "2026-11-13"
+  },
+  {
+   "id": "sf:3743990016848556",
+   "agency": "sf",
+   "title": "Associate Engineer - Transportation - Citywide (5207) - (C00478)",
+   "department": "Citywide",
+   "location": "San Francisco, CA",
+   "jobType": "Full-time",
+   "salary": null,
+   "posted": "2026-11-13",
+   "closes": null,
+   "url": "https://jobs.smartrecruiters.com/CityAndCountyOfSanFrancisco1/3743990016848556",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-13"
+  },
+  {
+   "id": "sf:3743990016848186",
+   "agency": "sf",
+   "title": "Associate Engineer - Civil - Citywide (5207) - (C00474)",
+   "department": "Citywide",
+   "location": "San Francisco, CA",
+   "jobType": "Full-time",
+   "salary": null,
+   "posted": "2026-11-13",
+   "closes": null,
+   "url": "https://jobs.smartrecruiters.com/CityAndCountyOfSanFrancisco1/3743990016848186",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": false,
+   "region": "norcal",
+   "firstSeen": "2026-11-13"
+  },
+  {
+   "id": "caltrans:538771",
+   "agency": "caltrans7",
+   "title": "Material Tester",
+   "department": "TRANSPORTATION ENGINEERING TECHNICIAN",
+   "location": "Los Angeles County",
+   "jobType": "Permanent Fulltime, In Office",
+   "salary": {
+    "min": 4695,
+    "max": 7063,
+    "interval": "month"
+   },
+   "posted": "2026-11-12",
+   "closes": "2026-11-22",
+   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=538771",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "socal",
+   "firstSeen": "2026-11-13"
+  },
+  {
+   "id": "longbeach:5547540",
+   "agency": "longbeach",
+   "title": "ADMINISTRATIVE INTERN - (NON-CAREER) - PROJECT CONTROLS",
+   "department": "Harbor - (UC)",
+   "location": "City of Long Beach",
+   "jobType": "Unclassified - Part-Time, Temporary",
+   "salary": {
+    "min": 25.09,
+    "max": null,
+    "interval": "hour"
+   },
+   "posted": "2026-11-12",
+   "closes": "2026-11-26",
+   "url": "https://www.governmentjobs.com/careers/longbeach/jobs/5547540-0",
+   "summary": "THE PORT OF LONG BEACH IS SEEKING TWO (2) ADMINISTRATIVE INTERNS IN THE PROJECT CONTROLS DIVISION. The Port of Choice: The Port of Long Beach is an international gateway for the reliable, efficient and sustainable movement of goods and is a leader in environmental stewardship. Credited with moving $300 billion in trade, the Port serves as a critical hub for international commerce and is a major tr",
+   "internalOnly": false,
+   "categories": [
+    "pm"
+   ],
+   "core": false,
+   "region": "socal",
+   "firstSeen": "2026-11-13"
+  },
+  {
+   "id": "caltrans:538804",
+   "agency": "caltranshq",
+   "title": "Construction Contract Scheduling Branch Chief",
+   "department": "SENIOR TRANSPORTATION ENGINEER, CALTRANS",
+   "location": "Sacramento County",
+   "jobType": "Permanent Fulltime, Hybrid",
+   "salary": {
+    "min": 11437,
+    "max": 14315,
+    "interval": "month"
+   },
+   "posted": "2026-11-12",
+   "closes": "2026-11-22",
+   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=538804",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-13"
+  },
+  {
+   "id": "marin:5521785",
+   "agency": "marin",
+   "title": "Project Manager (Transit-Oriented Development)",
+   "department": "Infrastructure Delivery",
+   "location": "BART Headquarters",
+   "jobType": "Full-Time",
+   "salary": {
+    "min": 160800,
+    "max": 243612,
+    "interval": "year"
+   },
+   "posted": "2026-11-09",
+   "closes": "2026-11-20",
+   "url": "https://www.governmentjobs.com/careers/bartca/jobs/5521785-0",
+   "summary": "Pay Rate Non-Represented Salary Grade E09 Annual Salary Range: $160,800.00 (minimum) - $243,612.00 (maximum) Note: The starting negotiable annual salary offer will be between $160.800.00 (minimum) - $210,042.48 (midpoint) to commensurate with education and experience. Reports To Engineering Manager Days Off Saturday/Sunday Who May Apply All current BART employees and Future BART employees Current ",
+   "internalOnly": false,
+   "categories": [
+    "pm"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-13"
+  },
+  {
+   "id": "marin:5537232",
+   "agency": "marin",
+   "title": "Project Manager, Accessibility",
+   "department": "Infrastructure Delivery",
+   "location": "BART Headquarters",
+   "jobType": "Full-Time",
+   "salary": {
+    "min": 160800,
+    "max": 243612,
+    "interval": "year"
+   },
+   "posted": "2026-11-09",
+   "closes": "2026-11-20",
+   "url": "https://www.governmentjobs.com/careers/bartca/jobs/5537232-0",
+   "summary": "Pay Rate: Non-Rep Salary Grade E09 Annual Salary Range: $160,800.00 (Minimum) - $243,612.00 (Maximum) *The starting negotiable annual salary for this position will be $160,800.00 (minimum) - $202,206.00 (midpoint) to commensurate with education and experience. Reports To: Senior Manager of Engineering Programs Days Off: Saturday and Sunday Who May Apply: All current BART employees and Future BART ",
+   "internalOnly": false,
+   "categories": [
+    "pm"
+   ],
+   "core": false,
+   "region": "norcal",
+   "firstSeen": "2026-11-13"
+  },
+  {
+   "id": "marin:5532855",
+   "agency": "marin",
+   "title": "Senior Administrative Analyst, AFSCME (Transportation)",
+   "department": "Operations",
+   "location": "BART Headquarters - 7th Fl",
+   "jobType": "Full-Time",
+   "salary": {
+    "min": 128356.8,
+    "max": 156020.8,
+    "interval": "year"
+   },
+   "posted": "2026-10-30",
+   "closes": "2026-11-13",
+   "url": "https://www.governmentjobs.com/careers/bartca/jobs/5532855-0",
+   "summary": "Pay Rate: AFSCME Pay Grade A13 Annual Salary: $128,356.80/year (Step 1) - $156,020.80/year (Step 5) Note: The negotiable salary offer will be commensurate with education and experience. Reports To: Group Manager, Operations Support and Review Days Off: Saturday/Sunday Who May Apply: All current BART employees and Future BART employees Current Assignment: This announcement will be used to create an",
+   "internalOnly": false,
+   "categories": [
+    "pm"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-13"
+  },
+  {
+   "id": "marin:5520150",
+   "agency": "marin",
+   "title": "Manager of Access & Accessible Services",
+   "department": "Planning & Development",
+   "location": "BART Headquarters",
+   "jobType": "Full-Time",
+   "salary": {
+    "min": 160800,
+    "max": 243612,
+    "interval": "year"
+   },
+   "posted": "2026-10-28",
+   "closes": "2026-11-18",
+   "url": "https://www.governmentjobs.com/careers/bartca/jobs/5520150-0",
+   "summary": "Pay Rate Non-Rep Pay Band N09 Annual Salary Range: $160,800.00 (Minimum) - $243,612.00 (Maximum) Note: The starting negotiable salary offer for this position will be $160,800.00 - $201,251.25 to commensurate with education and experience. Report To Director of Customer Access & Accessibility Days Off Saturday & Sunday Who May Apply All current BART employees and Future BART employees Current Assig",
+   "internalOnly": false,
+   "categories": [
+    "pm"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-13"
+  },
   {
    "id": "caltrans:538693",
    "agency": "caltrans7",
@@ -1176,30 +1484,6 @@
    "firstSeen": "2026-11-06"
   },
   {
-   "id": "caltrans:538214",
-   "agency": "caltranshq",
-   "title": "Office Chief",
-   "department": "SUPERVISING TRANSPORTATION ENGINEER, CALTRANS",
-   "location": "Sacramento County",
-   "jobType": "Permanent Fulltime, Hybrid",
-   "salary": {
-    "min": 13892,
-    "max": 15782,
-    "interval": "month"
-   },
-   "posted": "2026-11-06",
-   "closes": "2026-11-23",
-   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=538214",
-   "summary": "",
-   "internalOnly": false,
-   "categories": [
-    "engineering"
-   ],
-   "core": true,
-   "region": "norcal",
-   "firstSeen": "2026-11-06"
-  },
-  {
    "id": "caltrans:538180",
    "agency": "caltranshq",
    "title": "Office Chief, Office of Program Management",
@@ -1219,6 +1503,30 @@
    "categories": [
     "engineering",
     "pm"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "caltrans:538214",
+   "agency": "caltranshq",
+   "title": "Office Chief",
+   "department": "SUPERVISING TRANSPORTATION ENGINEER, CALTRANS",
+   "location": "Sacramento County",
+   "jobType": "Permanent Fulltime, Hybrid",
+   "salary": {
+    "min": 13892,
+    "max": 15782,
+    "interval": "month"
+   },
+   "posted": "2026-11-06",
+   "closes": "2026-11-23",
+   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=538214",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
    ],
    "core": true,
    "region": "norcal",
@@ -1419,30 +1727,6 @@
    "firstSeen": "2026-11-06"
   },
   {
-   "id": "caltrans:538058",
-   "agency": "caltranshq",
-   "title": "Project Support Engineer",
-   "department": "SENIOR TRANSPORTATION ENGINEER, CALTRANS",
-   "location": "Sacramento County",
-   "jobType": "Permanent Fulltime, Hybrid",
-   "salary": {
-    "min": 11437,
-    "max": 14315,
-    "interval": "month"
-   },
-   "posted": "2026-11-04",
-   "closes": "2026-11-14",
-   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=538058",
-   "summary": "",
-   "internalOnly": false,
-   "categories": [
-    "engineering"
-   ],
-   "core": true,
-   "region": "norcal",
-   "firstSeen": "2026-11-06"
-  },
-  {
    "id": "caltrans:538011",
    "agency": "caltranshq",
    "title": "Construction Storm Water Coordinator",
@@ -1467,24 +1751,24 @@
    "firstSeen": "2026-11-06"
   },
   {
-   "id": "marin:5538411",
-   "agency": "marin",
-   "title": "Capital Planning and Project Manager I/II (Capital Projects)",
-   "department": "Department of Public Works",
-   "location": "San Rafael",
-   "jobType": "Full Time, Regular",
+   "id": "caltrans:538058",
+   "agency": "caltranshq",
+   "title": "Project Support Engineer",
+   "department": "SENIOR TRANSPORTATION ENGINEER, CALTRANS",
+   "location": "Sacramento County",
+   "jobType": "Permanent Fulltime, Hybrid",
    "salary": {
-    "min": 47.02,
-    "max": 65.73,
-    "interval": "hour"
+    "min": 11437,
+    "max": 14315,
+    "interval": "month"
    },
-   "posted": "2026-11-03",
-   "closes": "2026-11-16",
-   "url": "https://www.governmentjobs.com/careers/marincounty/jobs/5538411-0",
-   "summary": "At the County of Marin, our employees overwhelmingly report feeling their work is meaningful, they like the work they do, and they are proud to tell people “I work for the County of Marin.” Discover more about us, our values and our organizational culture on the Department of Human Resources website. Read on to find out more about this opportunity. The mission of the Marin County Department of Pub",
+   "posted": "2026-11-04",
+   "closes": "2026-11-14",
+   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=538058",
+   "summary": "",
    "internalOnly": false,
    "categories": [
-    "pm"
+    "engineering"
    ],
    "core": true,
    "region": "norcal",
@@ -1594,30 +1878,6 @@
    "closes": "2026-11-23",
    "url": "https://www.governmentjobs.com/careers/berkeley/jobs/5533717-0",
    "summary": "The City of Berkeley invites you to apply for the position of Supervising Civil Engineer in the Public Works Department! The current vacancy will be assigned to the City’s Facilities Engineering Program, supporting the planning, design, construction, renovation, and rehabilitation of City-owned buildings and facilities. The City's diverse portfolio of public facilities includes buildings and infra",
-   "internalOnly": false,
-   "categories": [
-    "engineering"
-   ],
-   "core": true,
-   "region": "norcal",
-   "firstSeen": "2026-11-06"
-  },
-  {
-   "id": "caltrans:537577",
-   "agency": "caltranshq",
-   "title": "Materials Plant Quality Program Engineer",
-   "department": "SENIOR TRANSPORTATION ENGINEER, CALTRANS",
-   "location": "Sacramento County",
-   "jobType": "Permanent Fulltime, Hybrid",
-   "salary": {
-    "min": 11437,
-    "max": 14315,
-    "interval": "month"
-   },
-   "posted": "2026-11-02",
-   "closes": "2026-11-12",
-   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=537577",
-   "summary": "",
    "internalOnly": false,
    "categories": [
     "engineering"
@@ -1744,30 +2004,6 @@
    ],
    "core": true,
    "region": "socal",
-   "firstSeen": "2026-11-06"
-  },
-  {
-   "id": "mountainview:5507786",
-   "agency": "mountainview",
-   "title": "Senior Outreach Coordinator (Multicultural Engagement Program)",
-   "department": "City Manager's Office",
-   "location": "Mountain View City Hall",
-   "jobType": "Full-Time",
-   "salary": {
-    "min": 3924.48,
-    "max": 5309.58,
-    "interval": "biweekly"
-   },
-   "posted": "2026-10-28",
-   "closes": "2026-11-12",
-   "url": "https://www.governmentjobs.com/careers/mountainview/jobs/5507786-0",
-   "summary": "Help residents find their place in City of Mountain View life. You’ve built relationships, coordinated programs, and helped people get involved. Bring that experience to Mountain View, where you’ll lead a multilingual team and help guide an established citywide Multicultural Engagement Program in the City Manager's Office. You’ll have opportunities to enhance multilingual access to City services a",
-   "internalOnly": false,
-   "categories": [
-    "outreach"
-   ],
-   "core": false,
-   "region": "norcal",
    "firstSeen": "2026-11-06"
   },
   {
@@ -1912,30 +2148,6 @@
     "pm"
    ],
    "core": false,
-   "region": "norcal",
-   "firstSeen": "2026-11-06"
-  },
-  {
-   "id": "oakland:5515193",
-   "agency": "oakland",
-   "title": "ELDE - Transportation Planner III",
-   "department": "Department of Transportation",
-   "location": "Oakland",
-   "jobType": "Exempt Limited Duration Employee (ELDE)",
-   "salary": {
-    "min": 9290.41,
-    "max": 11407.51,
-    "interval": "month"
-   },
-   "posted": "2026-10-22",
-   "closes": "2026-11-12",
-   "url": "https://www.governmentjobs.com/careers/oaklandca/jobs/5515193-0",
-   "summary": "The City of Oakland is an equal opportunity employer that values workforce diversity, inclusion, and equity. Oakland has a long history of activism around issues of justice and equity. Both oppression and this resistance to oppression have shaped the city’s historical roots and the lives of its residents to this day. As public servants in one of the most diverse cities in the nation, we strive to ",
-   "internalOnly": false,
-   "categories": [
-    "engineering"
-   ],
-   "core": true,
    "region": "norcal",
    "firstSeen": "2026-11-06"
   },
@@ -2176,30 +2388,6 @@
     "pm"
    ],
    "core": false,
-   "region": "norcal",
-   "firstSeen": "2026-11-06"
-  },
-  {
-   "id": "marin:5483900",
-   "agency": "marin",
-   "title": "Engineering Division Manager (Principal Civil Engineer)",
-   "department": "Department of Public Works",
-   "location": "San Rafael",
-   "jobType": "Full Time, Regular",
-   "salary": {
-    "min": 83.16,
-    "max": 101.1,
-    "interval": "hour"
-   },
-   "posted": "2026-09-15",
-   "closes": "continuous",
-   "url": "https://www.governmentjobs.com/careers/marincounty/jobs/5483900-0",
-   "summary": "At the County of Marin, our employees overwhelmingly report feeling their work is meaningful, they like the work they do, and they are proud to tell people “I work for the County of Marin.” Discover more about us, our values and our organizational culture on the Department of Human Resources website. Read on to find out more about this opportunity. The mission of the Marin County Department of Pub",
-   "internalOnly": false,
-   "categories": [
-    "engineering"
-   ],
-   "core": true,
    "region": "norcal",
    "firstSeen": "2026-11-06"
   },
@@ -2524,30 +2712,6 @@
    "closes": "2026-11-30",
    "url": "https://www.governmentjobs.com/careers/culvercity/jobs/5537114-0",
    "summary": "Culver City is a Charter City incorporated in 1917, and is a destination filled with outdoor cafes, unique shops and galleries opening onto pedestrian-friendly boulevards. Culver City has dedicated staff of approximately 800 employees with an overall operating budget of over $370 million. The City provides a full range of municipal services including Fire, Police, Housing & Human Services, Plannin",
-   "internalOnly": false,
-   "categories": [
-    "engineering"
-   ],
-   "core": true,
-   "region": "socal",
-   "firstSeen": "2026-11-05"
-  },
-  {
-   "id": "lacity:5508889",
-   "agency": "lacity",
-   "title": "SUPERVISING TRANSPORTATION PLANNER 2481",
-   "department": "ALL DEPARTMENTS",
-   "location": "CITY OF LOS ANGELES",
-   "jobType": "FULL-TIME",
-   "salary": {
-    "min": 120477,
-    "max": 206732,
-    "interval": "year"
-   },
-   "posted": "2026-10-30",
-   "closes": "2026-11-12",
-   "url": "https://www.governmentjobs.com/careers/lacity/jobs/5508889-0",
-   "summary": "ANNUAL SALARY$120,477 to $176,164 and $141,399 to $206,732 NOTES: Candidates from the eligible list are normally appointed to vacancies in the lower pay grade positions. Annual salary is at the start of the pay range. The current salary range is subject to change. Please confirm the starting salary with the hiring department before accepting a job offer. A Supervising Transportation Planner superv",
    "internalOnly": false,
    "categories": [
     "engineering"
