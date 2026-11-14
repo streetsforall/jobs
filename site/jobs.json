@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T20:58:51.607Z",
+ "updated": "2026-11-14T19:27:41.570Z",
  "regions": [
   {
    "id": "socal",
@@ -374,14 +374,14 @@
    "id": "lacounty",
    "name": "County of Los Angeles",
    "ok": true,
-   "total": 418,
+   "total": 416,
    "listed": 6
   },
   {
    "id": "metro",
    "name": "LA Metro",
    "ok": true,
-   "total": 12,
+   "total": 11,
    "listed": 0
   },
   {
@@ -395,8 +395,8 @@
    "id": "scag",
    "name": "Southern California Association of Governments",
    "ok": true,
-   "total": 2,
-   "listed": 0
+   "total": 7,
+   "listed": 1
   },
   {
    "id": "caltrans7",
@@ -409,7 +409,7 @@
    "id": "longbeach",
    "name": "City of Long Beach",
    "ok": true,
-   "total": 34,
+   "total": 30,
    "listed": 5
   },
   {
@@ -430,14 +430,14 @@
    "id": "glendale",
    "name": "City of Glendale",
    "ok": true,
-   "total": 13,
+   "total": 7,
    "listed": 1
   },
   {
    "id": "burbank",
    "name": "City of Burbank",
    "ok": true,
-   "total": 10,
+   "total": 9,
    "listed": 0
   },
   {
@@ -465,7 +465,7 @@
    "id": "torrance",
    "name": "City of Torrance (incl. Torrance Transit)",
    "ok": true,
-   "total": 35,
+   "total": 34,
    "listed": 5
   },
   {
@@ -486,21 +486,21 @@
    "id": "sf",
    "name": "City & County of San Francisco (incl. SFMTA)",
    "ok": true,
-   "total": 181,
-   "listed": 16
+   "total": 186,
+   "listed": 15
   },
   {
    "id": "oakland",
    "name": "City of Oakland",
    "ok": true,
-   "total": 32,
+   "total": 34,
    "listed": 2
   },
   {
    "id": "sanjose",
    "name": "City of San José",
    "ok": true,
-   "total": 42,
+   "total": 44,
    "listed": 4
   },
   {
@@ -570,7 +570,7 @@
    "id": "paloalto",
    "name": "City of Palo Alto",
    "ok": true,
-   "total": 10,
+   "total": 12,
    "listed": 0
   },
   {
@@ -613,7 +613,7 @@
    "name": "County of Santa Clara",
    "ok": true,
    "total": 53,
-   "listed": 2
+   "listed": 1
   },
   {
    "id": "sanmateocounty",
@@ -626,28 +626,28 @@
    "id": "contracosta",
    "name": "County of Contra Costa",
    "ok": true,
-   "total": 67,
+   "total": 65,
    "listed": 0
   },
   {
    "id": "marin",
    "name": "County of Marin",
    "ok": true,
-   "total": 25,
-   "listed": 4
+   "total": 39,
+   "listed": 2
   },
   {
    "id": "sonoma",
    "name": "County of Sonoma",
    "ok": true,
-   "total": 33,
+   "total": 34,
    "listed": 0
   },
   {
    "id": "solano",
    "name": "County of Solano",
    "ok": true,
-   "total": 58,
+   "total": 57,
    "listed": 2
   },
   {
@@ -661,8 +661,8 @@
    "id": "bart",
    "name": "BART",
    "ok": true,
-   "total": 25,
-   "listed": 4
+   "total": 24,
+   "listed": 3
   },
   {
    "id": "vta",
@@ -696,25 +696,93 @@
    "id": "goldengate",
    "name": "Golden Gate Bridge, Highway & Transportation District",
    "ok": true,
-   "total": 14,
-   "listed": 1
+   "total": 15,
+   "listed": 2
   },
   {
    "id": "caltrans4",
    "name": "Caltrans District 4 (Bay Area)",
    "ok": true,
-   "total": 16,
+   "total": 15,
    "listed": 4
   },
   {
    "id": "caltranshq",
    "name": "Caltrans Headquarters (Sacramento)",
    "ok": true,
-   "total": 43,
-   "listed": 17
+   "total": 41,
+   "listed": 16
   }
  ],
  "jobs": [
+  {
+   "id": "sf:3743990016855676",
+   "agency": "sf",
+   "title": "Senior Engineer - Transportation - Citywide (5211) - (C00485)",
+   "department": "Citywide",
+   "location": "San Francisco, CA",
+   "jobType": "Full-time",
+   "salary": null,
+   "posted": "2026-11-13",
+   "closes": null,
+   "url": "https://jobs.smartrecruiters.com/CityAndCountyOfSanFrancisco1/3743990016855676",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-14"
+  },
+  {
+   "id": "goldengate:5545089",
+   "agency": "goldengate",
+   "title": "Ferry Maintenance Planner",
+   "department": "Ferry Division",
+   "location": "101 East Sir Francis Drake Blvd., Larkspur",
+   "jobType": "Regular, Full-Time",
+   "salary": {
+    "min": 59.08,
+    "max": 71.4,
+    "interval": "hour"
+   },
+   "posted": "2026-11-13",
+   "closes": "continuous",
+   "url": "https://www.governmentjobs.com/careers/goldengate/jobs/5545089-0",
+   "summary": "Under general direction of the Ferry Maintenance Manager, this position will be responsible for developing and implementing comprehensive maintenance job plans for our fleet of passenger ferries and facilities. The Ferry Maintenance Planner is responsible for all aspects of the planning process with the goal of improving workforce productivity and work quality by eliminating potential delays and o",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": false,
+   "region": "norcal",
+   "firstSeen": "2026-11-14"
+  },
+  {
+   "id": "scag:5518793",
+   "agency": "scag",
+   "title": "Associate Planner",
+   "department": "CD-Planning",
+   "location": "Beverly Hills City Hall",
+   "jobType": "Full-time",
+   "salary": {
+    "min": 8357.44,
+    "max": 10383.06,
+    "interval": "month"
+   },
+   "posted": "2026-10-23",
+   "closes": "2026-11-15",
+   "url": "https://www.governmentjobs.com/careers/beverlyhills/jobs/5518793-0",
+   "summary": "PLEASE NOTE: This recruitment has been extended and will close on Sunday, November 15, 2026, at 11:59 p.m. PST. Please be sure to submit your application prior to the deadline. Who We Are The City of Beverly Hills has a long-standing reputation for providing superior customer service to residents, businesses, and visitors. This characteristic, combined with outstanding staff in all departments, ha",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "socal",
+   "firstSeen": "2026-11-14"
+  },
   {
    "id": "sf:3743990016854336",
    "agency": "sf",
@@ -922,102 +990,6 @@
    "internalOnly": false,
    "categories": [
     "engineering"
-   ],
-   "core": true,
-   "region": "norcal",
-   "firstSeen": "2026-11-13"
-  },
-  {
-   "id": "marin:5521785",
-   "agency": "marin",
-   "title": "Project Manager (Transit-Oriented Development)",
-   "department": "Infrastructure Delivery",
-   "location": "BART Headquarters",
-   "jobType": "Full-Time",
-   "salary": {
-    "min": 160800,
-    "max": 243612,
-    "interval": "year"
-   },
-   "posted": "2026-11-09",
-   "closes": "2026-11-20",
-   "url": "https://www.governmentjobs.com/careers/bartca/jobs/5521785-0",
-   "summary": "Pay Rate Non-Represented Salary Grade E09 Annual Salary Range: $160,800.00 (minimum) - $243,612.00 (maximum) Note: The starting negotiable annual salary offer will be between $160.800.00 (minimum) - $210,042.48 (midpoint) to commensurate with education and experience. Reports To Engineering Manager Days Off Saturday/Sunday Who May Apply All current BART employees and Future BART employees Current ",
-   "internalOnly": false,
-   "categories": [
-    "pm"
-   ],
-   "core": true,
-   "region": "norcal",
-   "firstSeen": "2026-11-13"
-  },
-  {
-   "id": "marin:5537232",
-   "agency": "marin",
-   "title": "Project Manager, Accessibility",
-   "department": "Infrastructure Delivery",
-   "location": "BART Headquarters",
-   "jobType": "Full-Time",
-   "salary": {
-    "min": 160800,
-    "max": 243612,
-    "interval": "year"
-   },
-   "posted": "2026-11-09",
-   "closes": "2026-11-20",
-   "url": "https://www.governmentjobs.com/careers/bartca/jobs/5537232-0",
-   "summary": "Pay Rate: Non-Rep Salary Grade E09 Annual Salary Range: $160,800.00 (Minimum) - $243,612.00 (Maximum) *The starting negotiable annual salary for this position will be $160,800.00 (minimum) - $202,206.00 (midpoint) to commensurate with education and experience. Reports To: Senior Manager of Engineering Programs Days Off: Saturday and Sunday Who May Apply: All current BART employees and Future BART ",
-   "internalOnly": false,
-   "categories": [
-    "pm"
-   ],
-   "core": false,
-   "region": "norcal",
-   "firstSeen": "2026-11-13"
-  },
-  {
-   "id": "marin:5532855",
-   "agency": "marin",
-   "title": "Senior Administrative Analyst, AFSCME (Transportation)",
-   "department": "Operations",
-   "location": "BART Headquarters - 7th Fl",
-   "jobType": "Full-Time",
-   "salary": {
-    "min": 128356.8,
-    "max": 156020.8,
-    "interval": "year"
-   },
-   "posted": "2026-10-30",
-   "closes": "2026-11-13",
-   "url": "https://www.governmentjobs.com/careers/bartca/jobs/5532855-0",
-   "summary": "Pay Rate: AFSCME Pay Grade A13 Annual Salary: $128,356.80/year (Step 1) - $156,020.80/year (Step 5) Note: The negotiable salary offer will be commensurate with education and experience. Reports To: Group Manager, Operations Support and Review Days Off: Saturday/Sunday Who May Apply: All current BART employees and Future BART employees Current Assignment: This announcement will be used to create an",
-   "internalOnly": false,
-   "categories": [
-    "pm"
-   ],
-   "core": true,
-   "region": "norcal",
-   "firstSeen": "2026-11-13"
-  },
-  {
-   "id": "marin:5520150",
-   "agency": "marin",
-   "title": "Manager of Access & Accessible Services",
-   "department": "Planning & Development",
-   "location": "BART Headquarters",
-   "jobType": "Full-Time",
-   "salary": {
-    "min": 160800,
-    "max": 243612,
-    "interval": "year"
-   },
-   "posted": "2026-10-28",
-   "closes": "2026-11-18",
-   "url": "https://www.governmentjobs.com/careers/bartca/jobs/5520150-0",
-   "summary": "Pay Rate Non-Rep Pay Band N09 Annual Salary Range: $160,800.00 (Minimum) - $243,612.00 (Maximum) Note: The starting negotiable salary offer for this position will be $160,800.00 - $201,251.25 to commensurate with education and experience. Report To Director of Customer Access & Accessibility Days Off Saturday & Sunday Who May Apply All current BART employees and Future BART employees Current Assig",
-   "internalOnly": false,
-   "categories": [
-    "pm"
    ],
    "core": true,
    "region": "norcal",
@@ -1775,6 +1747,30 @@
    "firstSeen": "2026-11-06"
   },
   {
+   "id": "marin:5538411",
+   "agency": "marin",
+   "title": "Capital Planning and Project Manager I/II (Capital Projects)",
+   "department": "Department of Public Works",
+   "location": "San Rafael",
+   "jobType": "Full Time, Regular",
+   "salary": {
+    "min": 47.02,
+    "max": 65.73,
+    "interval": "hour"
+   },
+   "posted": "2026-11-03",
+   "closes": "2026-11-16",
+   "url": "https://www.governmentjobs.com/careers/marincounty/jobs/5538411-0",
+   "summary": "At the County of Marin, our employees overwhelmingly report feeling their work is meaningful, they like the work they do, and they are proud to tell people “I work for the County of Marin.” Discover more about us, our values and our organizational culture on the Department of Human Resources website. Read on to find out more about this opportunity. The mission of the Marin County Department of Pub",
+   "internalOnly": false,
+   "categories": [
+    "pm"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
    "id": "caltrans:537742",
    "agency": "caltranshq",
    "title": "Chief, Office of Geotechnical Design – North",
@@ -1823,46 +1819,6 @@
    "firstSeen": "2026-11-06"
   },
   {
-   "id": "sf:3743990016565796",
-   "agency": "sf",
-   "title": "Exempt to Permanent – Public Information Officer (1312) – Citywide (168253)",
-   "department": "Municipal Transportation Agency",
-   "location": "San Francisco, CA",
-   "jobType": "Full-time",
-   "salary": null,
-   "posted": "2026-11-02",
-   "closes": null,
-   "url": "https://jobs.smartrecruiters.com/CityAndCountyOfSanFrancisco1/3743990016565796",
-   "summary": "",
-   "internalOnly": false,
-   "categories": [
-    "outreach"
-   ],
-   "core": true,
-   "region": "norcal",
-   "firstSeen": "2026-11-06"
-  },
-  {
-   "id": "sf:3743990016562146",
-   "agency": "sf",
-   "title": "Exempt to Permanent – Public Relations Assistant (1310) – Citywide (169008)",
-   "department": "Municipal Transportation Agency",
-   "location": "San Francisco, CA",
-   "jobType": "Full-time",
-   "salary": null,
-   "posted": "2026-11-02",
-   "closes": null,
-   "url": "https://jobs.smartrecruiters.com/CityAndCountyOfSanFrancisco1/3743990016562146",
-   "summary": "",
-   "internalOnly": false,
-   "categories": [
-    "outreach"
-   ],
-   "core": true,
-   "region": "norcal",
-   "firstSeen": "2026-11-06"
-  },
-  {
    "id": "berkeley:5533717",
    "agency": "berkeley",
    "title": "Supervising Civil Engineer",
@@ -1881,30 +1837,6 @@
    "internalOnly": false,
    "categories": [
     "engineering"
-   ],
-   "core": true,
-   "region": "norcal",
-   "firstSeen": "2026-11-06"
-  },
-  {
-   "id": "bart:5532855",
-   "agency": "bart",
-   "title": "Senior Administrative Analyst, AFSCME (Transportation)",
-   "department": "Operations",
-   "location": "BART Headquarters - 7th Fl",
-   "jobType": "Full-Time",
-   "salary": {
-    "min": 128356.8,
-    "max": 156020.8,
-    "interval": "year"
-   },
-   "posted": "2026-10-30",
-   "closes": "2026-11-13",
-   "url": "https://www.governmentjobs.com/careers/bartca/jobs/5532855-0",
-   "summary": "Pay Rate: AFSCME Pay Grade A13 Annual Salary: $128,356.80/year (Step 1) - $156,020.80/year (Step 5) Note: The negotiable salary offer will be commensurate with education and experience. Reports To: Group Manager, Operations Support and Review Days Off: Saturday/Sunday Who May Apply: All current BART employees and Future BART employees Current Assignment: This announcement will be used to create an",
-   "internalOnly": false,
-   "categories": [
-    "pm"
    ],
    "core": true,
    "region": "norcal",
@@ -2224,30 +2156,6 @@
    "firstSeen": "2026-11-06"
   },
   {
-   "id": "santaclaracounty:5499209",
-   "agency": "santaclaracounty",
-   "title": "Public Health Communications Officer",
-   "department": "Public Health",
-   "location": "Throughout the County of Santa Clara",
-   "jobType": "Full-Time",
-   "salary": {
-    "min": 70.962,
-    "max": 86.263,
-    "interval": "hour"
-   },
-   "posted": "2026-10-15",
-   "closes": "2026-11-13",
-   "url": "https://www.governmentjobs.com/careers/santaclara/jobs/5499209-0",
-   "summary": "Under general direction, to plan, develop, direct, coordinate, implement, organize, and evaluate a comprehensive health information and communications program for the Public Health Department within the County of Santa Clara; and to act as a consultant to Public Health management regarding communications strategies. The Public Health Communications Officer will report to the Program Manager III fo",
-   "internalOnly": false,
-   "categories": [
-    "outreach"
-   ],
-   "core": false,
-   "region": "norcal",
-   "firstSeen": "2026-11-06"
-  },
-  {
    "id": "vta:5511023",
    "agency": "vta",
    "title": "Environmental Programs Manager (Transportation Planning Manager)",
@@ -2272,30 +2180,6 @@
    "firstSeen": "2026-11-06"
   },
   {
-   "id": "caltrans:535541",
-   "agency": "caltranshq",
-   "title": "Contract Administration Engineer",
-   "department": "SENIOR TRANSPORTATION ENGINEER, CALTRANS",
-   "location": "Sacramento County",
-   "jobType": "Permanent Fulltime, Hybrid",
-   "salary": {
-    "min": 11437,
-    "max": 14315,
-    "interval": "month"
-   },
-   "posted": "2026-10-14",
-   "closes": "2026-11-13",
-   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=535541",
-   "summary": "",
-   "internalOnly": false,
-   "categories": [
-    "engineering"
-   ],
-   "core": true,
-   "region": "norcal",
-   "firstSeen": "2026-11-06"
-  },
-  {
    "id": "santaclara:5512716",
    "agency": "santaclara",
    "title": "Senior Civil Engineer",
@@ -2308,9 +2192,9 @@
     "interval": "year"
    },
    "posted": "2026-10-13",
-   "closes": "2026-11-13",
+   "closes": "2026-12-04",
    "url": "https://www.governmentjobs.com/careers/cityofsantaclaraca/jobs/5512716-0",
-   "summary": "The Positions: The City of Santa Clara is seeking to fill multiple Senior Civil Engineer positions to perform high-level civil engineering tasks to manage and support capital improvement projects. Current openings are in the Department of Public Works (DPW). Currently, DPW has one (1) open position in the Design Division, one (1) open position in the Land and Property Development Division, and two",
+   "summary": "**Please note the application deadline has been extended.** The Positions: The City of Santa Clara is seeking to fill multiple Senior Civil Engineer positions to perform high-level civil engineering tasks to manage and support capital improvement projects. Current openings are in the Department of Public Works (DPW). Currently, DPW has one (1) open position in the Design Division, one (1) open pos",
    "internalOnly": false,
    "categories": [
     "engineering"
@@ -2388,6 +2272,30 @@
     "pm"
    ],
    "core": false,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "marin:5483900",
+   "agency": "marin",
+   "title": "Engineering Division Manager (Principal Civil Engineer)",
+   "department": "Department of Public Works",
+   "location": "San Rafael",
+   "jobType": "Full Time, Regular",
+   "salary": {
+    "min": 83.16,
+    "max": 101.1,
+    "interval": "hour"
+   },
+   "posted": "2026-09-15",
+   "closes": "continuous",
+   "url": "https://www.governmentjobs.com/careers/marincounty/jobs/5483900-0",
+   "summary": "At the County of Marin, our employees overwhelmingly report feeling their work is meaningful, they like the work they do, and they are proud to tell people “I work for the County of Marin.” Discover more about us, our values and our organizational culture on the Department of Human Resources website. Read on to find out more about this opportunity. The mission of the Marin County Department of Pub",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
    "region": "norcal",
    "firstSeen": "2026-11-06"
   },
