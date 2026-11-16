@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T19:56:24.183Z",
+ "updated": "2026-11-16T23:29:44.950Z",
  "regions": [
   {
    "id": "socal",
@@ -374,14 +374,14 @@
    "id": "lacounty",
    "name": "County of Los Angeles",
    "ok": true,
-   "total": 416,
+   "total": 417,
    "listed": 6
   },
   {
    "id": "metro",
    "name": "LA Metro",
    "ok": true,
-   "total": 11,
+   "total": 12,
    "listed": 0
   },
   {
@@ -430,7 +430,7 @@
    "id": "glendale",
    "name": "City of Glendale",
    "ok": true,
-   "total": 7,
+   "total": 8,
    "listed": 1
   },
   {
@@ -444,7 +444,7 @@
    "id": "culvercity",
    "name": "Culver City (incl. CityBus)",
    "ok": true,
-   "total": 8,
+   "total": 7,
    "listed": 1
   },
   {
@@ -458,14 +458,14 @@
    "id": "beverlyhills",
    "name": "City of Beverly Hills",
    "ok": true,
-   "total": 7,
-   "listed": 1
+   "total": 6,
+   "listed": 0
   },
   {
    "id": "torrance",
    "name": "City of Torrance (incl. Torrance Transit)",
    "ok": true,
-   "total": 34,
+   "total": 32,
    "listed": 5
   },
   {
@@ -479,29 +479,29 @@
    "id": "lbtransit",
    "name": "Long Beach Transit",
    "ok": true,
-   "total": 5,
+   "total": 6,
    "listed": 1
   },
   {
    "id": "sf",
    "name": "City & County of San Francisco (incl. SFMTA)",
    "ok": true,
-   "total": 186,
+   "total": 189,
    "listed": 15
   },
   {
    "id": "oakland",
    "name": "City of Oakland",
    "ok": true,
-   "total": 34,
+   "total": 33,
    "listed": 2
   },
   {
    "id": "sanjose",
    "name": "City of San José",
    "ok": true,
-   "total": 44,
-   "listed": 4
+   "total": 46,
+   "listed": 5
   },
   {
    "id": "santaclara",
@@ -521,7 +521,7 @@
    "id": "berkeley",
    "name": "City of Berkeley",
    "ok": true,
-   "total": 17,
+   "total": 22,
    "listed": 2
   },
   {
@@ -584,7 +584,7 @@
    "id": "sunnyvale",
    "name": "City of Sunnyvale",
    "ok": true,
-   "total": 20,
+   "total": 21,
    "listed": 0
   },
   {
@@ -598,7 +598,7 @@
    "id": "santarosa",
    "name": "City of Santa Rosa",
    "ok": true,
-   "total": 10,
+   "total": 9,
    "listed": 1
   },
   {
@@ -612,8 +612,8 @@
    "id": "santaclaracounty",
    "name": "County of Santa Clara",
    "ok": true,
-   "total": 87,
-   "listed": 0
+   "total": 55,
+   "listed": 1
   },
   {
    "id": "sanmateocounty",
@@ -626,35 +626,35 @@
    "id": "contracosta",
    "name": "County of Contra Costa",
    "ok": true,
-   "total": 66,
+   "total": 68,
    "listed": 0
   },
   {
    "id": "marin",
    "name": "County of Marin",
    "ok": true,
-   "total": 39,
+   "total": 40,
    "listed": 2
   },
   {
    "id": "sonoma",
    "name": "County of Sonoma",
    "ok": true,
-   "total": 34,
+   "total": 33,
    "listed": 0
   },
   {
    "id": "solano",
    "name": "County of Solano",
    "ok": true,
-   "total": 57,
+   "total": 58,
    "listed": 2
   },
   {
    "id": "napa",
    "name": "County of Napa",
    "ok": true,
-   "total": 15,
+   "total": 16,
    "listed": 0
   },
   {
@@ -675,46 +675,94 @@
    "id": "mtc",
    "name": "MTC / ABAG (Bay Area Metro)",
    "ok": true,
-   "total": 5,
+   "total": 4,
    "listed": 0
   },
   {
    "id": "actransit",
    "name": "AC Transit",
    "ok": true,
-   "total": 4,
+   "total": 6,
    "listed": 0
   },
   {
    "id": "samtrans",
    "name": "SamTrans / Caltrain",
    "ok": true,
-   "total": 18,
-   "listed": 8
+   "total": 15,
+   "listed": 7
   },
   {
    "id": "goldengate",
    "name": "Golden Gate Bridge, Highway & Transportation District",
    "ok": true,
-   "total": 15,
+   "total": 14,
    "listed": 2
   },
   {
    "id": "caltrans4",
    "name": "Caltrans District 4 (Bay Area)",
    "ok": true,
-   "total": 13,
+   "total": 11,
    "listed": 4
   },
   {
    "id": "caltranshq",
    "name": "Caltrans Headquarters (Sacramento)",
    "ok": true,
-   "total": 35,
-   "listed": 13
+   "total": 40,
+   "listed": 15
   }
  ],
  "jobs": [
+  {
+   "id": "sanjose:5548361",
+   "agency": "sanjose",
+   "title": "Student Intern/Graduate Student Intern (Part-Time) - Department of Transportation",
+   "department": "Transportation",
+   "location": "San Jose Metropolitan Area",
+   "jobType": "Part-Time",
+   "salary": {
+    "min": 16.33,
+    "max": 31.22,
+    "interval": "hour"
+   },
+   "posted": "2026-11-16",
+   "closes": "2026-11-30",
+   "url": "https://www.governmentjobs.com/careers/sanjoseca/jobs/5548361-0",
+   "summary": "The Department of Transportation (DOT) plans, develops, operates, and maintains transportation facilities, services, and related systems which contribute to the livability and economic health of the City. We comprise a team of more than 500 people ready to serve the needs of our residents to improve the efficiency and safety of San José streets. We are an energetic and innovative team that is impr",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-16"
+  },
+  {
+   "id": "caltrans:539029",
+   "agency": "caltranshq",
+   "title": "Resiliency Planner",
+   "department": "ASSOCIATE TRANSPORTATION PLANNER",
+   "location": "Sacramento County",
+   "jobType": "Limited Term Fulltime, Hybrid",
+   "salary": {
+    "min": 7328,
+    "max": 9178,
+    "interval": "month"
+   },
+   "posted": "2026-11-16",
+   "closes": "2026-11-26",
+   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=539029",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-16"
+  },
   {
    "id": "sf:3743990016855676",
    "agency": "sf",
@@ -1008,7 +1056,7 @@
     "interval": "month"
    },
    "posted": "2026-11-12",
-   "closes": "2026-11-22",
+   "closes": "2026-12-14",
    "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=538786",
    "summary": "",
    "internalOnly": false,
@@ -1056,7 +1104,7 @@
     "interval": "month"
    },
    "posted": "2026-11-12",
-   "closes": "2026-11-22",
+   "closes": "2026-12-02",
    "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=538743",
    "summary": "",
    "internalOnly": false,
@@ -1080,7 +1128,7 @@
     "interval": "month"
    },
    "posted": "2026-11-12",
-   "closes": "2026-11-22",
+   "closes": "2026-12-14",
    "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=538756",
    "summary": "",
    "internalOnly": false,
@@ -1651,6 +1699,30 @@
    "firstSeen": "2026-11-06"
   },
   {
+   "id": "caltrans:538011",
+   "agency": "caltranshq",
+   "title": "Construction Storm Water Coordinator",
+   "department": "SENIOR TRANSPORTATION ENGINEER, CALTRANS",
+   "location": "Sacramento County",
+   "jobType": "Permanent Fulltime, Hybrid",
+   "salary": {
+    "min": 11437,
+    "max": 14315,
+    "interval": "month"
+   },
+   "posted": "2026-11-04",
+   "closes": "2026-11-20",
+   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=538011",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
    "id": "marin:5538411",
    "agency": "marin",
    "title": "Capital Planning and Project Manager I/II (Capital Projects)",
@@ -1843,6 +1915,30 @@
    "firstSeen": "2026-11-06"
   },
   {
+   "id": "santaclaracounty:5522235",
+   "agency": "santaclaracounty",
+   "title": "Senior Civil Engineer",
+   "department": "County-Wide Recruitment",
+   "location": "Throughout the County of Santa Clara",
+   "jobType": "Full-Time",
+   "salary": {
+    "min": 77.935,
+    "max": 94.974,
+    "interval": "hour"
+   },
+   "posted": "2026-10-28",
+   "closes": "2026-11-30",
+   "url": "https://www.governmentjobs.com/careers/santaclara/jobs/5522235-0",
+   "summary": "Under direction, to have charge of varied and difficult engineering work involving the supervision of professional engineers and others engaged in a variety of engineering activities, such as the planning and design of roads and bridges, special studies or services, and other public works projects.",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": false,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
    "id": "bart:5520150",
    "agency": "bart",
    "title": "Manager of Access & Accessible Services",
@@ -1940,30 +2036,6 @@
    "firstSeen": "2026-11-06"
   },
   {
-   "id": "samtrans:5521690",
-   "agency": "samtrans",
-   "title": "Director, Project Delivery",
-   "department": "SMCTA Administration",
-   "location": "Millbrae, CA",
-   "jobType": "Full-Time",
-   "salary": {
-    "min": 211485,
-    "max": 296080,
-    "interval": "year"
-   },
-   "posted": "2026-10-23",
-   "closes": "2026-11-15",
-   "url": "https://www.governmentjobs.com/careers/smctd/jobs/5521690-0",
-   "summary": "The Director, Project Delivery reports to the Chief Officer, Transportation Authority (SMCTA) and is responsible for overseeing the delivery of a wide array of transportation programs and projects funded through SMCTA’s Measure A and W sales tax programs.",
-   "internalOnly": false,
-   "categories": [
-    "pm"
-   ],
-   "core": false,
-   "region": "norcal",
-   "firstSeen": "2026-11-06"
-  },
-  {
    "id": "fremont:5521793",
    "agency": "fremont",
    "title": "Administrative Analyst (Council Aide)",
@@ -2048,7 +2120,7 @@
     "interval": "biweekly"
    },
    "posted": "2026-10-15",
-   "closes": "2026-11-16",
+   "closes": "2026-11-19",
    "url": "https://www.governmentjobs.com/careers/vtasantaclara/jobs/5511023-0",
    "summary": "VTA's Engineering and Program Delivery (EPD) Division is seeking qualified candidates for the position of Environmental Programs Manager (Transportation Planning Manager)! What You'll be Doing: Definition Under general direction, the Environmental Programs Department Manager (Transportation Planning Manager - Environmental Resource Planning) plans, organizes, and directs professional staff involve",
    "internalOnly": false,
@@ -2529,30 +2601,6 @@
     "engineering"
    ],
    "core": false,
-   "region": "socal",
-   "firstSeen": "2026-11-05"
-  },
-  {
-   "id": "beverlyhills:5518793",
-   "agency": "beverlyhills",
-   "title": "Associate Planner",
-   "department": "CD-Planning",
-   "location": "Beverly Hills City Hall",
-   "jobType": "Full-time",
-   "salary": {
-    "min": 8357.44,
-    "max": 10383.06,
-    "interval": "month"
-   },
-   "posted": "2026-10-23",
-   "closes": "2026-11-15",
-   "url": "https://www.governmentjobs.com/careers/beverlyhills/jobs/5518793-0",
-   "summary": "PLEASE NOTE: This recruitment has been extended and will close on Sunday, November 15, 2026, at 11:59 p.m. PST. Please be sure to submit your application prior to the deadline. Who We Are The City of Beverly Hills has a long-standing reputation for providing superior customer service to residents, businesses, and visitors. This characteristic, combined with outstanding staff in all departments, ha",
-   "internalOnly": false,
-   "categories": [
-    "engineering"
-   ],
-   "core": true,
    "region": "socal",
    "firstSeen": "2026-11-05"
   },
