@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T22:26:03.569Z",
+ "updated": "2026-11-20T21:57:58.333Z",
  "regions": [
   {
    "id": "socal",
@@ -366,37 +366,32 @@
   {
    "id": "lacity",
    "name": "City of Los Angeles",
-   "ok": true,
-   "total": 51,
-   "listed": 2
+   "ok": false,
+   "error": "fetch failed"
   },
   {
    "id": "lacounty",
    "name": "County of Los Angeles",
-   "ok": true,
-   "total": 419,
-   "listed": 6
+   "ok": false,
+   "error": "fetch failed"
   },
   {
    "id": "metro",
    "name": "LA Metro",
-   "ok": true,
-   "total": 13,
-   "listed": 1
+   "ok": false,
+   "error": "fetch failed"
   },
   {
    "id": "metrolink",
    "name": "Metrolink (SCRRA)",
-   "ok": true,
-   "total": 3,
-   "listed": 0
+   "ok": false,
+   "error": "fetch failed"
   },
   {
    "id": "scag",
    "name": "Southern California Association of Governments",
-   "ok": true,
-   "total": 1,
-   "listed": 0
+   "ok": false,
+   "error": "fetch failed"
   },
   {
    "id": "caltrans7",
@@ -408,65 +403,56 @@
   {
    "id": "longbeach",
    "name": "City of Long Beach",
-   "ok": true,
-   "total": 32,
-   "listed": 4
+   "ok": false,
+   "error": "fetch failed"
   },
   {
    "id": "pasadena",
    "name": "City of Pasadena",
-   "ok": true,
-   "total": 20,
-   "listed": 3
+   "ok": false,
+   "error": "fetch failed"
   },
   {
    "id": "santamonica",
    "name": "City of Santa Monica (incl. Big Blue Bus)",
-   "ok": true,
-   "total": 12,
-   "listed": 1
+   "ok": false,
+   "error": "fetch failed"
   },
   {
    "id": "glendale",
    "name": "City of Glendale",
-   "ok": true,
-   "total": 9,
-   "listed": 1
+   "ok": false,
+   "error": "fetch failed"
   },
   {
    "id": "burbank",
    "name": "City of Burbank",
-   "ok": true,
-   "total": 9,
-   "listed": 0
+   "ok": false,
+   "error": "fetch failed"
   },
   {
    "id": "culvercity",
    "name": "Culver City (incl. CityBus)",
-   "ok": true,
-   "total": 7,
-   "listed": 1
+   "ok": false,
+   "error": "fetch failed"
   },
   {
    "id": "weho",
    "name": "City of West Hollywood",
-   "ok": true,
-   "total": 0,
-   "listed": 0
+   "ok": false,
+   "error": "fetch failed"
   },
   {
    "id": "beverlyhills",
    "name": "City of Beverly Hills",
-   "ok": true,
-   "total": 6,
-   "listed": 0
+   "ok": false,
+   "error": "fetch failed"
   },
   {
    "id": "torrance",
    "name": "City of Torrance (incl. Torrance Transit)",
-   "ok": true,
-   "total": 32,
-   "listed": 5
+   "ok": false,
+   "error": "fetch failed"
   },
   {
    "id": "inglewood",
@@ -479,197 +465,171 @@
    "id": "lbtransit",
    "name": "Long Beach Transit",
    "ok": true,
-   "total": 6,
-   "listed": 1
+   "total": 4,
+   "listed": 0
   },
   {
    "id": "sf",
    "name": "City & County of San Francisco (incl. SFMTA)",
    "ok": true,
-   "total": 190,
-   "listed": 17
+   "total": 204,
+   "listed": 22
   },
   {
    "id": "oakland",
    "name": "City of Oakland",
-   "ok": true,
-   "total": 33,
-   "listed": 3
+   "ok": false,
+   "error": "fetch failed"
   },
   {
    "id": "sanjose",
    "name": "City of San José",
-   "ok": true,
-   "total": 45,
-   "listed": 5
+   "ok": false,
+   "error": "fetch failed"
   },
   {
    "id": "santaclara",
    "name": "City of Santa Clara",
-   "ok": true,
-   "total": 40,
-   "listed": 1
+   "ok": false,
+   "error": "fetch failed"
   },
   {
    "id": "emeryville",
    "name": "City of Emeryville",
-   "ok": true,
-   "total": 10,
-   "listed": 1
+   "ok": false,
+   "error": "fetch failed"
   },
   {
    "id": "berkeley",
    "name": "City of Berkeley",
-   "ok": true,
-   "total": 22,
-   "listed": 2
+   "ok": false,
+   "error": "fetch failed"
   },
   {
    "id": "fremont",
    "name": "City of Fremont",
-   "ok": true,
-   "total": 16,
-   "listed": 4
+   "ok": false,
+   "error": "fetch failed"
   },
   {
    "id": "hayward",
    "name": "City of Hayward",
-   "ok": true,
-   "total": 12,
-   "listed": 3
+   "ok": false,
+   "error": "fetch failed"
   },
   {
    "id": "alameda",
    "name": "City of Alameda",
-   "ok": true,
-   "total": 20,
-   "listed": 0
+   "ok": false,
+   "error": "fetch failed"
   },
   {
    "id": "richmond",
    "name": "City of Richmond",
-   "ok": true,
-   "total": 15,
-   "listed": 0
+   "ok": false,
+   "error": "fetch failed"
   },
   {
    "id": "concord",
    "name": "City of Concord",
-   "ok": true,
-   "total": 18,
-   "listed": 1
+   "ok": false,
+   "error": "fetch failed"
   },
   {
    "id": "walnutcreek",
    "name": "City of Walnut Creek",
-   "ok": true,
-   "total": 2,
-   "listed": 0
+   "ok": false,
+   "error": "fetch failed"
   },
   {
    "id": "paloalto",
    "name": "City of Palo Alto",
-   "ok": true,
-   "total": 11,
-   "listed": 0
+   "ok": false,
+   "error": "fetch failed"
   },
   {
    "id": "mountainview",
    "name": "City of Mountain View",
-   "ok": true,
-   "total": 8,
-   "listed": 0
+   "ok": false,
+   "error": "fetch failed"
   },
   {
    "id": "sunnyvale",
    "name": "City of Sunnyvale",
-   "ok": true,
-   "total": 20,
-   "listed": 0
+   "ok": false,
+   "error": "fetch failed"
   },
   {
    "id": "vallejo",
    "name": "City of Vallejo",
-   "ok": true,
-   "total": 6,
-   "listed": 0
+   "ok": false,
+   "error": "fetch failed"
   },
   {
    "id": "santarosa",
    "name": "City of Santa Rosa",
-   "ok": true,
-   "total": 7,
-   "listed": 1
+   "ok": false,
+   "error": "fetch failed"
   },
   {
    "id": "petaluma",
    "name": "City of Petaluma",
-   "ok": true,
-   "total": 3,
-   "listed": 0
+   "ok": false,
+   "error": "fetch failed"
   },
   {
    "id": "santaclaracounty",
    "name": "County of Santa Clara",
-   "ok": true,
-   "total": 56,
-   "listed": 1
+   "ok": false,
+   "error": "fetch failed"
   },
   {
    "id": "sanmateocounty",
    "name": "County of San Mateo",
-   "ok": true,
-   "total": 14,
-   "listed": 0
+   "ok": false,
+   "error": "fetch failed"
   },
   {
    "id": "contracosta",
    "name": "County of Contra Costa",
-   "ok": true,
-   "total": 70,
-   "listed": 0
+   "ok": false,
+   "error": "fetch failed"
   },
   {
    "id": "marin",
    "name": "County of Marin",
-   "ok": true,
-   "total": 37,
-   "listed": 1
+   "ok": false,
+   "error": "fetch failed"
   },
   {
    "id": "sonoma",
    "name": "County of Sonoma",
-   "ok": true,
-   "total": 39,
-   "listed": 0
+   "ok": false,
+   "error": "fetch failed"
   },
   {
    "id": "solano",
    "name": "County of Solano",
-   "ok": true,
-   "total": 59,
-   "listed": 2
+   "ok": false,
+   "error": "fetch failed"
   },
   {
    "id": "napa",
    "name": "County of Napa",
-   "ok": true,
-   "total": 14,
-   "listed": 0
+   "ok": false,
+   "error": "fetch failed"
   },
   {
    "id": "bart",
    "name": "BART",
-   "ok": true,
-   "total": 22,
-   "listed": 2
+   "ok": false,
+   "error": "fetch failed"
   },
   {
    "id": "vta",
    "name": "VTA (Santa Clara Valley Transportation Authority)",
-   "ok": true,
-   "total": 8,
-   "listed": 3
+   "ok": false,
+   "error": "fetch failed"
   },
   {
    "id": "mtc",
@@ -681,23 +641,20 @@
   {
    "id": "actransit",
    "name": "AC Transit",
-   "ok": true,
-   "total": 8,
-   "listed": 0
+   "ok": false,
+   "error": "fetch failed"
   },
   {
    "id": "samtrans",
    "name": "SamTrans / Caltrain",
-   "ok": true,
-   "total": 16,
-   "listed": 7
+   "ok": false,
+   "error": "fetch failed"
   },
   {
    "id": "goldengate",
    "name": "Golden Gate Bridge, Highway & Transportation District",
-   "ok": true,
-   "total": 13,
-   "listed": 2
+   "ok": false,
+   "error": "fetch failed"
   },
   {
    "id": "caltrans4",
@@ -710,11 +667,111 @@
    "id": "caltranshq",
    "name": "Caltrans Headquarters (Sacramento)",
    "ok": true,
-   "total": 43,
-   "listed": 17
+   "total": 46,
+   "listed": 16
   }
  ],
  "jobs": [
+  {
+   "id": "sf:3743990017005526",
+   "agency": "sf",
+   "title": "PermitSF Permitting Transformation Lead (1054 Technology Analyst/Designer – Principal)",
+   "department": "City Planning",
+   "location": "San Francisco, CA",
+   "jobType": "Full-time",
+   "salary": null,
+   "posted": "2026-11-20",
+   "closes": null,
+   "url": "https://jobs.smartrecruiters.com/CityAndCountyOfSanFrancisco1/3743990017005526",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "pm"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-20"
+  },
+  {
+   "id": "sf:3743990017004620",
+   "agency": "sf",
+   "title": "PermitSF Portal Project Manager (1053 Technology Analyst/Designer-Senior)",
+   "department": "City Planning",
+   "location": "San Francisco, CA",
+   "jobType": "Full-time",
+   "salary": null,
+   "posted": "2026-11-20",
+   "closes": null,
+   "url": "https://jobs.smartrecruiters.com/CityAndCountyOfSanFrancisco1/3743990017004620",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "pm"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-20"
+  },
+  {
+   "id": "sf:3743990017005256",
+   "agency": "sf",
+   "title": "PermitSF Permitting Transformation Senior Specialist (1053 Technology Analyst/Designer-Senior)",
+   "department": "City Planning",
+   "location": "San Francisco, CA",
+   "jobType": "Full-time",
+   "salary": null,
+   "posted": "2026-11-20",
+   "closes": null,
+   "url": "https://jobs.smartrecruiters.com/CityAndCountyOfSanFrancisco1/3743990017005256",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "pm"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-20"
+  },
+  {
+   "id": "sf:3743990017004254",
+   "agency": "sf",
+   "title": "PermitSF Training & Change Management Lead (1054 Technology Analyst/Designer – Principal)",
+   "department": "City Planning",
+   "location": "San Francisco, CA",
+   "jobType": "Full-time",
+   "salary": null,
+   "posted": "2026-11-20",
+   "closes": null,
+   "url": "https://jobs.smartrecruiters.com/CityAndCountyOfSanFrancisco1/3743990017004254",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "pm"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-20"
+  },
+  {
+   "id": "sf:3743990017000096",
+   "agency": "sf",
+   "title": "PermitSF Process Improvement Specialist (1823 Senior Administrative Analyst)",
+   "department": "City Planning",
+   "location": "San Francisco, CA",
+   "jobType": "Full-time",
+   "salary": null,
+   "posted": "2026-11-20",
+   "closes": null,
+   "url": "https://jobs.smartrecruiters.com/CityAndCountyOfSanFrancisco1/3743990017000096",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "pm"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-20"
+  },
   {
    "id": "metro:5555531",
    "agency": "metro",
@@ -1333,7 +1390,7 @@
     "interval": "month"
    },
    "posted": "2026-11-12",
-   "closes": "2026-11-22",
+   "closes": "2026-11-29",
    "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=538804",
    "summary": "",
    "internalOnly": false,
@@ -1393,30 +1450,6 @@
    "firstSeen": "2026-11-12"
   },
   {
-   "id": "caltrans:538673",
-   "agency": "caltranshq",
-   "title": "Statewide Maintenance Stormwater Coordinator",
-   "department": "SENIOR TRANSPORTATION ENGINEER, CALTRANS",
-   "location": "Sacramento County",
-   "jobType": "Permanent Fulltime, Hybrid",
-   "salary": {
-    "min": 11437,
-    "max": 14315,
-    "interval": "month"
-   },
-   "posted": "2026-11-12",
-   "closes": "2026-11-22",
-   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=538673",
-   "summary": "",
-   "internalOnly": false,
-   "categories": [
-    "engineering"
-   ],
-   "core": true,
-   "region": "norcal",
-   "firstSeen": "2026-11-12"
-  },
-  {
    "id": "caltrans:538743",
    "agency": "caltranshq",
    "title": "Performance Engineer, Design Delegations",
@@ -1455,6 +1488,30 @@
    "posted": "2026-11-12",
    "closes": "2026-12-14",
    "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=538756",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-12"
+  },
+  {
+   "id": "caltrans:538673",
+   "agency": "caltranshq",
+   "title": "Statewide Maintenance Stormwater Coordinator",
+   "department": "SENIOR TRANSPORTATION ENGINEER, CALTRANS",
+   "location": "Sacramento County",
+   "jobType": "Permanent Fulltime, Hybrid",
+   "salary": {
+    "min": 11437,
+    "max": 14315,
+    "interval": "month"
+   },
+   "posted": "2026-11-12",
+   "closes": "2026-12-06",
+   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=538673",
    "summary": "",
    "internalOnly": false,
    "categories": [
@@ -1805,6 +1862,30 @@
    "firstSeen": "2026-11-06"
   },
   {
+   "id": "caltrans:538214",
+   "agency": "caltranshq",
+   "title": "Office Chief",
+   "department": "SUPERVISING TRANSPORTATION ENGINEER, CALTRANS",
+   "location": "Sacramento County",
+   "jobType": "Permanent Fulltime, Hybrid",
+   "salary": {
+    "min": 13892,
+    "max": 15782,
+    "interval": "month"
+   },
+   "posted": "2026-11-06",
+   "closes": "2026-11-23",
+   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=538214",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
    "id": "caltrans:538180",
    "agency": "caltranshq",
    "title": "Office Chief, Office of Program Management",
@@ -1824,30 +1905,6 @@
    "categories": [
     "engineering",
     "pm"
-   ],
-   "core": true,
-   "region": "norcal",
-   "firstSeen": "2026-11-06"
-  },
-  {
-   "id": "caltrans:538214",
-   "agency": "caltranshq",
-   "title": "Office Chief",
-   "department": "SUPERVISING TRANSPORTATION ENGINEER, CALTRANS",
-   "location": "Sacramento County",
-   "jobType": "Permanent Fulltime, Hybrid",
-   "salary": {
-    "min": 13892,
-    "max": 15782,
-    "interval": "month"
-   },
-   "posted": "2026-11-06",
-   "closes": "2026-11-23",
-   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=538214",
-   "summary": "",
-   "internalOnly": false,
-   "categories": [
-    "engineering"
    ],
    "core": true,
    "region": "norcal",
@@ -1900,30 +1957,6 @@
     "pm"
    ],
    "core": true,
-   "region": "norcal",
-   "firstSeen": "2026-11-06"
-  },
-  {
-   "id": "sanjose:5540569",
-   "agency": "sanjose",
-   "title": "Program Manager (Capital Improvement Program) - Environmental Services Department",
-   "department": "Environmental Services",
-   "location": "San Jose",
-   "jobType": "Full-Time",
-   "salary": {
-    "min": 138531.12,
-    "max": 180092.64,
-    "interval": "year"
-   },
-   "posted": "2026-11-04",
-   "closes": "2026-11-19",
-   "url": "https://www.governmentjobs.com/careers/sanjoseca/jobs/5540569-0",
-   "summary": "The City of San José's Environmental Services Department (ESD) is an award-winning department with a mission to deliver world-class utility services and programs to improve our health, environment and economy. The Department is a national leader in managing garbage and recycling services; watershed protection and pollution prevention; municipal drinking water and recycled water; sustainability ini",
-   "internalOnly": false,
-   "categories": [
-    "pm"
-   ],
-   "core": false,
    "region": "norcal",
    "firstSeen": "2026-11-06"
   },
@@ -2038,30 +2071,6 @@
    "posted": "2026-11-04",
    "closes": "2026-12-04",
    "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=538011",
-   "summary": "",
-   "internalOnly": false,
-   "categories": [
-    "engineering"
-   ],
-   "core": true,
-   "region": "norcal",
-   "firstSeen": "2026-11-06"
-  },
-  {
-   "id": "caltrans:537742",
-   "agency": "caltranshq",
-   "title": "Chief, Office of Geotechnical Design – North",
-   "department": "SUPERVISING TRANSPORTATION ENGINEER, CALTRANS",
-   "location": "Sacramento County",
-   "jobType": "Permanent Fulltime, Hybrid",
-   "salary": {
-    "min": 13892,
-    "max": 15782,
-    "interval": "month"
-   },
-   "posted": "2026-11-03",
-   "closes": "2026-11-19",
-   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=537742",
    "summary": "",
    "internalOnly": false,
    "categories": [
@@ -2279,30 +2288,6 @@
    "closes": "2026-11-20",
    "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=536004",
    "summary": "",
-   "internalOnly": false,
-   "categories": [
-    "engineering"
-   ],
-   "core": true,
-   "region": "norcal",
-   "firstSeen": "2026-11-06"
-  },
-  {
-   "id": "vta:5511023",
-   "agency": "vta",
-   "title": "Environmental Programs Manager (Transportation Planning Manager)",
-   "department": "Engineering & Program Delivery",
-   "location": "3331 N First St, San Jose, CA 95134",
-   "jobType": "Full-Time",
-   "salary": {
-    "min": 7240.86,
-    "max": 9414.26,
-    "interval": "biweekly"
-   },
-   "posted": "2026-10-15",
-   "closes": "2026-11-19",
-   "url": "https://www.governmentjobs.com/careers/vtasantaclara/jobs/5511023-0",
-   "summary": "VTA's Engineering and Program Delivery (EPD) Division is seeking qualified candidates for the position of Environmental Programs Manager (Transportation Planning Manager)! What You'll be Doing: Definition Under general direction, the Environmental Programs Department Manager (Transportation Planning Manager - Environmental Resource Planning) plans, organizes, and directs professional staff involve",
    "internalOnly": false,
    "categories": [
     "engineering"
@@ -2852,26 +2837,6 @@
    "categories": [
     "engineering",
     "gis"
-   ],
-   "core": false,
-   "region": "socal",
-   "firstSeen": "2026-11-05"
-  },
-  {
-   "id": "lbtransit:27",
-   "agency": "lbtransit",
-   "title": "Project Engineer",
-   "department": "",
-   "location": "Long Beach, CA, United States",
-   "jobType": "",
-   "salary": null,
-   "posted": "2026-09-21",
-   "closes": null,
-   "url": "https://ibcrqy.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/27",
-   "summary": "",
-   "internalOnly": false,
-   "categories": [
-    "pm"
    ],
    "core": false,
    "region": "socal",
