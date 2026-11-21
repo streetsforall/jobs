@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T21:57:58.333Z",
+ "updated": "2026-11-21T20:40:36.520Z",
  "regions": [
   {
    "id": "socal",
@@ -660,15 +660,15 @@
    "id": "caltrans4",
    "name": "Caltrans District 4 (Bay Area)",
    "ok": true,
-   "total": 9,
+   "total": 7,
    "listed": 3
   },
   {
    "id": "caltranshq",
    "name": "Caltrans Headquarters (Sacramento)",
    "ok": true,
-   "total": 46,
-   "listed": 16
+   "total": 42,
+   "listed": 15
   }
  ],
  "jobs": [
@@ -1450,6 +1450,30 @@
    "firstSeen": "2026-11-12"
   },
   {
+   "id": "caltrans:538673",
+   "agency": "caltranshq",
+   "title": "Statewide Maintenance Stormwater Coordinator",
+   "department": "SENIOR TRANSPORTATION ENGINEER, CALTRANS",
+   "location": "Sacramento County",
+   "jobType": "Permanent Fulltime, Hybrid",
+   "salary": {
+    "min": 11437,
+    "max": 14315,
+    "interval": "month"
+   },
+   "posted": "2026-11-12",
+   "closes": "2026-12-06",
+   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=538673",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-12"
+  },
+  {
    "id": "caltrans:538743",
    "agency": "caltranshq",
    "title": "Performance Engineer, Design Delegations",
@@ -1488,30 +1512,6 @@
    "posted": "2026-11-12",
    "closes": "2026-12-14",
    "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=538756",
-   "summary": "",
-   "internalOnly": false,
-   "categories": [
-    "engineering"
-   ],
-   "core": true,
-   "region": "norcal",
-   "firstSeen": "2026-11-12"
-  },
-  {
-   "id": "caltrans:538673",
-   "agency": "caltranshq",
-   "title": "Statewide Maintenance Stormwater Coordinator",
-   "department": "SENIOR TRANSPORTATION ENGINEER, CALTRANS",
-   "location": "Sacramento County",
-   "jobType": "Permanent Fulltime, Hybrid",
-   "salary": {
-    "min": 11437,
-    "max": 14315,
-    "interval": "month"
-   },
-   "posted": "2026-11-12",
-   "closes": "2026-12-06",
-   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=538673",
    "summary": "",
    "internalOnly": false,
    "categories": [
@@ -1566,30 +1566,6 @@
    "firstSeen": "2026-11-12"
   },
   {
-   "id": "bart:5521785",
-   "agency": "bart",
-   "title": "Project Manager (Transit-Oriented Development)",
-   "department": "Infrastructure Delivery",
-   "location": "BART Headquarters",
-   "jobType": "Full-Time",
-   "salary": {
-    "min": 160800,
-    "max": 243612,
-    "interval": "year"
-   },
-   "posted": "2026-11-09",
-   "closes": "2026-11-20",
-   "url": "https://www.governmentjobs.com/careers/bartca/jobs/5521785-0",
-   "summary": "Pay Rate Non-Represented Salary Grade E09 Annual Salary Range: $160,800.00 (minimum) - $243,612.00 (maximum) Note: The starting negotiable annual salary offer will be between $160.800.00 (minimum) - $210,042.48 (midpoint) to commensurate with education and experience. Reports To Engineering Manager Days Off Saturday/Sunday Who May Apply All current BART employees and Future BART employees Current ",
-   "internalOnly": false,
-   "categories": [
-    "pm"
-   ],
-   "core": true,
-   "region": "norcal",
-   "firstSeen": "2026-11-12"
-  },
-  {
    "id": "sf:3743990016732506",
    "agency": "sf",
    "title": "San Francisco Municipal Transportation Agency Student Intern Program, Summer 2027 – 5380 Engineering Intern (Level 1)",
@@ -1630,30 +1606,6 @@
     "engineering"
    ],
    "core": true,
-   "region": "norcal",
-   "firstSeen": "2026-11-09"
-  },
-  {
-   "id": "bart:5537232",
-   "agency": "bart",
-   "title": "Project Manager, Accessibility",
-   "department": "Infrastructure Delivery",
-   "location": "BART Headquarters",
-   "jobType": "Full-Time",
-   "salary": {
-    "min": 160800,
-    "max": 243612,
-    "interval": "year"
-   },
-   "posted": "2026-11-09",
-   "closes": "2026-11-20",
-   "url": "https://www.governmentjobs.com/careers/bartca/jobs/5537232-0",
-   "summary": "Pay Rate: Non-Rep Salary Grade E09 Annual Salary Range: $160,800.00 (Minimum) - $243,612.00 (Maximum) *The starting negotiable annual salary for this position will be $160,800.00 (minimum) - $202,206.00 (midpoint) to commensurate with education and experience. Reports To: Senior Manager of Engineering Programs Days Off: Saturday and Sunday Who May Apply: All current BART employees and Future BART ",
-   "internalOnly": false,
-   "categories": [
-    "pm"
-   ],
-   "core": false,
    "region": "norcal",
    "firstSeen": "2026-11-09"
   },
@@ -1790,54 +1742,6 @@
    "firstSeen": "2026-11-07"
   },
   {
-   "id": "longbeach:5541432",
-   "agency": "longbeach",
-   "title": "ADMINISTRATIVE INTERN - (NON-CAREER) - CONSTRUCTION MANAGEMENT",
-   "department": "Harbor - (UC)",
-   "location": "City of Long Beach",
-   "jobType": "Unclassified - Part-Time, Temporary",
-   "salary": {
-    "min": 26.79,
-    "max": null,
-    "interval": "hour"
-   },
-   "posted": "2026-11-06",
-   "closes": "2026-11-20",
-   "url": "https://www.governmentjobs.com/careers/longbeach/jobs/5541432-0",
-   "summary": "THE PORT OF LONG BEACH IS SEEKING ONE (1) ADMINISTRATIVE INTERN IN THE CONSTRUCTION MANAGEMENT DIVISION. (This is an at-will position) HOURLY PAY: $26.79 The Port of Choice: The Port of Long Beach is an international gateway for the reliable, efficient and sustainable movement of goods and is a leader in environmental stewardship. Credited with moving $300 billion in trade, the Port serves as a cr",
-   "internalOnly": false,
-   "categories": [
-    "pm"
-   ],
-   "core": false,
-   "region": "socal",
-   "firstSeen": "2026-11-06"
-  },
-  {
-   "id": "santamonica:5534475",
-   "agency": "santamonica",
-   "title": "CIP PROJECT MANAGER",
-   "department": "Public Works",
-   "location": "City of Santa Monica",
-   "jobType": "Full-Time Regular",
-   "salary": {
-    "min": 10852,
-    "max": 13397,
-    "interval": "month"
-   },
-   "posted": "2026-11-06",
-   "closes": "2026-11-20",
-   "url": "https://www.governmentjobs.com/careers/santamonica/jobs/5534475-0",
-   "summary": "Performs a variety of complex professional duties in the administration, development and execution of public works Capital Improvement Projects (CIPs). Coordinates and manages the activities of assigned staff, consultants and contractors.",
-   "internalOnly": false,
-   "categories": [
-    "pm"
-   ],
-   "core": true,
-   "region": "socal",
-   "firstSeen": "2026-11-06"
-  },
-  {
    "id": "samtrans:5536126",
    "agency": "samtrans",
    "title": "Manager, Bus Transportation",
@@ -1856,30 +1760,6 @@
    "internalOnly": false,
    "categories": [
     "pm"
-   ],
-   "core": true,
-   "region": "norcal",
-   "firstSeen": "2026-11-06"
-  },
-  {
-   "id": "caltrans:538214",
-   "agency": "caltranshq",
-   "title": "Office Chief",
-   "department": "SUPERVISING TRANSPORTATION ENGINEER, CALTRANS",
-   "location": "Sacramento County",
-   "jobType": "Permanent Fulltime, Hybrid",
-   "salary": {
-    "min": 13892,
-    "max": 15782,
-    "interval": "month"
-   },
-   "posted": "2026-11-06",
-   "closes": "2026-11-23",
-   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=538214",
-   "summary": "",
-   "internalOnly": false,
-   "categories": [
-    "engineering"
    ],
    "core": true,
    "region": "norcal",
@@ -1905,6 +1785,30 @@
    "categories": [
     "engineering",
     "pm"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-06"
+  },
+  {
+   "id": "caltrans:538214",
+   "agency": "caltranshq",
+   "title": "Office Chief",
+   "department": "SUPERVISING TRANSPORTATION ENGINEER, CALTRANS",
+   "location": "Sacramento County",
+   "jobType": "Permanent Fulltime, Hybrid",
+   "salary": {
+    "min": 13892,
+    "max": 15782,
+    "interval": "month"
+   },
+   "posted": "2026-11-06",
+   "closes": "2026-11-23",
+   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=538214",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
    ],
    "core": true,
    "region": "norcal",
@@ -2269,30 +2173,6 @@
     "pm"
    ],
    "core": false,
-   "region": "norcal",
-   "firstSeen": "2026-11-06"
-  },
-  {
-   "id": "caltrans:536004",
-   "agency": "caltranshq",
-   "title": "Construction Special Projects Engineer",
-   "department": "SENIOR TRANSPORTATION ENGINEER, CALTRANS",
-   "location": "Sacramento County",
-   "jobType": "Permanent Fulltime, Hybrid",
-   "salary": {
-    "min": 11437,
-    "max": 14315,
-    "interval": "month"
-   },
-   "posted": "2026-10-19",
-   "closes": "2026-11-20",
-   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=536004",
-   "summary": "",
-   "internalOnly": false,
-   "categories": [
-    "engineering"
-   ],
-   "core": true,
    "region": "norcal",
    "firstSeen": "2026-11-06"
   },
