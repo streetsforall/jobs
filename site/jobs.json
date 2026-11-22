@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T20:40:36.520Z",
+ "updated": "2026-11-22T20:50:45.585Z",
  "regions": [
   {
    "id": "socal",
@@ -397,7 +397,7 @@
    "id": "caltrans7",
    "name": "Caltrans District 7 (LA & Ventura)",
    "ok": true,
-   "total": 12,
+   "total": 11,
    "listed": 5
   },
   {
@@ -667,8 +667,8 @@
    "id": "caltranshq",
    "name": "Caltrans Headquarters (Sacramento)",
    "ok": true,
-   "total": 42,
-   "listed": 15
+   "total": 41,
+   "listed": 14
   }
  ],
  "jobs": [
@@ -1450,30 +1450,6 @@
    "firstSeen": "2026-11-12"
   },
   {
-   "id": "caltrans:538673",
-   "agency": "caltranshq",
-   "title": "Statewide Maintenance Stormwater Coordinator",
-   "department": "SENIOR TRANSPORTATION ENGINEER, CALTRANS",
-   "location": "Sacramento County",
-   "jobType": "Permanent Fulltime, Hybrid",
-   "salary": {
-    "min": 11437,
-    "max": 14315,
-    "interval": "month"
-   },
-   "posted": "2026-11-12",
-   "closes": "2026-12-06",
-   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=538673",
-   "summary": "",
-   "internalOnly": false,
-   "categories": [
-    "engineering"
-   ],
-   "core": true,
-   "region": "norcal",
-   "firstSeen": "2026-11-12"
-  },
-  {
    "id": "caltrans:538743",
    "agency": "caltranshq",
    "title": "Performance Engineer, Design Delegations",
@@ -1512,6 +1488,30 @@
    "posted": "2026-11-12",
    "closes": "2026-12-14",
    "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=538756",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-12"
+  },
+  {
+   "id": "caltrans:538673",
+   "agency": "caltranshq",
+   "title": "Statewide Maintenance Stormwater Coordinator",
+   "department": "SENIOR TRANSPORTATION ENGINEER, CALTRANS",
+   "location": "Sacramento County",
+   "jobType": "Permanent Fulltime, Hybrid",
+   "salary": {
+    "min": 11437,
+    "max": 14315,
+    "interval": "month"
+   },
+   "posted": "2026-11-12",
+   "closes": "2026-12-06",
+   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=538673",
    "summary": "",
    "internalOnly": false,
    "categories": [
@@ -1933,30 +1933,6 @@
     "engineering"
    ],
    "core": true,
-   "region": "norcal",
-   "firstSeen": "2026-11-06"
-  },
-  {
-   "id": "caltrans:537977",
-   "agency": "caltranshq",
-   "title": "Standards and Procedures Coordinator",
-   "department": "SENIOR LANDSCAPE ARCHITECT, CALTRANS",
-   "location": "Sacramento County",
-   "jobType": "Permanent Fulltime, Hybrid",
-   "salary": {
-    "min": 11437,
-    "max": 14315,
-    "interval": "month"
-   },
-   "posted": "2026-11-04",
-   "closes": "2026-11-21",
-   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=537977",
-   "summary": "",
-   "internalOnly": false,
-   "categories": [
-    "engineering"
-   ],
-   "core": false,
    "region": "norcal",
    "firstSeen": "2026-11-06"
   },
