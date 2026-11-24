@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T20:50:45.585Z",
+ "updated": "2026-11-24T01:52:46.126Z",
  "regions": [
   {
    "id": "socal",
@@ -366,32 +366,37 @@
   {
    "id": "lacity",
    "name": "City of Los Angeles",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 52,
+   "listed": 2
   },
   {
    "id": "lacounty",
    "name": "County of Los Angeles",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 414,
+   "listed": 6
   },
   {
    "id": "metro",
    "name": "LA Metro",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 17,
+   "listed": 2
   },
   {
    "id": "metrolink",
    "name": "Metrolink (SCRRA)",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 3,
+   "listed": 0
   },
   {
    "id": "scag",
    "name": "Southern California Association of Governments",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 1,
+   "listed": 0
   },
   {
    "id": "caltrans7",
@@ -403,56 +408,65 @@
   {
    "id": "longbeach",
    "name": "City of Long Beach",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 29,
+   "listed": 3
   },
   {
    "id": "pasadena",
    "name": "City of Pasadena",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 19,
+   "listed": 3
   },
   {
    "id": "santamonica",
    "name": "City of Santa Monica (incl. Big Blue Bus)",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 8,
+   "listed": 0
   },
   {
    "id": "glendale",
    "name": "City of Glendale",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 0,
+   "listed": 0
   },
   {
    "id": "burbank",
    "name": "City of Burbank",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 9,
+   "listed": 0
   },
   {
    "id": "culvercity",
    "name": "Culver City (incl. CityBus)",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 8,
+   "listed": 1
   },
   {
    "id": "weho",
    "name": "City of West Hollywood",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 0,
+   "listed": 0
   },
   {
    "id": "beverlyhills",
    "name": "City of Beverly Hills",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 4,
+   "listed": 0
   },
   {
    "id": "torrance",
    "name": "City of Torrance (incl. Torrance Transit)",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 33,
+   "listed": 5
   },
   {
    "id": "inglewood",
@@ -472,164 +486,190 @@
    "id": "sf",
    "name": "City & County of San Francisco (incl. SFMTA)",
    "ok": true,
-   "total": 204,
+   "total": 202,
    "listed": 22
   },
   {
    "id": "oakland",
    "name": "City of Oakland",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 32,
+   "listed": 3
   },
   {
    "id": "sanjose",
    "name": "City of San José",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 50,
+   "listed": 4
   },
   {
    "id": "santaclara",
    "name": "City of Santa Clara",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 42,
+   "listed": 2
   },
   {
    "id": "emeryville",
    "name": "City of Emeryville",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 10,
+   "listed": 1
   },
   {
    "id": "berkeley",
    "name": "City of Berkeley",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 18,
+   "listed": 1
   },
   {
    "id": "fremont",
    "name": "City of Fremont",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 16,
+   "listed": 4
   },
   {
    "id": "hayward",
    "name": "City of Hayward",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 12,
+   "listed": 3
   },
   {
    "id": "alameda",
    "name": "City of Alameda",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 20,
+   "listed": 0
   },
   {
    "id": "richmond",
    "name": "City of Richmond",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 15,
+   "listed": 0
   },
   {
    "id": "concord",
    "name": "City of Concord",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 19,
+   "listed": 1
   },
   {
    "id": "walnutcreek",
    "name": "City of Walnut Creek",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 2,
+   "listed": 0
   },
   {
    "id": "paloalto",
    "name": "City of Palo Alto",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 11,
+   "listed": 0
   },
   {
    "id": "mountainview",
    "name": "City of Mountain View",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 7,
+   "listed": 0
   },
   {
    "id": "sunnyvale",
    "name": "City of Sunnyvale",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 20,
+   "listed": 0
   },
   {
    "id": "vallejo",
    "name": "City of Vallejo",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 7,
+   "listed": 0
   },
   {
    "id": "santarosa",
    "name": "City of Santa Rosa",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 7,
+   "listed": 1
   },
   {
    "id": "petaluma",
    "name": "City of Petaluma",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 3,
+   "listed": 0
   },
   {
    "id": "santaclaracounty",
    "name": "County of Santa Clara",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 44,
+   "listed": 1
   },
   {
    "id": "sanmateocounty",
    "name": "County of San Mateo",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 87,
+   "listed": 0
   },
   {
    "id": "contracosta",
    "name": "County of Contra Costa",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 70,
+   "listed": 0
   },
   {
    "id": "marin",
    "name": "County of Marin",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 33,
+   "listed": 1
   },
   {
    "id": "sonoma",
    "name": "County of Sonoma",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 40,
+   "listed": 0
   },
   {
    "id": "solano",
    "name": "County of Solano",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 57,
+   "listed": 2
   },
   {
    "id": "napa",
    "name": "County of Napa",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 13,
+   "listed": 0
   },
   {
    "id": "bart",
    "name": "BART",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 18,
+   "listed": 0
   },
   {
    "id": "vta",
    "name": "VTA (Santa Clara Valley Transportation Authority)",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 7,
+   "listed": 2
   },
   {
    "id": "mtc",
@@ -641,20 +681,23 @@
   {
    "id": "actransit",
    "name": "AC Transit",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 7,
+   "listed": 0
   },
   {
    "id": "samtrans",
    "name": "SamTrans / Caltrain",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 14,
+   "listed": 7
   },
   {
    "id": "goldengate",
    "name": "Golden Gate Bridge, Highway & Transportation District",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 11,
+   "listed": 2
   },
   {
    "id": "caltrans4",
@@ -667,11 +710,83 @@
    "id": "caltranshq",
    "name": "Caltrans Headquarters (Sacramento)",
    "ok": true,
-   "total": 41,
-   "listed": 14
+   "total": 40,
+   "listed": 13
   }
  ],
  "jobs": [
+  {
+   "id": "metro:5558768",
+   "agency": "metro",
+   "title": "SENIOR DIRECTOR, QUALITY MANAGEMENT (TRANSIT)",
+   "department": "PROGRAM MANAGEMENT",
+   "location": "Los Angeles",
+   "jobType": "Regular Employee",
+   "salary": {
+    "min": 148200,
+    "max": 222268.8,
+    "interval": "year"
+   },
+   "posted": "2026-11-23",
+   "closes": "2026-12-07",
+   "url": "https://www.governmentjobs.com/careers/lametro/jobs/5558768-0",
+   "summary": "Directs and administers quality management programs in design, construction, and start-up operations of major Metro capital projects. The Director leads Metro’s quality management program for major transit capital projects, overseeing quality during design, construction, testing, and start-up of rail lines, stations, tunnels, and systems. They will also directs a team of agency and consultant qual",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "socal",
+   "firstSeen": "2026-11-23"
+  },
+  {
+   "id": "caltrans:540820",
+   "agency": "caltrans7",
+   "title": "District 7 Stormwater NPDES Coordinator",
+   "department": "SENIOR TRANSPORTATION ENGINEER, CALTRANS",
+   "location": "Los Angeles County",
+   "jobType": "Permanent Fulltime, Hybrid",
+   "salary": {
+    "min": 11437,
+    "max": 14315,
+    "interval": "month"
+   },
+   "posted": "2026-11-23",
+   "closes": "2026-12-14",
+   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=540820",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "socal",
+   "firstSeen": "2026-11-23"
+  },
+  {
+   "id": "santaclara:5554512",
+   "agency": "santaclara",
+   "title": "Associate Engineer (Civil)",
+   "department": "Public Works/Engineering",
+   "location": "1500 Warburton Ave., Santa Clara",
+   "jobType": "Full-Time",
+   "salary": {
+    "min": 145344.96,
+    "max": 186030.24,
+    "interval": "year"
+   },
+   "posted": "2026-11-20",
+   "closes": "2027-01-08",
+   "url": "https://www.governmentjobs.com/careers/cityofsantaclaraca/jobs/5554512-0",
+   "summary": "The City The City of Santa Clara is a \"full service\" city – one of only a few communities in the Bay Area that has its own police, fire, library, recreation, and electric, water, and sewer utilities, as well as all of the other departments and civic amenities expected in a thriving community. Santa Clara is a family-oriented and business-friendly city, led by a city government that has developed a",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-23"
+  },
   {
    "id": "sf:3743990017005526",
    "agency": "sf",
@@ -1330,30 +1445,6 @@
    "firstSeen": "2026-11-13"
   },
   {
-   "id": "caltrans:538771",
-   "agency": "caltrans7",
-   "title": "Material Tester",
-   "department": "TRANSPORTATION ENGINEERING TECHNICIAN",
-   "location": "Los Angeles County",
-   "jobType": "Permanent Fulltime, In Office",
-   "salary": {
-    "min": 4695,
-    "max": 7063,
-    "interval": "month"
-   },
-   "posted": "2026-11-12",
-   "closes": "2026-11-22",
-   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=538771",
-   "summary": "",
-   "internalOnly": false,
-   "categories": [
-    "engineering"
-   ],
-   "core": true,
-   "region": "socal",
-   "firstSeen": "2026-11-13"
-  },
-  {
    "id": "longbeach:5547540",
    "agency": "longbeach",
    "title": "ADMINISTRATIVE INTERN - (NON-CAREER) - PROJECT CONTROLS",
@@ -1840,31 +1931,6 @@
    "firstSeen": "2026-11-06"
   },
   {
-   "id": "caltrans:538135",
-   "agency": "caltranshq",
-   "title": "Construction Oversight Program Manager",
-   "department": "SENIOR TRANSPORTATION ENGINEER, CALTRANS",
-   "location": "Sacramento County",
-   "jobType": "Permanent Fulltime, Hybrid",
-   "salary": {
-    "min": 11437,
-    "max": 14315,
-    "interval": "month"
-   },
-   "posted": "2026-11-05",
-   "closes": "2026-11-22",
-   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=538135",
-   "summary": "",
-   "internalOnly": false,
-   "categories": [
-    "engineering",
-    "pm"
-   ],
-   "core": true,
-   "region": "norcal",
-   "firstSeen": "2026-11-06"
-  },
-  {
    "id": "samtrans:5539811",
    "agency": "samtrans",
    "title": "Director, Government & Community Affairs",
@@ -1952,30 +2018,6 @@
    "closes": "2026-12-04",
    "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=538011",
    "summary": "",
-   "internalOnly": false,
-   "categories": [
-    "engineering"
-   ],
-   "core": true,
-   "region": "norcal",
-   "firstSeen": "2026-11-06"
-  },
-  {
-   "id": "berkeley:5533717",
-   "agency": "berkeley",
-   "title": "Supervising Civil Engineer",
-   "department": "Public Works",
-   "location": "Berkeley",
-   "jobType": "Career",
-   "salary": {
-    "min": 78.1655,
-    "max": 94.3818,
-    "interval": "hour"
-   },
-   "posted": "2026-11-02",
-   "closes": "2026-11-23",
-   "url": "https://www.governmentjobs.com/careers/berkeley/jobs/5533717-0",
-   "summary": "The City of Berkeley invites you to apply for the position of Supervising Civil Engineer in the Public Works Department! The current vacancy will be assigned to the City’s Facilities Engineering Program, supporting the planning, design, construction, renovation, and rehabilitation of City-owned buildings and facilities. The City's diverse portfolio of public facilities includes buildings and infra",
    "internalOnly": false,
    "categories": [
     "engineering"
@@ -2644,30 +2686,6 @@
    "internalOnly": false,
    "categories": [
     "gis"
-   ],
-   "core": false,
-   "region": "socal",
-   "firstSeen": "2026-11-05"
-  },
-  {
-   "id": "glendale:5507756",
-   "agency": "glendale",
-   "title": "Director of Communications & Community Relations",
-   "department": "Management Services Department",
-   "location": "613 E. Broadway, Room 100, Glendale",
-   "jobType": "Salaried - Full-time",
-   "salary": {
-    "min": 12533.57,
-    "max": 18223.81,
-    "interval": "month"
-   },
-   "posted": "2026-10-19",
-   "closes": "2026-11-30",
-   "url": "https://www.governmentjobs.com/careers/glendaleca/jobs/5507756-0",
-   "summary": "OPEN EXAMINATION - ONE YEAR PROBATIONARY PERIOD Job Description:. Under the direction of the City Manager, this position leads citywide communications and community engagement — including internal/external communications, media relations, and messaging consistency across departments. The position builds and maintains partnerships with stakeholders, directs community outreach and civic events, over",
-   "internalOnly": false,
-   "categories": [
-    "outreach"
    ],
    "core": false,
    "region": "socal",
