@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T23:39:05.532Z",
+ "updated": "2026-11-25T23:17:53.974Z",
  "regions": [
   {
    "id": "socal",
@@ -397,8 +397,8 @@
    "id": "caltrans7",
    "name": "Caltrans District 7 (LA & Ventura)",
    "ok": true,
-   "total": 11,
-   "listed": 5
+   "total": 13,
+   "listed": 6
   },
   {
    "id": "longbeach",
@@ -472,8 +472,8 @@
    "id": "sf",
    "name": "City & County of San Francisco (incl. SFMTA)",
    "ok": true,
-   "total": 204,
-   "listed": 22
+   "total": 215,
+   "listed": 24
   },
   {
    "id": "oakland",
@@ -635,7 +635,7 @@
    "id": "mtc",
    "name": "MTC / ABAG (Bay Area Metro)",
    "ok": true,
-   "total": 7,
+   "total": 6,
    "listed": 1
   },
   {
@@ -660,7 +660,7 @@
    "id": "caltrans4",
    "name": "Caltrans District 4 (Bay Area)",
    "ok": true,
-   "total": 7,
+   "total": 8,
    "listed": 3
   },
   {
@@ -672,6 +672,70 @@
   }
  ],
  "jobs": [
+  {
+   "id": "caltrans:541042",
+   "agency": "caltrans7",
+   "title": "Climate Change Senior Transportation Planner (Supervisor)",
+   "department": "SENIOR TRANSPORTATION PLANNER",
+   "location": "Los Angeles County",
+   "jobType": "Permanent Fulltime, Hybrid",
+   "salary": {
+    "min": 8678,
+    "max": 10783,
+    "interval": "month"
+   },
+   "posted": "2026-11-25",
+   "closes": "2026-12-28",
+   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=541042",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "socal",
+   "firstSeen": "2026-11-25"
+  },
+  {
+   "id": "sf:3743990017080356",
+   "agency": "sf",
+   "title": "Assistant Engineer (Transportation) [5203] - Citywide (Eligible List ID # C00505)",
+   "department": "Citywide",
+   "location": "San Francisco, CA",
+   "jobType": "Full-time",
+   "salary": null,
+   "posted": "2026-11-25",
+   "closes": null,
+   "url": "https://jobs.smartrecruiters.com/CityAndCountyOfSanFrancisco1/3743990017080356",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-25"
+  },
+  {
+   "id": "sf:3743990017080086",
+   "agency": "sf",
+   "title": "Junior Engineer (Transportation) [5201] - Citywide (Eligible List ID # C00500)",
+   "department": "Citywide",
+   "location": "San Francisco, CA",
+   "jobType": "Full-time",
+   "salary": null,
+   "posted": "2026-11-25",
+   "closes": null,
+   "url": "https://jobs.smartrecruiters.com/CityAndCountyOfSanFrancisco1/3743990017080086",
+   "summary": "",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-25"
+  },
   {
    "id": "caltrans:540914",
    "agency": "caltranshq",
