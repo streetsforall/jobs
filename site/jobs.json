@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T23:17:53.974Z",
+ "updated": "2026-11-26T23:17:47.405Z",
  "regions": [
   {
    "id": "socal",
@@ -472,8 +472,8 @@
    "id": "sf",
    "name": "City & County of San Francisco (incl. SFMTA)",
    "ok": true,
-   "total": 215,
-   "listed": 24
+   "total": 214,
+   "listed": 23
   },
   {
    "id": "oakland",
@@ -667,8 +667,8 @@
    "id": "caltranshq",
    "name": "Caltrans Headquarters (Sacramento)",
    "ok": true,
-   "total": 45,
-   "listed": 13
+   "total": 43,
+   "listed": 12
   }
  ],
  "jobs": [
@@ -1318,7 +1318,7 @@
     "interval": "month"
    },
    "posted": "2026-11-16",
-   "closes": "2026-11-26",
+   "closes": "2026-12-03",
    "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=539029",
    "summary": "",
    "internalOnly": false,
@@ -1676,26 +1676,6 @@
    "internalOnly": false,
    "categories": [
     "engineering"
-   ],
-   "core": true,
-   "region": "norcal",
-   "firstSeen": "2026-11-12"
-  },
-  {
-   "id": "sf:3743990016783326",
-   "agency": "sf",
-   "title": "Senior Administrative Analyst, Transit Division, SFMTA (1823)",
-   "department": "Municipal Transportation Agency",
-   "location": "San Francisco, CA",
-   "jobType": "Full-time",
-   "salary": null,
-   "posted": "2026-11-11",
-   "closes": null,
-   "url": "https://jobs.smartrecruiters.com/CityAndCountyOfSanFrancisco1/3743990016783326",
-   "summary": "",
-   "internalOnly": false,
-   "categories": [
-    "pm"
    ],
    "core": true,
    "region": "norcal",
@@ -2137,30 +2117,6 @@
    "internalOnly": false,
    "categories": [
     "outreach"
-   ],
-   "core": false,
-   "region": "norcal",
-   "firstSeen": "2026-11-06"
-  },
-  {
-   "id": "caltrans:535994",
-   "agency": "caltranshq",
-   "title": "Project Delivery Liaison (Senior Right of Way Agent, Specialist)",
-   "department": "SENIOR RIGHT OF WAY AGENT",
-   "location": "Sacramento County",
-   "jobType": "Permanent Fulltime, Hybrid",
-   "salary": {
-    "min": 8678,
-    "max": 10783,
-    "interval": "month"
-   },
-   "posted": "2026-10-19",
-   "closes": "2026-11-25",
-   "url": "https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=535994",
-   "summary": "",
-   "internalOnly": false,
-   "categories": [
-    "pm"
    ],
    "core": false,
    "region": "norcal",
