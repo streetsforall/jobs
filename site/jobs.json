@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T23:17:47.405Z",
+ "updated": "2026-11-27T22:54:50.392Z",
  "regions": [
   {
    "id": "socal",
@@ -366,93 +366,107 @@
   {
    "id": "lacity",
    "name": "City of Los Angeles",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 51,
+   "listed": 2
   },
   {
    "id": "lacounty",
    "name": "County of Los Angeles",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 416,
+   "listed": 6
   },
   {
    "id": "metro",
    "name": "LA Metro",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 16,
+   "listed": 3
   },
   {
    "id": "metrolink",
    "name": "Metrolink (SCRRA)",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 5,
+   "listed": 0
   },
   {
    "id": "scag",
    "name": "Southern California Association of Governments",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 1,
+   "listed": 0
   },
   {
    "id": "caltrans7",
    "name": "Caltrans District 7 (LA & Ventura)",
    "ok": true,
-   "total": 13,
+   "total": 12,
    "listed": 6
   },
   {
    "id": "longbeach",
    "name": "City of Long Beach",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 30,
+   "listed": 3
   },
   {
    "id": "pasadena",
    "name": "City of Pasadena",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 19,
+   "listed": 3
   },
   {
    "id": "santamonica",
    "name": "City of Santa Monica (incl. Big Blue Bus)",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 8,
+   "listed": 0
   },
   {
    "id": "glendale",
    "name": "City of Glendale",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 10,
+   "listed": 3
   },
   {
    "id": "burbank",
    "name": "City of Burbank",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 10,
+   "listed": 0
   },
   {
    "id": "culvercity",
    "name": "Culver City (incl. CityBus)",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 9,
+   "listed": 1
   },
   {
    "id": "weho",
    "name": "City of West Hollywood",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 0,
+   "listed": 0
   },
   {
    "id": "beverlyhills",
    "name": "City of Beverly Hills",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 4,
+   "listed": 0
   },
   {
    "id": "torrance",
    "name": "City of Torrance (incl. Torrance Transit)",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 33,
+   "listed": 5
   },
   {
    "id": "inglewood",
@@ -478,158 +492,184 @@
   {
    "id": "oakland",
    "name": "City of Oakland",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 34,
+   "listed": 4
   },
   {
    "id": "sanjose",
    "name": "City of San José",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 49,
+   "listed": 2
   },
   {
    "id": "santaclara",
    "name": "City of Santa Clara",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 42,
+   "listed": 2
   },
   {
    "id": "emeryville",
    "name": "City of Emeryville",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 10,
+   "listed": 1
   },
   {
    "id": "berkeley",
    "name": "City of Berkeley",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 18,
+   "listed": 1
   },
   {
    "id": "fremont",
    "name": "City of Fremont",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 16,
+   "listed": 4
   },
   {
    "id": "hayward",
    "name": "City of Hayward",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 13,
+   "listed": 4
   },
   {
    "id": "alameda",
    "name": "City of Alameda",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 18,
+   "listed": 0
   },
   {
    "id": "richmond",
    "name": "City of Richmond",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 15,
+   "listed": 0
   },
   {
    "id": "concord",
    "name": "City of Concord",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 20,
+   "listed": 1
   },
   {
    "id": "walnutcreek",
    "name": "City of Walnut Creek",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 2,
+   "listed": 0
   },
   {
    "id": "paloalto",
    "name": "City of Palo Alto",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 11,
+   "listed": 0
   },
   {
    "id": "mountainview",
    "name": "City of Mountain View",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 7,
+   "listed": 0
   },
   {
    "id": "sunnyvale",
    "name": "City of Sunnyvale",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 7,
+   "listed": 1
   },
   {
    "id": "vallejo",
    "name": "City of Vallejo",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 6,
+   "listed": 0
   },
   {
    "id": "santarosa",
    "name": "City of Santa Rosa",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 7,
+   "listed": 1
   },
   {
    "id": "petaluma",
    "name": "City of Petaluma",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 3,
+   "listed": 0
   },
   {
    "id": "santaclaracounty",
    "name": "County of Santa Clara",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 43,
+   "listed": 1
   },
   {
    "id": "sanmateocounty",
    "name": "County of San Mateo",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 82,
+   "listed": 0
   },
   {
    "id": "contracosta",
    "name": "County of Contra Costa",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 70,
+   "listed": 0
   },
   {
    "id": "marin",
    "name": "County of Marin",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 28,
+   "listed": 1
   },
   {
    "id": "sonoma",
    "name": "County of Sonoma",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 32,
+   "listed": 0
   },
   {
    "id": "solano",
    "name": "County of Solano",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 60,
+   "listed": 2
   },
   {
    "id": "napa",
    "name": "County of Napa",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 13,
+   "listed": 0
   },
   {
    "id": "bart",
    "name": "BART",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 17,
+   "listed": 0
   },
   {
    "id": "vta",
    "name": "VTA (Santa Clara Valley Transportation Authority)",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 7,
+   "listed": 2
   },
   {
    "id": "mtc",
@@ -641,20 +681,23 @@
   {
    "id": "actransit",
    "name": "AC Transit",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 7,
+   "listed": 0
   },
   {
    "id": "samtrans",
    "name": "SamTrans / Caltrain",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 14,
+   "listed": 7
   },
   {
    "id": "goldengate",
    "name": "Golden Gate Bridge, Highway & Transportation District",
-   "ok": false,
-   "error": "fetch failed"
+   "ok": true,
+   "total": 11,
+   "listed": 2
   },
   {
    "id": "caltrans4",
@@ -667,11 +710,180 @@
    "id": "caltranshq",
    "name": "Caltrans Headquarters (Sacramento)",
    "ok": true,
-   "total": 43,
+   "total": 41,
    "listed": 12
   }
  ],
  "jobs": [
+  {
+   "id": "metro:5562195",
+   "agency": "metro",
+   "title": "SENIOR DIRECTOR, QUALITY MANAGEMENT (HIGHWAYS AND TRANSIT)",
+   "department": "PROGRAM MANAGEMENT",
+   "location": "Los Angeles",
+   "jobType": "Regular Employee",
+   "salary": {
+    "min": 148200,
+    "max": 222268.8,
+    "interval": "year"
+   },
+   "posted": "2026-11-25",
+   "closes": "2026-12-09",
+   "url": "https://www.governmentjobs.com/careers/lametro/jobs/5562195-0",
+   "summary": "Directs and administers quality management programs in design, construction, and start-up operations of major Metro capital projects. Recruitment Timelines: Interviews are projected to be scheduled for the week of December 14, 2026. These dates are subject to change. We encourage you to monitor your governmentjobs.com profile and emails for the latest updates.",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "socal",
+   "firstSeen": "2026-11-27"
+  },
+  {
+   "id": "longbeach:5551691",
+   "agency": "longbeach",
+   "title": "CIVIL ENGINEERING ASSISTANT - NON-CAREER",
+   "department": "Long Beach Utilities - (UC)",
+   "location": "City of Long Beach",
+   "jobType": "Unclassified - Part-Time, Seasonal",
+   "salary": {
+    "min": 33.15,
+    "max": 45.04,
+    "interval": "hour"
+   },
+   "posted": "2026-11-25",
+   "closes": "2026-12-13",
+   "url": "https://www.governmentjobs.com/careers/longbeach/jobs/5551691-0",
+   "summary": "The Long Beach Utilities Department is currently seeking candidates to fill two Civil Engineering Assistant – Non Career vacancies in the Water Treatment Division. Long Beach Utilities serves nearly 500,000 people in 50 square miles, providing high quality, safe drinking water and wastewater management for Long Beach, as well as natural gas services for Long Beach and Signal Hill. With the foundat",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": false,
+   "region": "socal",
+   "firstSeen": "2026-11-27"
+  },
+  {
+   "id": "oakland:5448588",
+   "agency": "oakland",
+   "title": "Construction Inspector Supervisor",
+   "department": "Department of Transportation",
+   "location": "Oakland",
+   "jobType": "Full Time Civil Service",
+   "salary": {
+    "min": 9381.25,
+    "max": 11517.5,
+    "interval": "month"
+   },
+   "posted": "2026-11-25",
+   "closes": "2026-12-10",
+   "url": "https://www.governmentjobs.com/careers/oaklandca/jobs/5448588-0",
+   "summary": "The City of Oakland is an equal opportunity employer that values workforce diversity, inclusion, and equity. Oakland has a long history of activism around issues of justice and equity. Both oppression and this resistance to oppression have shaped the city’s historical roots and the lives of its residents to this day. As public servants in one of the most diverse cities in the nation, we strive to ",
+   "internalOnly": false,
+   "categories": [
+    "pm"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-27"
+  },
+  {
+   "id": "hayward:5556171",
+   "agency": "hayward",
+   "title": "Construction Inspector",
+   "department": "Public Works & Utilities",
+   "location": "Hayward City Hall - 777 B Street, Hayward",
+   "jobType": "Full-Time",
+   "salary": {
+    "min": 52.15,
+    "max": 63.36,
+    "interval": "hour"
+   },
+   "posted": "2026-11-24",
+   "closes": "2026-12-17",
+   "url": "https://www.governmentjobs.com/careers/haywardca/jobs/5556171-0",
+   "summary": "DEADLINE TO APPLY: Thursday, December 17th, 2026 at 11:59 PM THE DEPARTMENT The Department of Public Works and Utilities is comprised of six divisions that work collaboratively to develop, build, operate, and maintain Hayward's infrastructure. The Department is responsible for providing engineering and transportation support to City operating departments and divisions and for implementation of the",
+   "internalOnly": false,
+   "categories": [
+    "pm"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-27"
+  },
+  {
+   "id": "glendale:5553533",
+   "agency": "glendale",
+   "title": "Civil Engineering Associate",
+   "department": "Public Works Department",
+   "location": "613 E. Broadway, Room 100, Glendale",
+   "jobType": "Salaried - Full-time",
+   "salary": {
+    "min": 8695.66,
+    "max": 11364.91,
+    "interval": "month"
+   },
+   "posted": "2026-11-23",
+   "closes": "2026-12-11",
+   "url": "https://www.governmentjobs.com/careers/glendaleca/jobs/5553533-0",
+   "summary": "OPEN & PROMOTIONAL EXAMINATION- SIX MONTHS PROBATIONARY PERIOD This current recruitment is for the Public Works Engineering Division. The eligible list resulting from this recruitment may be utilized by other Departments within the City. Under direction, this supervisory position performs moderately difficult professional engineering work in connection with a wide variety of civil engineering proj",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "socal",
+   "firstSeen": "2026-11-27"
+  },
+  {
+   "id": "glendale:5553530",
+   "agency": "glendale",
+   "title": "Civil Engineering Assistant",
+   "department": "Public Works Department",
+   "location": "613 E. Broadway, Room 100, Glendale",
+   "jobType": "Salaried - Full-time",
+   "salary": {
+    "min": 7528.11,
+    "max": 9839.63,
+    "interval": "month"
+   },
+   "posted": "2026-11-23",
+   "closes": "2026-12-11",
+   "url": "https://www.governmentjobs.com/careers/glendaleca/jobs/5553530-0",
+   "summary": "OPEN & PROMOTIONAL EXAMINATION- SIX MONTHS PROBATIONARY PERIOD This current recruitment is for the Public Works Engineering Division. The eligible list resulting from this recruitment may be utilized by other Departments within the City. Under supervision, performs beginning level of professional civil engineering work. Essential functions of the job include, but are not limited to, the following:",
+   "internalOnly": false,
+   "categories": [
+    "engineering"
+   ],
+   "core": true,
+   "region": "socal",
+   "firstSeen": "2026-11-27"
+  },
+  {
+   "id": "sunnyvale:5514550",
+   "agency": "sunnyvale",
+   "title": "Civil Engineering Technician I/II/III - Capital Projects Engineering- CPE",
+   "department": "Transportation and Public Works",
+   "location": "MSCS-69 Stony Circle Santa Rosa",
+   "jobType": "Full-Time",
+   "salary": {
+    "min": 97963,
+    "max": 118961,
+    "interval": "year"
+   },
+   "posted": "2026-11-05",
+   "closes": "2026-11-29",
+   "url": "https://www.governmentjobs.com/careers/srcity/jobs/5514550-0",
+   "summary": "THE CITY OF SANTA ROSA IS HIRING MULTIPLE CIVIL ENGINEERING TECHNICIANS! THIS IS AN EXCITING OPPORTUNITY FOR THOSE SEEKING TO APPLY THEIR TECHNICAL EXPERTISE IN A DYNAMIC CAREER PROVIDING CRITICAL SERVICES TO OUR LOCAL COMMUNITY! The City of Santa Rosa is committed to building a workforce reflective of our community and establishing a lasting culture of equity and belonging within our organization",
+   "internalOnly": false,
+   "categories": [
+    "engineering",
+    "pm"
+   ],
+   "core": true,
+   "region": "norcal",
+   "firstSeen": "2026-11-27"
+  },
   {
    "id": "caltrans:541042",
    "agency": "caltrans7",
@@ -1511,30 +1723,6 @@
    ],
    "core": false,
    "region": "norcal",
-   "firstSeen": "2026-11-13"
-  },
-  {
-   "id": "longbeach:5547540",
-   "agency": "longbeach",
-   "title": "ADMINISTRATIVE INTERN - (NON-CAREER) - PROJECT CONTROLS",
-   "department": "Harbor - (UC)",
-   "location": "City of Long Beach",
-   "jobType": "Unclassified - Part-Time, Temporary",
-   "salary": {
-    "min": 25.09,
-    "max": null,
-    "interval": "hour"
-   },
-   "posted": "2026-11-12",
-   "closes": "2026-11-26",
-   "url": "https://www.governmentjobs.com/careers/longbeach/jobs/5547540-0",
-   "summary": "THE PORT OF LONG BEACH IS SEEKING TWO (2) ADMINISTRATIVE INTERNS IN THE PROJECT CONTROLS DIVISION. The Port of Choice: The Port of Long Beach is an international gateway for the reliable, efficient and sustainable movement of goods and is a leader in environmental stewardship. Credited with moving $300 billion in trade, the Port serves as a critical hub for international commerce and is a major tr",
-   "internalOnly": false,
-   "categories": [
-    "pm"
-   ],
-   "core": false,
-   "region": "socal",
    "firstSeen": "2026-11-13"
   },
   {
@@ -2614,6 +2802,30 @@
    "internalOnly": false,
    "categories": [
     "gis"
+   ],
+   "core": false,
+   "region": "socal",
+   "firstSeen": "2026-11-05"
+  },
+  {
+   "id": "glendale:5507756",
+   "agency": "glendale",
+   "title": "Director of Communications & Community Relations",
+   "department": "Management Services Department",
+   "location": "613 E. Broadway, Room 100, Glendale",
+   "jobType": "Salaried - Full-time",
+   "salary": {
+    "min": 12533.57,
+    "max": 18223.81,
+    "interval": "month"
+   },
+   "posted": "2026-10-19",
+   "closes": "2026-11-30",
+   "url": "https://www.governmentjobs.com/careers/glendaleca/jobs/5507756-0",
+   "summary": "OPEN EXAMINATION - ONE YEAR PROBATIONARY PERIOD Job Description:. Under the direction of the City Manager, this position leads citywide communications and community engagement — including internal/external communications, media relations, and messaging consistency across departments. The position builds and maintains partnerships with stakeholders, directs community outreach and civic events, over",
+   "internalOnly": false,
+   "categories": [
+    "outreach"
    ],
    "core": false,
    "region": "socal",
